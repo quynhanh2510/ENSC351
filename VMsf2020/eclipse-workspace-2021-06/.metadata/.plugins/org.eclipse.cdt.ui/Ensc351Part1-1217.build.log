@@ -1,0 +1,24 @@
+18:38:31 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:68:18: warning: unused variable ‘fileSize’ [-Wunused-variable]
+         unsigned fileSize = st.st_size;
+                  ^
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+
+18:38:34 Build Finished (took 3s.320ms)
+

@@ -1,0 +1,5 @@
+SAN_OPTIONS
+-fsanitize=address       -fsanitize=leak     -fsanitize=undefined       -fsanitize=pointer-compare  -fsanitize=pointer-subtract
+
+SAN_SET_WITH_THREAD
+-fsanitize=thread     -fsanitize=undefined

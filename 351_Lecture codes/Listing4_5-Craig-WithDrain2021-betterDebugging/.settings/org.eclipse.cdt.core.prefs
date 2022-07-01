@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+environment/project/cdt.managedbuild.config.gnu.exe.debug.788954921/ASAN_OPTIONS/delimiter=\:
+environment/project/cdt.managedbuild.config.gnu.exe.debug.788954921/ASAN_OPTIONS/operation=append
+environment/project/cdt.managedbuild.config.gnu.exe.debug.788954921/ASAN_OPTIONS/value=detect_leaks\=0
+environment/project/cdt.managedbuild.config.gnu.exe.debug.788954921/SAN_OPTIONS/delimiter=\:
+environment/project/cdt.managedbuild.config.gnu.exe.debug.788954921/SAN_OPTIONS/operation=append
+environment/project/cdt.managedbuild.config.gnu.exe.debug.788954921/SAN_OPTIONS/value=-fsanitize\=address       -fsanitize\=leak     -fsanitize\=undefined       -fsanitize\=pointer-compare  -fsanitize\=pointer-subtract
+environment/project/cdt.managedbuild.config.gnu.exe.debug.788954921/append=true
+environment/project/cdt.managedbuild.config.gnu.exe.debug.788954921/appendContributed=true
+environment/project/cdt.managedbuild.config.gnu.exe.release.2047204546/SAN_OPTIONS/delimiter=\:
+environment/project/cdt.managedbuild.config.gnu.exe.release.2047204546/SAN_OPTIONS/operation=append
+environment/project/cdt.managedbuild.config.gnu.exe.release.2047204546/SAN_OPTIONS/value=-fsanitize\=address       -fsanitize\=leak     -fsanitize\=undefined       -fsanitize\=pointer-compare  -fsanitize\=pointer-subtract
+environment/project/cdt.managedbuild.config.gnu.exe.release.2047204546/append=true
+environment/project/cdt.managedbuild.config.gnu.exe.release.2047204546/appendContributed=true

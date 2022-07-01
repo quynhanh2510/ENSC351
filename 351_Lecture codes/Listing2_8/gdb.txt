@@ -1,0 +1,305 @@
+~"+handle SIGPIPE nostop\n"
+~"+skip -rfu ^std::\n"
+~"Function(s) ^std:: will be skipped when stepping.\n"
+15^done
+(gdb) 
+16^done
+(gdb) 
+17^done
+(gdb) 
+18^done
+(gdb) 
+19^done
+(gdb) 
+20^done,value="auto"
+(gdb) 
+21^done
+(gdb) 
+~"$1 = 0xff\n"
+22^done
+(gdb) 
+23^done,value="8"
+(gdb) 
+24^done
+(gdb) 
+~"The target endianness is set automatically (currently little endian)\n"
+25^done
+(gdb) 
+26^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000002280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&)",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp:11"}
+(gdb) 
+27^done,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000001b72",func="parallel_accumulate<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int)",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="50",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp:50"}
+(gdb) 
+28^done,bkpt={number="3",type="breakpoint",disp="del",enabled="y",addr="0x00000000000013a9",func="main()",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="59",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+29^done
+(gdb) 
+=thread-group-started,id="i1",pid="20981"
+=thread-created,id="1",group-id="i1"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&)",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp:11"}
+=breakpoint-modified,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="0x0000555555555b72",func="parallel_accumulate<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int)",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="50",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp:50"}
+=breakpoint-modified,bkpt={number="3",type="breakpoint",disp="del",enabled="y",addr="0x00005555555553a9",func="main()",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="59",thread-groups=["i1"],times="0",original-location="main"}
+=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd0100",to="0x00007ffff7ff2674"}]
+30^running
+*running,thread-id="all"
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libpthread.so.0",target-name="/lib/x86_64-linux-gnu/libpthread.so.0",host-name="/lib/x86_64-linux-gnu/libpthread.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7f95ae0",to="0x00007ffff7fa54d5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libstdc++.so.6",target-name="/lib/x86_64-linux-gnu/libstdc++.so.6",host-name="/lib/x86_64-linux-gnu/libstdc++.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7e4a160",to="0x00007ffff7f32452"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgcc_s.so.1",target-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",host-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7d945e0",to="0x00007ffff7da5045"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7bc4630",to="0x00007ffff7d3920d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7a5f3c0",to="0x00007ffff7b05f18"}]
+=breakpoint-modified,bkpt={number="3",type="breakpoint",disp="del",enabled="y",addr="0x00005555555553a9",func="main()",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="59",thread-groups=["i1"],times="1",original-location="main"}
+~"\n"
+~"Temporary breakpoint 3, main () at ../src/code.cpp:59\n"
+~"59\t{\n"
+*stopped,reason="breakpoint-hit",disp="del",bkptno="3",frame={addr="0x00005555555553a9",func="main",args=[],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="59",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="0"
+=breakpoint-deleted,id="3"
+31^done,groups=[{id="i1",type="process",pid="20981",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/Debug/Listing2_8",cores=["0"]}]
+(gdb) 
+32^done,threads=[{id="1",target-id="Thread 0x7ffff7a4b740 (LWP 20981)",name="Listing2_8",frame={level="0",addr="0x00005555555553a9",func="main",args=[],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="59",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+33^done,depth="1"
+(gdb) 
+34^done
+(gdb) 
+35^done,groups=[{id="i1",type="process",pid="20981",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/Debug/Listing2_8",cores=["0"]}]
+(gdb) 
+36^done,threads=[{id="1",target-id="Thread 0x7ffff7a4b740 (LWP 20981)",name="Listing2_8",frame={level="0",addr="0x00005555555553a9",func="main",args=[],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="59",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+37^done,locals=[{name="vi",value="std::vector of length -11728089832598, capacity -35184337895410 = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, -198266207, -1175325282, -200363359, -1175325282, -187780447, -1175325282, -191974751, -1175325282, 950973089, -1175325282, 953070241, -1175325282, 856601249, -1175325282, 1825485473, -1175325282, 1817096865, -1175325282, 179221153, -1175325282, 363770529, -1175325282, 502182561, -1175325282, 967750305, -1175325282, 1020179105, -1175325282, 1007596193, -1175325282, 982430369, -1175325282, 1015984801, -1175325282, 1001304737, -1175325282, -974212447, -1175325282, -871451999, -1175325282, -921783647, -1175325282, -410078559, -1175325282, -95505759, -1175325282, -387009887, -1175325282, -1206996319, -1175325282, -707874143, -1175325287, -764497247, -1175325287, -370232671, -1175325287, -584142175, -1175325287, 1353626273, -1175325282, 1292808865, -1175325282, 1638838945, -1175325282, 537834145, -1175325282, 802075297, -1175325282, 781103777, -1175325282, -271666527, -1175325287, -286346591, -1175325287, 1392423585, -1175325288, -353455455, -1175325287, 810463905, -1175325281, 5157537, -1175325281, 1624158881, -1175325281, 1, 0, -134544288, 32767, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0...}"},{name="sum",value="21845"}]
+(gdb) 
+38^done,name="var1",numchild="0",value="{...}",type="std::vector<int, std::allocator<int> >",thread-id="1",displayhint="array",dynamic="1",has_more="1"
+(gdb) 
+39^done,name="var2",numchild="0",value="21845",type="int",thread-id="1",has_more="0"
+(gdb) 
+40^done,numchild="1",displayhint="array",children=[child={name="var1.[0]",exp="[0]",numchild="0",type="int",thread-id="1"}],has_more="1"
+(gdb) 
+41^done
+(gdb) 
+42^running
+*running,thread-id="all"
+(gdb) 
+43^done,new-thread-id="1"
+(gdb) 
+=thread-created,id="2",group-id="i1"
+*running,thread-id="2"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&)",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp:11"}
+=thread-created,id="3",group-id="i1"
+*running,thread-id="3"
+~"[Switching to Thread 0x7ffff7a4a700 (LWP 20991)]\n"
+~"\n"
+~"Thread 2 \"Listing2_8\" hit Breakpoint 1, accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator() (this=0x55555556ff08, first=non-dereferenceable iterator for std::vector, last=267633609, result=@0x7ffff7a49d90: -140206624) at ../src/code.cpp:11\n"
+~"11\t    void operator()(Iterator first,Iterator last,T& result)\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",args=[{name="this",value="0x55555556ff08"},{name="first",value="non-dereferenceable iterator for std::vector"},{name="last",value="267633609"},{name="result",value="@0x7ffff7a49d90: -140206624"}],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},thread-id="2",stopped-threads="all",core="0"
+44^done,depth="2"
+(gdb) 
+45^done,groups=[{id="i1",type="process",pid="20981",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/Debug/Listing2_8",cores=["0","1","3"]}]
+(gdb) 
+46^done,threads=[{id="1",target-id="Thread 0x7ffff7a4b740 (LWP 20981)",name="Listing2_8",frame={level="0",addr="0x00007ffff7cc1285",func="clone",args=[],file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="78",arch="i386:x86-64"},state="stopped",core="1"},{id="2",target-id="Thread 0x7ffff7a4a700 (LWP 20991)",name="Listing2_8",frame={level="0",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",args=[{name="this",value="0x55555556ff08"},{name="first",value="non-dereferenceable iterator for std::vector"},{name="last",value="267633609"},{name="result",value="@0x7ffff7a49d90: -140206624"}],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},state="stopped",core="0"},{id="3",target-id="Thread 0x7ffff7249700 (LWP 20992)",name="Listing2_8",frame={level="0",addr="0x00007ffff7cc1285",func="clone",args=[],file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="78",arch="i386:x86-64"},state="stopped",core="3"}]
+(gdb) 
+47^done,depth="9"
+(gdb) 
+48^done
+(gdb) 
+49^done,threads=[{id="2",target-id="Thread 0x7ffff7a4a700 (LWP 20991)",name="Listing2_8",frame={level="0",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",args=[{name="this",value="0x55555556ff08"},{name="first",value="non-dereferenceable iterator for std::vector"},{name="last",value="267633609"},{name="result",value="@0x7ffff7a49d90: -140206624"}],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+50^done,locals=[]
+(gdb) 
+51^done,threads=[{id="1",target-id="Thread 0x7ffff7a4b740 (LWP 20981)",name="Listing2_8",frame={level="0",addr="0x00007ffff7cc1285",func="clone",args=[],file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="78",arch="i386:x86-64"},state="stopped",core="1"}]
+(gdb) 
+52^done,threads=[{id="3",target-id="Thread 0x7ffff7249700 (LWP 20992)",name="Listing2_8",frame={level="0",addr="0x00007ffff7cc1285",func="clone",args=[],file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="78",arch="i386:x86-64"},state="stopped",core="3"}]
+(gdb) 
+53^done,name="var3",numchild="0",value="0x55555556ff08",type="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int> * const",thread-id="2",has_more="0"
+(gdb) 
+54^done,stack=[frame={level="0",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},frame={level="1",addr="0x0000555555558cb6",func="std::__invoke_impl<void, accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> >",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="2",addr="0x0000555555558b75",func="std::__invoke<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> >",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="3",addr="0x0000555555558a45",func="std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > >::_M_invoke<0ul, 1ul, 2ul, 3ul>",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="4",addr="0x00005555555589af",func="std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > >::operator()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="5",addr="0x0000555555558980",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > > >::_M_run",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="6",addr="0x00007ffff7e82de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="7",addr="0x00007ffff7f97609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7cc1293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+55^done,name="var4",numchild="0",value="non-dereferenceable iterator for std::vector",type="__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >",thread-id="2",dynamic="1",has_more="0"
+(gdb) 
+56^done,name="var5",numchild="0",value="267633609",type="__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >",thread-id="2",dynamic="1",has_more="0"
+(gdb) 
+57^done,name="var6",numchild="0",value="-140206624",type="int &",thread-id="2",has_more="0"
+(gdb) 
+58^done,value="{void (accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int> * const, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int &)} 0x555555556280 <accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&)>"
+(gdb) 
+59^done,name="var7",numchild="0",value="{void (accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int> * const, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int &)} 0x555555556280 <accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&)>",type="void (accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int> * const, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int &)",has_more="0"
+(gdb) 
+60^done,format="octal",value="0"
+(gdb) 
+61^done,format="natural",value="{void (accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int> * const, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int &)} 0x555555556280 <accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&)>"
+(gdb) 
+62^done,format="decimal",value="0"
+(gdb) 
+63^done,format="natural",value="{void (accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int> * const, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int &)} 0x555555556280 <accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&)>"
+(gdb) 
+64^done,format="binary",value="0"
+(gdb) 
+65^done,format="natural",value="{void (accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int> * const, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int &)} 0x555555556280 <accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&)>"
+(gdb) 
+66^done,format="hexadecimal",value="0x0"
+(gdb) 
+67^done,format="natural",value="{void (accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int> * const, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int &)} 0x555555556280 <accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&)>"
+(gdb) 
+68^done,depth="4"
+(gdb) 
+69^done,stack=[frame={level="0",addr="0x00007ffff7cc1285",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="78",arch="i386:x86-64"},frame={level="1",addr="0x00007ffff7f97530",func="??",file="allocatestack.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/allocatestack.c",line="311",from="/lib/x86_64-linux-gnu/libpthread.so.0",arch="i386:x86-64"},frame={level="2",addr="0x00007ffff7249700",func="??",arch="i386:x86-64"},frame={level="3",addr="0x0000000000000000",func="??",arch="i386:x86-64"}]
+(gdb) 
+70^running
+*running,thread-id="all"
+~"[Switching to thread 3 (Thread 0x7ffff7249700 (LWP 20992))](running)\n"
+=thread-selected,id="3"
+(gdb) 
+=thread-created,id="4",group-id="i1"
+*running,thread-id="4"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&)",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",thread-groups=["i1"],times="2",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp:11"}
+~"[Switching to Thread 0x7ffff7249700 (LWP 20992)]\n"
+~"\n"
+~"Thread 3 \"Listing2_8\" hit Breakpoint 1, accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator() (this=0x555555570878, first=non-dereferenceable iterator for std::vector, last=267633609, result=@0x7ffff7248d90: -148599328) at ../src/code.cpp:11\n"
+~"11\t    void operator()(Iterator first,Iterator last,T& result)\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",args=[{name="this",value="0x555555570878"},{name="first",value="non-dereferenceable iterator for std::vector"},{name="last",value="267633609"},{name="result",value="@0x7ffff7248d90: -148599328"}],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},thread-id="3",stopped-threads="all",core="3"
+71^done,depth="2"
+(gdb) 
+72^done,threads=[{id="1",target-id="Thread 0x7ffff7a4b740 (LWP 20981)",name="Listing2_8",frame={level="0",addr="0x0000555555555b72",func="parallel_accumulate<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>",args=[{name="first",value="10"},{name="last",value="0"},{name="init",value="5"}],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="50",arch="i386:x86-64"},state="stopped",core="0"},{id="2",target-id="Thread 0x7ffff7a4a700 (LWP 20991)",name="Listing2_8",frame={level="0",addr="0x00005555555564a1",func="std::accumulate<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>",args=[{name="__first",value="10"},{name="__last",value="10"},{name="__init",value="1233010"}],file="/usr/include/c++/9/bits/stl_numeric.h",fullname="/usr/include/c++/9/bits/stl_numeric.h",line="138",arch="i386:x86-64"},state="stopped",core="0"},{id="3",target-id="Thread 0x7ffff7249700 (LWP 20992)",name="Listing2_8",frame={level="0",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",args=[{name="this",value="0x555555570878"},{name="first",value="non-dereferenceable iterator for std::vector"},{name="last",value="267633609"},{name="result",value="@0x7ffff7248d90: -148599328"}],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},state="stopped",core="3"},{id="4",target-id="Thread 0x7ffff6a48700 (LWP 20998)",name="Listing2_8",frame={level="0",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",args=[{name="this",value="0x5555555709d8"},{name="first",value="non-dereferenceable iterator for std::vector"},{name="last",value="267633609"},{name="result",value="@0x7ffff6a47d90: -156992032"}],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+73^done,stack-args=[frame={level="0",args=[{name="__first",value="10"},{name="__last",value="10"},{name="__init",value="1233010"}]},frame={level="1",args=[{name="this",value="0x55555556fef8"},{name="first",value="10"},{name="last",value="10"},{name="result",value="@0x55555556feb0: 0"}]},frame={level="2",args=[{name="__f",value="@0x55555556fef8: {<No data fields>}"}]},frame={level="3",args=[{name="__fn",value="@0x55555556fef8: {<No data fields>}"}]},frame={level="4",args=[{name="this",value="0x55555556fef8"}]},frame={level="5",args=[{name="this",value="0x55555556fef8"}]},frame={level="6",args=[{name="this",value="0x55555556fef0"}]},frame={level="7",args=[]},frame={level="8",args=[{name="arg",value="<optimized out>"}]},frame={level="9",args=[]}]
+(gdb) 
+74^done,locals=[]
+(gdb) 
+75^done,depth="9"
+(gdb) 
+76^done,groups=[{id="i1",type="process",pid="20981",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/Debug/Listing2_8",cores=["0","3"]}]
+(gdb) 
+77^done,stack=[frame={level="0",addr="0x00005555555564a1",func="std::accumulate<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>",file="/usr/include/c++/9/bits/stl_numeric.h",fullname="/usr/include/c++/9/bits/stl_numeric.h",line="138",arch="i386:x86-64"},frame={level="1",addr="0x00005555555562b5",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="13",arch="i386:x86-64"},frame={level="2",addr="0x0000555555558cb6",func="std::__invoke_impl<void, accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> >",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="3",addr="0x0000555555558b75",func="std::__invoke<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> >",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="4",addr="0x0000555555558a45",func="std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > >::_M_invoke<0ul, 1ul, 2ul, 3ul>",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="5",addr="0x00005555555589af",func="std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > >::operator()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="6",addr="0x0000555555558980",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > > >::_M_run",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="7",addr="0x00007ffff7e82de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7f97609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="9",addr="0x00007ffff7cc1293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+78^done
+(gdb) 
+79^done,threads=[{id="3",target-id="Thread 0x7ffff7249700 (LWP 20992)",name="Listing2_8",frame={level="0",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",args=[{name="this",value="0x555555570878"},{name="first",value="non-dereferenceable iterator for std::vector"},{name="last",value="267633609"},{name="result",value="@0x7ffff7248d90: -148599328"}],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},state="stopped",core="3"}]
+(gdb) 
+80^done,locals=[]
+(gdb) 
+81^done,threads=[{id="1",target-id="Thread 0x7ffff7a4b740 (LWP 20981)",name="Listing2_8",frame={level="0",addr="0x0000555555555b72",func="parallel_accumulate<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>",args=[{name="first",value="10"},{name="last",value="0"},{name="init",value="5"}],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="50",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+82^done,threads=[{id="2",target-id="Thread 0x7ffff7a4a700 (LWP 20991)",name="Listing2_8",frame={level="0",addr="0x00005555555564a1",func="std::accumulate<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>",args=[{name="__first",value="10"},{name="__last",value="10"},{name="__init",value="1233010"}],file="/usr/include/c++/9/bits/stl_numeric.h",fullname="/usr/include/c++/9/bits/stl_numeric.h",line="138",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+83^done,threads=[{id="4",target-id="Thread 0x7ffff6a48700 (LWP 20998)",name="Listing2_8",frame={level="0",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",args=[{name="this",value="0x5555555709d8"},{name="first",value="non-dereferenceable iterator for std::vector"},{name="last",value="267633609"},{name="result",value="@0x7ffff6a47d90: -156992032"}],file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+84^done,depth="10"
+(gdb) 
+85^done,name="var8",numchild="0",value="0x555555570878",type="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int> * const",thread-id="3",has_more="0"
+(gdb) 
+86^done,name="var9",numchild="0",value="non-dereferenceable iterator for std::vector",type="__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >",thread-id="3",dynamic="1",has_more="0"
+(gdb) 
+87^done,name="var10",numchild="0",value="267633609",type="__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >",thread-id="3",dynamic="1",has_more="0"
+(gdb) 
+88^done,name="var11",numchild="0",value="-148599328",type="int &",thread-id="3",has_more="0"
+(gdb) 
+89^done,stack=[frame={level="0",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},frame={level="1",addr="0x0000555555558cb6",func="std::__invoke_impl<void, accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> >",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="2",addr="0x0000555555558b75",func="std::__invoke<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> >",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="3",addr="0x0000555555558a45",func="std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > >::_M_invoke<0ul, 1ul, 2ul, 3ul>",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="4",addr="0x00005555555589af",func="std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > >::operator()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="5",addr="0x0000555555558980",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > > >::_M_run",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="6",addr="0x00007ffff7e82de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="7",addr="0x00007ffff7f97609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7cc1293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+90^done,depth="9"
+(gdb) 
+91^done,stack=[frame={level="0",addr="0x0000555555556280",func="accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>::operator()",file="../src/code.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/src/code.cpp",line="11",arch="i386:x86-64"},frame={level="1",addr="0x0000555555558cb6",func="std::__invoke_impl<void, accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> >",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="2",addr="0x0000555555558b75",func="std::__invoke<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> >",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="3",addr="0x0000555555558a45",func="std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > >::_M_invoke<0ul, 1ul, 2ul, 3ul>",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="4",addr="0x00005555555589af",func="std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > >::operator()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="5",addr="0x0000555555558980",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<accumulate_block<__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int>, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, __gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, std::reference_wrapper<int> > > >::_M_run",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="6",addr="0x00007ffff7e82de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="7",addr="0x00007ffff7f97609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7cc1293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+92^done,value="non-dereferenceable iterator for std::vector"
+(gdb) 
+93^done,format="octal",value="non-dereferenceable iterator for std::vector"
+(gdb) 
+94^done,format="natural",value="non-dereferenceable iterator for std::vector"
+(gdb) 
+95^done,format="decimal",value="non-dereferenceable iterator for std::vector"
+(gdb) 
+96^done,format="natural",value="non-dereferenceable iterator for std::vector"
+(gdb) 
+97^done,format="binary",value="non-dereferenceable iterator for std::vector"
+(gdb) 
+98^done,format="natural",value="non-dereferenceable iterator for std::vector"
+(gdb) 
+99^done,format="hexadecimal",value="non-dereferenceable iterator for std::vector"
+(gdb) 
+100^done,format="natural",value="non-dereferenceable iterator for std::vector"
+(gdb) 
+101^done,value="267633609"
+(gdb) 
+102^done,format="octal",value="267633609"
+(gdb) 
+103^done,format="natural",value="267633609"
+(gdb) 
+104^done,format="decimal",value="267633609"
+(gdb) 
+105^done,format="natural",value="267633609"
+(gdb) 
+106^done,format="binary",value="267633609"
+(gdb) 
+107^done,format="natural",value="267633609"
+(gdb) 
+108^done,format="hexadecimal",value="267633609"
+(gdb) 
+109^done,format="natural",value="267633609"
+(gdb) 
+110^done
+(gdb) 
+111^done,locals=[]
+(gdb) 
+112^done,changelist=[{name="var3",value="0x55555556fef8",in_scope="true",type_changed="false",has_more="0"}]
+(gdb) 
+113^done,changelist=[{name="var4",value="10",in_scope="true",type_changed="false",dynamic="1",has_more="0"}]
+(gdb) 
+114^done,changelist=[{name="var5",value="10",in_scope="true",type_changed="false",dynamic="1",has_more="0"}]
+(gdb) 
+115^done,changelist=[{name="var6",value="0",in_scope="true",type_changed="false",has_more="0"}]
+(gdb) 
+116^done,value="10"
+(gdb) 
+117^done,format="octal",value="10"
+(gdb) 
+118^done,format="natural",value="10"
+(gdb) 
+119^done,format="decimal",value="10"
+(gdb) 
+120^done,format="natural",value="10"
+(gdb) 
+121^done,format="binary",value="10"
+(gdb) 
+122^done,format="natural",value="10"
+(gdb) 
+123^done,format="hexadecimal",value="10"
+(gdb) 
+124^done,format="natural",value="10"
+(gdb) 
+125^done,value="10"
+(gdb) 
+126^done,format="octal",value="10"
+(gdb) 
+127^done,format="natural",value="10"
+(gdb) 
+128^done,format="decimal",value="10"
+(gdb) 
+129^done,format="natural",value="10"
+(gdb) 
+130^done,format="binary",value="10"
+(gdb) 
+131^done,format="natural",value="10"
+(gdb) 
+132^done,format="hexadecimal",value="10"
+(gdb) 
+133^done,format="natural",value="10"
+(gdb) 
+~"Kill the program being debugged? (y or n) [answered Y; input not from terminal]\n"
+=thread-exited,id="1",group-id="i1"
+=thread-exited,id="2",group-id="i1"
+=thread-exited,id="3",group-id="i1"
+=thread-exited,id="4",group-id="i1"
+=thread-group-exited,id="i1"
+~"[Inferior 1 (process 20981) killed]\n"
+134^done
+(gdb) 
+135^done,threads=[]
+(gdb) 
+136^error,msg="Thread ID 0 not known."
+(gdb) 
+137^error,msg="Thread ID 0 not known."
+(gdb) 
+138^error,msg="Thread ID 0 not known."
+(gdb) 
+139^done,groups=[{id="i1",type="process",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/Debug/Listing2_8"}]
+(gdb) 
+140^done,groups=[{id="i1",type="process",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Listing2_8/Debug/Listing2_8"}]
+(gdb) 
+141^exit

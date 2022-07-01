@@ -1,0 +1,41 @@
+POSIX func
+https://www.mkssoftware.com/docs/man3/creat.3.asp
+
+X/Ymodem
+https://elixir.bootlin.com/barebox/latest/source/lib/xymodem.c
+
+crc implemented in c
+https://barrgroup.com/embedded-systems/how-to/crc-calculation-c-code (reliable)
+https://github.com/yogesh1202/ENSC-351-Real-Time-And-Embedded-Systems
+
+github:
+https://github.com/ChicoRao/XmodemFileTransferProject
+
+RAW mode:
+https://developer.blackberry.com/native/reference/core/com.qnx.doc.neutrino.lib_ref/topic/r/readcond.html
+
+how to convert to C++ 2017:
+https://stackoverflow.com/questions/9131763/how-to-enable-c11-c0x-support-in-eclipse-cdt
+
+
+1) myRead() vs myReadCond()
+https://piazza.com/class/ktc3cnirnee5ho?cid=55
+
+2) Corrupted ACK from receiver 
+https://piazza.com/class/ktc3cnirnee5ho?cid=49
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

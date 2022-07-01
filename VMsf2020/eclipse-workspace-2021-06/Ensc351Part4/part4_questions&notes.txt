@@ -1,0 +1,11 @@
+1) How to decide which TM to use?
+	Unless a fast simulation has been chosen ...
+	TM_VL (Very Long timeout) gives 60 seconds
+	TM_SOH (normal timeout waiting for SOH) gives 10 seconds
+	TM_CHAR (inter-character timeout) gives 1 second
+	TM_2CHAR gives a period longer than the inter-character timeout of 1 sec.
+2) what is it doing? what is the point of using tmRed?
+	onEvent(KB_C)
+	[!ctx.KbCan]
+	/ctx.KbCan = true;
+	ctx.tmRed(TM_VL - TM_2CHAR);

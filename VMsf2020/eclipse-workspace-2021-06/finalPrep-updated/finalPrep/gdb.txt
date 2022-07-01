@@ -1,0 +1,1538 @@
+~"+handle SIGPIPE nostop\n"
+~"+skip -rfu ^std::\n"
+~"Function(s) ^std:: will be skipped when stepping.\n"
+~"+skip -rfu ^__ubsan::\n"
+~"Function(s) ^__ubsan:: will be skipped when stepping.\n"
+~"+skip file /mnt/hgfs/VMsf2020/git/ensc351lib/Ensc351/ScopedMutex.cpp \n"
+~"File /mnt/hgfs/VMsf2020/git/ensc351lib/Ensc351/ScopedMutex.cpp will be skipped when stepping.\n"
+~"+set sysroot /\n"
+=cmd-param-changed,param="sysroot",value="/"
+~"+python\n"
+&"Traceback (most recent call last):\n"
+&"  File \"/build/glibc-YYA7BZ/glibc-2.31/nptl/nptl-printers.py\", line 38, in <module>\n"
+&"    from nptl_lock_constants import *\n"
+&"ModuleNotFoundError: No module named 'nptl_lock_constants'\n"
+14^done
+(gdb) 
+15^done,groups=[{id="i1",type="process"}]
+(gdb) 
+16^done
+(gdb) 
+17^done
+(gdb) 
+18^done
+(gdb) 
+19^done
+(gdb) 
+20^done,value="auto"
+(gdb) 
+21^done
+(gdb) 
+~"$1 = 0xff\n"
+22^done
+(gdb) 
+23^done,value="8"
+(gdb) 
+24^done
+(gdb) 
+~"The target endianness is set automatically (currently little endian)\n"
+25^done
+(gdb) 
+26^done,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007ceb",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="406",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:403"}
+(gdb) 
+&"No source file named /mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp.\n"
+27^done,bkpt={number="2",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:168",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:168"}
+(gdb) 
+&"No source file named /mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp.\n"
+28^done,bkpt={number="3",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:107",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:107"}
+(gdb) 
+&"No source file named /mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/RageUtil_CircularBuffer.h.\n"
+29^done,bkpt={number="4",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/RageUtil_CircularBuffer.h:32",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/RageUtil_CircularBuffer.h:32"}
+(gdb) 
+&"No source file named /mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp.\n"
+30^done,bkpt={number="5",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:167",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:167"}
+(gdb) 
+&"No source file named /mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp.\n"
+31^done,bkpt={number="6",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:134",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:134"}
+(gdb) 
+&"No source file named /mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp.\n"
+32^done,bkpt={number="7",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:100",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:100"}
+(gdb) 
+&"No source file named /mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp.\n"
+33^done,bkpt={number="8",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:92",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:92"}
+(gdb) 
+&"No source file named /mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp.\n"
+34^done,bkpt={number="9",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:58",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:58"}
+(gdb) 
+35^done,bkpt={number="10",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007660",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="340",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:340"}
+(gdb) 
+36^done,bkpt={number="11",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007679",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="342",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:342"}
+(gdb) 
+37^done,bkpt={number="12",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007526",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="333",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:333"}
+(gdb) 
+38^done,bkpt={number="13",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007e09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:430"}
+(gdb) 
+39^done,bkpt={number="14",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007e13",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="432",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:432"}
+(gdb) 
+40^done,bkpt={number="15",type="breakpoint",disp="keep",enabled="y",addr="0x000000000000753e",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="334",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:334"}
+(gdb) 
+41^done,bkpt={number="16",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007692",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="343",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:343"}
+(gdb) 
+42^done,bkpt={number="17",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000075dd",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="337",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:337"}
+(gdb) 
+43^done,bkpt={number="18",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000078a2",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="373",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:373"}
+(gdb) 
+44^done,bkpt={number="19",type="breakpoint",disp="keep",enabled="y",addr="0x000000000000779a",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="366",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:366"}
+(gdb) 
+45^done,bkpt={number="20",type="breakpoint",disp="keep",enabled="y",addr="0x00000000000079aa",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="380",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:380"}
+(gdb) 
+46^done,bkpt={number="21",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007de5",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="414",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:414"}
+(gdb) 
+47^done,bkpt={number="22",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007d86",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="409",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:409"}
+(gdb) 
+48^done,bkpt={number="23",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007dbf",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="411",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:411"}
+(gdb) 
+49^done,bkpt={number="24",type="breakpoint",disp="keep",enabled="y",addr="0x0000000000007660",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="340",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:340"}
+(gdb) 
+&"No source file named /mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp.\n"
+50^done,bkpt={number="25",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:124",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part3-test/src/Ensc351Part3-test.cpp:124"}
+(gdb) 
+&"No source file named /mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part5-stable/Ensc351ymodLib/PeerY.cpp.\n"
+51^done,bkpt={number="26",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part5-stable/Ensc351ymodLib/PeerY.cpp:94",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/Ensc351Part5-stable/Ensc351ymodLib/PeerY.cpp:94"}
+(gdb) 
+52^done,bkpt={number="27",type="breakpoint",disp="del",enabled="y",addr="0x0000000000007b2f",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="389",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+53^done
+(gdb) 
+=thread-group-started,id="i1",pid="11116"
+=thread-created,id="1",group-id="i1"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bceb",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="406",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:403"}
+=breakpoint-modified,bkpt={number="10",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b660",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="340",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:340"}
+=breakpoint-modified,bkpt={number="11",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b679",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="342",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:342"}
+=breakpoint-modified,bkpt={number="12",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b526",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="333",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:333"}
+=breakpoint-modified,bkpt={number="13",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:430"}
+=breakpoint-modified,bkpt={number="14",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be13",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="432",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:432"}
+=breakpoint-modified,bkpt={number="15",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b53e",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="334",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:334"}
+=breakpoint-modified,bkpt={number="16",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b692",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="343",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:343"}
+=breakpoint-modified,bkpt={number="17",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b5dd",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="337",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:337"}
+=breakpoint-modified,bkpt={number="18",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b8a2",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="373",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:373"}
+=breakpoint-modified,bkpt={number="19",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b79a",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="366",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:366"}
+=breakpoint-modified,bkpt={number="20",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b9aa",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="380",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:380"}
+=breakpoint-modified,bkpt={number="21",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bde5",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="414",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:414"}
+=breakpoint-modified,bkpt={number="22",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bd86",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="409",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:409"}
+=breakpoint-modified,bkpt={number="23",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bdbf",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="411",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:411"}
+=breakpoint-modified,bkpt={number="24",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b660",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="340",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:340"}
+=breakpoint-modified,bkpt={number="27",type="breakpoint",disp="del",enabled="y",addr="0x000055555555bb2f",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="389",thread-groups=["i1"],times="0",original-location="main"}
+=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7fd0100",to="0x00007ffff7ff2674"}]
+54^running
+*running,thread-id="all"
+(gdb) 
+55^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["1"]}]
+(gdb) 
+=library-loaded,id="/lib/x86_64-linux-gnu/libasan.so.5",target-name="/lib/x86_64-linux-gnu/libasan.so.5",host-name="/lib/x86_64-linux-gnu/libasan.so.5",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff75a1a80",to="0x00007ffff76ce172"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libpthread.so.0",target-name="/lib/x86_64-linux-gnu/libpthread.so.0",host-name="/lib/x86_64-linux-gnu/libpthread.so.0",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7563ae0",to="0x00007ffff75734d5"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libstdc++.so.6",target-name="/lib/x86_64-linux-gnu/libstdc++.so.6",host-name="/lib/x86_64-linux-gnu/libstdc++.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7418160",to="0x00007ffff7500452"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libgcc_s.so.1",target-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",host-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff73625e0",to="0x00007ffff7373045"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7192630",to="0x00007ffff730720d"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libdl.so.2",target-name="/lib/x86_64-linux-gnu/libdl.so.2",host-name="/lib/x86_64-linux-gnu/libdl.so.2",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff7168220",to="0x00007ffff7169179"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/librt.so.1",target-name="/lib/x86_64-linux-gnu/librt.so.1",host-name="/lib/x86_64-linux-gnu/librt.so.1",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff715d720",to="0x00007ffff7160d70"}]
+=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1",ranges=[{from="0x00007ffff701a3c0",to="0x00007ffff70c0f18"}]
+=breakpoint-modified,bkpt={number="27",type="breakpoint",disp="del",enabled="y",addr="0x000055555555bb2f",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="389",thread-groups=["i1"],times="1",original-location="main"}
+~"\n"
+~"Temporary breakpoint 27, main () at ../src/myioFinal.cpp:389\n"
+~"389\tint main() { // debug launch configuration ensures gdb runs at FIFO priority 98 ...\n"
+*stopped,reason="breakpoint-hit",disp="del",bkptno="27",frame={addr="0x000055555555bb2f",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="389",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="1"
+=breakpoint-deleted,id="27"
+56^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["1"]}]
+(gdb) 
+57^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="finalPrep",frame={level="0",addr="0x000055555555bb2f",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="389",arch="i386:x86-64"},state="stopped",core="1"}]
+(gdb) 
+58^done,depth="1"
+(gdb) 
+59^done
+(gdb) 
+60^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="finalPrep",frame={level="0",addr="0x000055555555bb2f",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="389",arch="i386:x86-64"},state="stopped",core="1"}]
+(gdb) 
+61^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["1"]}]
+(gdb) 
+62^done,locals=[{name="cpu_set",value="{__bits = {425805159189184202, 12531482057089482443, 9892370476410339017, 281968969916172496, 1116892157844750664, 14309360161972816310, 14376343126426487112, 2432397964983418883, 14378102486513321201, 5477094028443558888, 16780281682267333257, 18360120050842562090, 144414073374975, 8970666388695976264, 14611622087828701184, 17518980475506130942}}"},{name="threadName",value="0x7ffff7558dc0 <std::wclog> \"04U\\367\\377\\177\""},{name="ptr",value="0x7ffff7553418 <vtable for std::basic_ostream<wchar_t, std::char_traits<wchar_t> >>"}]
+(gdb) 
+63^done,name="var1",numchild="1",value="{...}",type="cpu_set_t",thread-id="1",has_more="0"
+(gdb) 
+64^done,name="var2",numchild="1",value="0x7ffff7558dc0 <std::wclog> \"04U\\367\\377\\177\"",type="const char *",thread-id="1",has_more="0"
+(gdb) 
+65^done,name="var3",numchild="0",value="0x7ffff7553418 <vtable for std::basic_ostream<wchar_t, std::char_traits<wchar_t> >>",type="void *",thread-id="1",has_more="0"
+(gdb) 
+66^running
+*running,thread-id="all"
+(gdb) 
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bceb",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="406",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:403"}
+~"\n"
+~"Breakpoint 1, main () at ../src/myioFinal.cpp:406\n"
+~"406\t        sch.__sched_priority = 60;\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="1",frame={addr="0x000055555555bceb",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="406",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="0"
+67^done,locals=[{name="sch",value="{sched_priority = -145300272}"},{name="coutThread",value="{<std::thread> = {_M_id = {_M_thread = 140737342967448}}, <No data fields>}"},{name="cpu_set",value="{__bits = {140737488345681, 93824992292807, 140737340872352, 140737343357936, 140737340891080, 140737339158439, 0, 0, 140737488345744, 3, 140737488345808, 140737343357277, 140737488345776, 93824992250970, 140737488346136, 93824992365504}}"},{name="threadName",value="0x55555556c820 \"Pri\""},{name="ptr",value="0x62a000000200"}]
+(gdb) 
+68^done,depth="1"
+(gdb) 
+69^done,name="var4",numchild="1",value="{...}",type="sched_param",thread-id="1",has_more="0"
+(gdb) 
+70^done,name="var5",numchild="1",value="{...}",type="pthreadSupport::posixThread",thread-id="1",has_more="0"
+(gdb) 
+71^done,changelist=[]
+(gdb) 
+72^done,changelist=[{name="var2",value="0x55555556c820 \"Pri\"",in_scope="true",type_changed="false",has_more="0"}]
+(gdb) 
+73^done,changelist=[{name="var3",value="0x62a000000200",in_scope="true",type_changed="false",has_more="0"}]
+(gdb) 
+74^done
+(gdb) 
+75^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555bceb",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="406",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+76^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+77^running
+*running,thread-id="all"
+(gdb) 
+=breakpoint-modified,bkpt={number="22",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bd86",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="409",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:409"}
+~"\n"
+~"Breakpoint 22, main () at ../src/myioFinal.cpp:409\n"
+~"409\t\t\tmyWrite(daSktPr[0], \"abc\", 3);\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="22",frame={addr="0x000055555555bd86",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="409",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="0"
+78^done,locals=[{name="sch",value="{sched_priority = 60}"},{name="coutThread",value="{<std::thread> = {_M_id = {_M_thread = 140737342967448}}, <No data fields>}"},{name="cpu_set",value="{__bits = {140737488345681, 93824992292807, 140737340872352, 140737343357936, 140737340891080, 140737339158439, 0, 0, 140737488345744, 3, 140737488345808, 140737343357277, 140737488345776, 93824992250970, 140737488346136, 93824992365504}}"},{name="threadName",value="0x55555556c820 \"Pri\""},{name="ptr",value="0x62a000000200"}]
+(gdb) 
+79^done,depth="1"
+(gdb) 
+80^done,changelist=[]
+(gdb) 
+81^done,changelist=[]
+(gdb) 
+82^done,changelist=[]
+(gdb) 
+83^done,changelist=[]
+(gdb) 
+84^done,changelist=[]
+(gdb) 
+85^done
+(gdb) 
+86^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555bd86",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="409",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+87^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+88^running
+*running,thread-id="all"
+(gdb) 
+=thread-created,id="2",group-id="i1"
+*running,thread-id="2"
+=breakpoint-modified,bkpt={number="23",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bdbf",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="411",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:411"}
+~"\n"
+~"Thread 1 \"Pri\" hit Breakpoint 23, main () at ../src/myioFinal.cpp:411\n"
+~"411\t\t\tmyTcdrain(daSktPr[0]);\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="23",frame={addr="0x000055555555bdbf",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="411",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="0"
+89^done,locals=[{name="sch",value="{sched_priority = 60}"},{name="coutThread",value="{<std::thread> = {_M_id = {_M_thread = 140737280734976}}, <No data fields>}"},{name="cpu_set",value="{__bits = {140737488345681, 93824992292807, 140737340872352, 140737343357936, 140737340891080, 140737339158439, 0, 0, 140737488345744, 3, 140737488345808, 140737343357277, 140737488345776, 93824992250970, 140737488346136, 93824992365504}}"},{name="threadName",value="0x55555556c820 \"Pri\""},{name="ptr",value="0x62a000000200"}]
+(gdb) 
+90^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555bdbf",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="411",arch="i386:x86-64"},state="stopped",core="0"},{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x000055555555b526",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="333",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+91^done,depth="1"
+(gdb) 
+92^done,changelist=[]
+(gdb) 
+93^done,changelist=[]
+(gdb) 
+94^done,changelist=[]
+(gdb) 
+95^done,changelist=[]
+(gdb) 
+96^done,changelist=[]
+(gdb) 
+97^done
+(gdb) 
+98^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555bdbf",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="411",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+99^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+100^done,threads=[{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x000055555555b526",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="333",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+101^running
+*running,thread-id="all"
+~"[Switching to thread 2 (Thread 0x7ffff39ff700 (LWP 11130))](running)\n"
+=thread-selected,id="2"
+(gdb) 
+=breakpoint-modified,bkpt={number="12",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b526",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="333",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:333"}
+~"[Switching to Thread 0x7ffff39ff700 (LWP 11130)]\n"
+~"\n"
+~"Thread 2 \"Pri\" hit Breakpoint 12, coutThreadFunc () at ../src/myioFinal.cpp:333\n"
+~"333\t\tbuffer.write(\"123456789\", 10); // don't forget NUL termination character\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="12",frame={addr="0x000055555555b526",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="333",arch="i386:x86-64"},thread-id="2",stopped-threads="all",core="0"
+102^done,stack=[frame={level="0",addr="0x000055555555bdc5",func="main",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="411",arch="i386:x86-64"}]
+(gdb) 
+103^done,stack-args=[frame={level="0",args=[]}]
+(gdb) 
+104^done,locals=[{name="sch",value="{sched_priority = 60}"},{name="coutThread",value="{<std::thread> = {_M_id = {_M_thread = 140737280734976}}, <No data fields>}"},{name="cpu_set",value="{__bits = {140737488345681, 93824992292807, 140737340872352, 140737343357936, 140737340891080, 140737339158439, 0, 0, 140737488345744, 3, 140737488345808, 140737343357277, 140737488345776, 93824992250970, 140737488346136, 93824992365504}}"},{name="threadName",value="0x55555556c820 \"Pri\""},{name="ptr",value="0x62a000000200"}]
+(gdb) 
+105^done,depth="11"
+(gdb) 
+106^done,depth="1"
+(gdb) 
+107^done,changelist=[]
+(gdb) 
+108^done,changelist=[]
+(gdb) 
+109^done,changelist=[]
+(gdb) 
+110^done,changelist=[]
+(gdb) 
+111^done,changelist=[]
+(gdb) 
+112^done
+(gdb) 
+113^done,threads=[{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x000055555555b526",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="333",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+114^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+115^done,locals=[{name="buffer",value="{static size = 9, buf = \"\\263\\212\\265A\\000\\000\\000\\000\\266\", read_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 0}, static is_always_lock_free = true}, write_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 0}, static is_always_lock_free = true}}"}]
+(gdb) 
+116^done,stack=[frame={level="0",addr="0x000055555555b526",func="coutThreadFunc",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="333",arch="i386:x86-64"},frame={level="1",addr="0x0000555555569a99",func="pthreadSupport::ctorHelperLower<void (&)()>",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="59",arch="i386:x86-64"},frame={level="2",addr="0x0000555555567fda",func="pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}::operator()() const",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="88",arch="i386:x86-64"},frame={level="3",addr="0x000055555556b325",func="std::__invoke_impl<void, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(std::__invoke_other, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}&&)",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="4",addr="0x000055555556b26f",func="std::__invoke<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(void (&)())",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="5",addr="0x000055555556b1e0",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::_M_invoke<0ul>(std::_Index_tuple<0ul>)",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="6",addr="0x000055555556b194",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::operator()()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="7",addr="0x000055555556b150",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> > >::_M_run()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7450de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="9",addr="0x00007ffff7565609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="10",addr="0x00007ffff728f293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+117^done,depth="11"
+(gdb) 
+118^done,name="var6",numchild="1",value="{...}",type="CircBuf<char>",thread-id="2",has_more="0"
+(gdb) 
+119^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555bdc5",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="411",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+120^running
+*running,thread-id="all"
+~"[Switching to thread 1 (Thread 0x7ffff7009e40 (LWP 11116))](running)\n"
+=thread-selected,id="1"
+(gdb) 
+=breakpoint-modified,bkpt={number="15",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b53e",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="334",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:334"}
+~"\n"
+~"Thread 2 \"Pri\" hit Breakpoint 15, coutThreadFunc () at ../src/myioFinal.cpp:334\n"
+~"334\t\tRetVal = buffer.read(B, BSize);\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="15",frame={addr="0x000055555555b53e",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="334",arch="i386:x86-64"},thread-id="2",stopped-threads="all",core="0"
+121^done,locals=[{name="buffer",value="{static size = 9, buf = \"12345678\\266\", read_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 0}, static is_always_lock_free = true}, write_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}}"}]
+(gdb) 
+122^done,depth="11"
+(gdb) 
+123^done,depth="11"
+(gdb) 
+124^done,changelist=[]
+(gdb) 
+125^done
+(gdb) 
+126^done,threads=[{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x000055555555b53e",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="334",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+127^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+128^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x00007ffff756c376",func="futex_wait_cancelable",args=[{name="private",value="<optimized out>"},{name="expected",value="0"},{name="futex_word",value="0x610000000180"}],file="../sysdeps/nptl/futex-internal.h",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/nptl/futex-internal.h",line="183",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+129^done,depth="7"
+(gdb) 
+130^done,stack=[frame={level="0",addr="0x00007ffff756c376",func="futex_wait_cancelable",file="../sysdeps/nptl/futex-internal.h",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/nptl/futex-internal.h",line="183",arch="i386:x86-64"},frame={level="1",addr="0x00007ffff756c376",func="__pthread_cond_wait_common",file="pthread_cond_wait.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_cond_wait.c",line="508",arch="i386:x86-64"},frame={level="2",addr="0x00007ffff756c376",func="__pthread_cond_wait",file="pthread_cond_wait.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_cond_wait.c",line="638",arch="i386:x86-64"},frame={level="3",addr="0x00007ffff744ae30",func="std::condition_variable::wait(std::unique_lock<std::mutex>&)",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="4",addr="0x0000555555558f63",func="(anonymous namespace)::socketInfoClass::draining",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="139",arch="i386:x86-64"},frame={level="5",addr="0x000055555555acdd",func="myTcdrain",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="291",arch="i386:x86-64"},frame={level="6",addr="0x000055555555bdcc",func="main",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="411",arch="i386:x86-64"}]
+(gdb) 
+131^done,stack=[frame={level="0",addr="0x000055555555b53e",func="coutThreadFunc",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="334",arch="i386:x86-64"},frame={level="1",addr="0x0000555555569a99",func="pthreadSupport::ctorHelperLower<void (&)()>",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="59",arch="i386:x86-64"},frame={level="2",addr="0x0000555555567fda",func="pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}::operator()() const",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="88",arch="i386:x86-64"},frame={level="3",addr="0x000055555556b325",func="std::__invoke_impl<void, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(std::__invoke_other, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}&&)",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="4",addr="0x000055555556b26f",func="std::__invoke<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(void (&)())",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="5",addr="0x000055555556b1e0",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::_M_invoke<0ul>(std::_Index_tuple<0ul>)",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="6",addr="0x000055555556b194",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::operator()()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="7",addr="0x000055555556b150",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> > >::_M_run()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7450de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="9",addr="0x00007ffff7565609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="10",addr="0x00007ffff728f293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+132^running
+*running,thread-id="all"
+~"[Switching to thread 1 (Thread 0x7ffff7009e40 (LWP 11116))](running)\n"
+=thread-selected,id="1"
+(gdb) 
+=breakpoint-modified,bkpt={number="17",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b5dd",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="337",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:337"}
+~"\n"
+~"Thread 2 \"Pri\" hit Breakpoint 17, coutThreadFunc () at ../src/myioFinal.cpp:337\n"
+~"337\t    RetVal = myReadcond2(daSktPr[1], B, BSize, 10, 50);\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="17",frame={addr="0x000055555555b5dd",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="337",arch="i386:x86-64"},thread-id="2",stopped-threads="all",core="0"
+133^done,locals=[{name="buffer",value="{static size = 9, buf = \"12345678\\266\", read_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}, write_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}}"}]
+(gdb) 
+134^done,depth="11"
+(gdb) 
+135^done,depth="11"
+(gdb) 
+136^done,changelist=[]
+(gdb) 
+137^done
+(gdb) 
+138^done,threads=[{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x000055555555b5dd",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="337",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+139^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+140^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x00007ffff756c376",func="futex_wait_cancelable",args=[{name="private",value="<optimized out>"},{name="expected",value="0"},{name="futex_word",value="0x610000000180"}],file="../sysdeps/nptl/futex-internal.h",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/nptl/futex-internal.h",line="183",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+141^done,depth="7"
+(gdb) 
+142^done,stack=[frame={level="0",addr="0x00007ffff756c376",func="futex_wait_cancelable",file="../sysdeps/nptl/futex-internal.h",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/nptl/futex-internal.h",line="183",arch="i386:x86-64"},frame={level="1",addr="0x00007ffff756c376",func="__pthread_cond_wait_common",file="pthread_cond_wait.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_cond_wait.c",line="508",arch="i386:x86-64"},frame={level="2",addr="0x00007ffff756c376",func="__pthread_cond_wait",file="pthread_cond_wait.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_cond_wait.c",line="638",arch="i386:x86-64"},frame={level="3",addr="0x00007ffff744ae30",func="std::condition_variable::wait(std::unique_lock<std::mutex>&)",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="4",addr="0x0000555555558f63",func="(anonymous namespace)::socketInfoClass::draining",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="139",arch="i386:x86-64"},frame={level="5",addr="0x000055555555acdd",func="myTcdrain",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="291",arch="i386:x86-64"},frame={level="6",addr="0x000055555555bdcc",func="main",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="411",arch="i386:x86-64"}]
+(gdb) 
+143^done,stack=[frame={level="0",addr="0x000055555555b5dd",func="coutThreadFunc",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="337",arch="i386:x86-64"},frame={level="1",addr="0x0000555555569a99",func="pthreadSupport::ctorHelperLower<void (&)()>",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="59",arch="i386:x86-64"},frame={level="2",addr="0x0000555555567fda",func="pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}::operator()() const",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="88",arch="i386:x86-64"},frame={level="3",addr="0x000055555556b325",func="std::__invoke_impl<void, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(std::__invoke_other, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}&&)",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="4",addr="0x000055555556b26f",func="std::__invoke<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(void (&)())",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="5",addr="0x000055555556b1e0",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::_M_invoke<0ul>(std::_Index_tuple<0ul>)",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="6",addr="0x000055555556b194",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::operator()()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="7",addr="0x000055555556b150",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> > >::_M_run()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7450de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="9",addr="0x00007ffff7565609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="10",addr="0x00007ffff728f293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+144^running
+*running,thread-id="all"
+~"[Switching to thread 1 (Thread 0x7ffff7009e40 (LWP 11116))](running)\n"
+=thread-selected,id="1"
+(gdb) 
+=breakpoint-modified,bkpt={number="21",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bde5",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="414",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:414"}
+~"[Switching to Thread 0x7ffff7009e40 (LWP 11116)]\n"
+~"\n"
+~"Thread 1 \"Pri\" hit Breakpoint 21, main () at ../src/myioFinal.cpp:414\n"
+~"414\t\t\tmyReadcond2(daSktPr[0], B2, 4, 4, 0);\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="21",frame={addr="0x000055555555bde5",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="414",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="0"
+145^done,stack-args=[frame={level="0",args=[{name="abstime",value="0x7ffff39fe6c0"},{name="expected",value="0"},{name="futex_word",value="0x6100000001b4"}]},frame={level="1",args=[{name="abstime",value="0x7ffff39fe6c0"},{name="clockid",value="<optimized out>"},{name="mutex",value="0x6100000001d0"},{name="cond",value="0x610000000188"}]},frame={level="2",args=[{name="cond",value="0x610000000188"},{name="mutex",value="0x6100000001d0"},{name="abstime",value="0x7ffff39fe6c0"}]},frame={level="3",args=[{name="__cond",value="0x610000000188"},{name="__mutex",value="0x6100000001d0"},{name="__abs_timeout",value="0x7ffff39fe6c0"}]},frame={level="4",args=[{name="this",value="0x610000000188"},{name="__lock",value="@0x7ffff39feae0: {_M_device = 0x6100000001d0, _M_owns = true}"},{name="__atime",value="@0x7ffff39fe7d0: {__d = {__r = 1639377081502048008}}"}]},frame={level="5",args=[{name="this",value="0x610000000188"},{name="__lock",value="@0x7ffff39feae0: {_M_device = 0x6100000001d0, _M_owns = true}"},{name="__atime",value="@0x7ffff39fe9b0: {__d = {__r = 92858331615125}}"}]},frame={level="6",args=[{name="this",value="0x610000000188"},{name="__lock",value="@0x7ffff39feae0: {_M_device = 0x6100000001d0, _M_owns = true}"},{name="__atime",value="@0x7ffff39fe9b0: {__d = {__r = 92858331615125}}"},{name="__p",value="{__this = 0x610000000150, __min = 10}"}]},frame={level="7",args=[{name="this",value="0x610000000188"},{name="__lock",value="@0x7ffff39feae0: {_M_device = 0x6100000001d0, _M_owns = true}"},{name="__rtime",value="@0x7ffff39feac0: {__r = 50}"},{name="__p",value="{__this = 0x610000000150, __min = 10}"}]},frame={level="8",args=[{name="this",value="0x610000000150"},{name="des",value="4"},{name="buf",value="0x555555574c80 <B>"},{name="n",value="20"},{name="min",value="10"},{name="time",value="50"}]},frame={level="9",args=[{name="des",value="4"},{name="buf",value="0x555555574c80 <B>"},{name="n",value="20"},{name="min",value="10"},{name="time",value="50"}]},frame={level="10",args=[]},frame={level="11",args=[{name="policy",value="1"},{name="sch",value="{sched_priority = 50}"},{name="sem4",value="@0x7fffffffd800: {__size = \" \\330\\377\\377\\377\\177\\000\\000/.VUUU\\000\\000\\060\\330\\377\\377\\377\\177\\000\\000 LWUUU\\000\", __align = 140737488345120}"},{name="__f",value="@0x55555555b481: {void (void)} 0x55555555b481 <coutThreadFunc()>"}]},frame={level="12",args=[{name="this",value="0x604000000018"}]},frame={level="13",args=[{name="__f",value="@0x604000000018: {__policy = @0x7fffffffd720, __sch = @0x7fffffffd730, __sem4 = @0x7fffffffd800, ____f = @0x55555555b481}"}]},frame={level="14",args=[{name="__fn",value="@0x604000000018: {__policy = @0x7fffffffd720, __sch = @0x7fffffffd730, __sem4 = @0x7fffffffd800, ____f = @0x55555555b481}"}]},frame={level="15",args=[{name="this",value="0x604000000018"}]},frame={level="16",args=[{name="this",value="0x604000000018"}]},frame={level="17",args=[{name="this",value="0x604000000010"}]},frame={level="18",args=[]},frame={level="19",args=[{name="arg",value="<optimized out>"}]},frame={level="20",args=[]}]
+(gdb) 
+146^done,locals=[{name="__ret",value="-516"},{name="__ret",value="<optimized out>"},{name="oldtype",value="0"},{name="err",value="<optimized out>"}]
+(gdb) 
+147^done,stack=[frame={level="0",addr="0x00007ffff756c7b1",func="futex_abstimed_wait_cancelable",file="../sysdeps/nptl/futex-internal.h",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/nptl/futex-internal.h",line="320",arch="i386:x86-64"},frame={level="1",addr="0x00007ffff756c7b1",func="__pthread_cond_wait_common",file="pthread_cond_wait.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_cond_wait.c",line="520",arch="i386:x86-64"},frame={level="2",addr="0x00007ffff756c7b1",func="__pthread_cond_timedwait",file="pthread_cond_wait.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_cond_wait.c",line="656",arch="i386:x86-64"},frame={level="3",addr="0x0000555555562650",func="__gthread_cond_timedwait",file="/usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h",fullname="/usr/include/x86_64-linux-gnu/c++/9/bits/gthr-default.h",line="872",arch="i386:x86-64"},frame={level="4",addr="0x0000555555568f02",func="std::condition_variable::__wait_until_impl<std::chrono::duration<long, std::ratio<1l, 1000000000l> > >",file="/usr/include/c++/9/condition_variable",fullname="/usr/include/c++/9/condition_variable",line="188",arch="i386:x86-64"},frame={level="5",addr="0x00005555555678f8",func="std::condition_variable::wait_until<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1l, 1000000000l> > >",file="/usr/include/c++/9/condition_variable",fullname="/usr/include/c++/9/condition_variable",line="121",arch="i386:x86-64"},frame={level="6",addr="0x000055555555ce63",func="std::condition_variable::wait_until<std::chrono::_V2::steady_clock, std::chrono::duration<long int, std::ratio<1, 1000000000> >, (anonymous namespace)::socketInfoClass::reading2(int, void*, int, int, int)::<lambda()> >(std::unique_lock<std::mutex> &, const std::chrono::time_point<std::chrono::_V2::steady_clock, std::chrono::duration<long, std::ratio<1, 1000000000> > > &, (anonymous namespace)::socketInfoClass::<lambda()>)",file="/usr/include/c++/9/condition_variable",fullname="/usr/include/c++/9/condition_variable",line="138",arch="i386:x86-64"},frame={level="7",addr="0x000055555555c32b",func="std::condition_variable::wait_for<int, std::ratio<1, 10>, (anonymous namespace)::socketInfoClass::reading2(int, void*, int, int, int)::<lambda()> >(std::unique_lock<std::mutex> &, const std::chrono::duration<int, std::ratio<1, 10> > &, (anonymous namespace)::socketInfoClass::<lambda()>)",file="/usr/include/c++/9/condition_variable",fullname="/usr/include/c++/9/condition_variable",line="166",arch="i386:x86-64"},frame={level="8",addr="0x0000555555559965",func="(anonymous namespace)::socketInfoClass::reading2",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="186",arch="i386:x86-64"},frame={level="9",addr="0x000055555555a76a",func="myReadcond2",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="265",arch="i386:x86-64"},frame={level="10",addr="0x000055555555b601",func="coutThreadFunc",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="337",arch="i386:x86-64"},frame={level="11",addr="0x0000555555569a99",func="pthreadSupport::ctorHelperLower<void (&)()>",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="59",arch="i386:x86-64"},frame={level="12",addr="0x0000555555567fda",func="pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}::operator()() const",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="88",arch="i386:x86-64"},frame={level="13",addr="0x000055555556b325",func="std::__invoke_impl<void, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(std::__invoke_other, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}&&)",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="14",addr="0x000055555556b26f",func="std::__invoke<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(void (&)())",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="15",addr="0x000055555556b1e0",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::_M_invoke<0ul>(std::_Index_tuple<0ul>)",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="16",addr="0x000055555556b194",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::operator()()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="17",addr="0x000055555556b150",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> > >::_M_run()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="18",addr="0x00007ffff7450de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="19",addr="0x00007ffff7565609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="20",addr="0x00007ffff728f293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+148^done,depth="1"
+(gdb) 
+149^done
+(gdb) 
+150^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555bde5",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="414",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+151^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+152^done,locals=[{name="sch",value="{sched_priority = 60}"},{name="coutThread",value="{<std::thread> = {_M_id = {_M_thread = 140737280734976}}, <No data fields>}"},{name="cpu_set",value="{__bits = {140737488345681, 93824992292807, 140737340872352, 140737343357936, 140737340891080, 140737339158439, 0, 0, 140737488345744, 3, 140737488345808, 140737343357277, 140737488345776, 93824992250970, 140737488346136, 93824992365504}}"},{name="threadName",value="0x55555556c820 \"Pri\""},{name="ptr",value="0x62a000000200"}]
+(gdb) 
+153^done,changelist=[]
+(gdb) 
+154^done,changelist=[]
+(gdb) 
+155^done,changelist=[]
+(gdb) 
+156^done,changelist=[]
+(gdb) 
+157^done,changelist=[]
+(gdb) 
+158^done,threads=[{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x00007ffff756c7b1",func="futex_abstimed_wait_cancelable",args=[{name="private",value="<optimized out>"},{name="abstime",value="0x7ffff39fe6c0"},{name="clockid",value="<optimized out>"},{name="expected",value="0"},{name="futex_word",value="0x6100000001b4"}],file="../sysdeps/nptl/futex-internal.h",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/nptl/futex-internal.h",line="320",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+159^running
+*running,thread-id="all"
+~"[Switching to thread 2 (Thread 0x7ffff39ff700 (LWP 11130))](running)\n"
+=thread-selected,id="2"
+(gdb) 
+=breakpoint-modified,bkpt={number="10",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b660",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="340",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:340"}
+=breakpoint-modified,bkpt={number="24",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b660",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="340",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:340"}
+~"[Switching to Thread 0x7ffff39ff700 (LWP 11130)]\n"
+~"\n"
+~"Thread 2 \"Pri\" hit Breakpoint 10, coutThreadFunc () at ../src/myioFinal.cpp:340\n"
+~"340\t    myWrite(daSktPr[1], \"wxyza\", 5); // don't forget NUL termination char\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="10",frame={addr="0x000055555555b660",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="340",arch="i386:x86-64"},thread-id="2",stopped-threads="all",core="0"
+160^done,stack=[frame={level="0",addr="0x000055555555bdeb",func="main",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="414",arch="i386:x86-64"}]
+(gdb) 
+161^done,stack-args=[frame={level="0",args=[]}]
+(gdb) 
+162^done,locals=[{name="sch",value="{sched_priority = 60}"},{name="coutThread",value="{<std::thread> = {_M_id = {_M_thread = 140737280734976}}, <No data fields>}"},{name="cpu_set",value="{__bits = {140737488345681, 93824992292807, 140737340872352, 140737343357936, 140737340891080, 140737339158439, 0, 0, 140737488345744, 3, 140737488345808, 140737343357277, 140737488345776, 93824992250970, 140737488346136, 93824992365504}}"},{name="threadName",value="0x55555556c820 \"Pri\""},{name="ptr",value="0x62a000000200"}]
+(gdb) 
+163^done,depth="11"
+(gdb) 
+164^done,depth="1"
+(gdb) 
+165^done,changelist=[]
+(gdb) 
+166^done,changelist=[]
+(gdb) 
+167^done,changelist=[]
+(gdb) 
+168^done,changelist=[]
+(gdb) 
+169^done,changelist=[]
+(gdb) 
+170^done
+(gdb) 
+171^done,threads=[{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x000055555555b660",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="340",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+172^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+173^done,locals=[{name="buffer",value="{static size = 9, buf = \"12345678\\266\", read_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}, write_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}}"}]
+(gdb) 
+174^done,depth="11"
+(gdb) 
+175^done,changelist=[]
+(gdb) 
+176^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555bdeb",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="414",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+177^done,stack=[frame={level="0",addr="0x000055555555b660",func="coutThreadFunc",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="340",arch="i386:x86-64"},frame={level="1",addr="0x0000555555569a99",func="pthreadSupport::ctorHelperLower<void (&)()>",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="59",arch="i386:x86-64"},frame={level="2",addr="0x0000555555567fda",func="pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}::operator()() const",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="88",arch="i386:x86-64"},frame={level="3",addr="0x000055555556b325",func="std::__invoke_impl<void, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(std::__invoke_other, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}&&)",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="4",addr="0x000055555556b26f",func="std::__invoke<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(void (&)())",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="5",addr="0x000055555556b1e0",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::_M_invoke<0ul>(std::_Index_tuple<0ul>)",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="6",addr="0x000055555556b194",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::operator()()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="7",addr="0x000055555556b150",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> > >::_M_run()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7450de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="9",addr="0x00007ffff7565609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="10",addr="0x00007ffff728f293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+178^running
+*running,thread-id="all"
+~"[Switching to thread 1 (Thread 0x7ffff7009e40 (LWP 11116))](running)\n"
+=thread-selected,id="1"
+(gdb) 
+=breakpoint-modified,bkpt={number="11",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b679",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="342",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:342"}
+~"\n"
+~"Thread 2 \"Pri\" hit Breakpoint 11, coutThreadFunc () at ../src/myioFinal.cpp:342\n"
+~"342\t\tmyWrite(daSktPr[0], \"ab\", 3); // don't forget NUL termination character\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="11",frame={addr="0x000055555555b679",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="342",arch="i386:x86-64"},thread-id="2",stopped-threads="all",core="0"
+179^done,depth="2"
+(gdb) 
+180^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+181^done,locals=[{name="buffer",value="{static size = 9, buf = \"12345678\\266\", read_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}, write_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}}"}]
+(gdb) 
+182^done,depth="11"
+(gdb) 
+183^done,depth="11"
+(gdb) 
+184^done,changelist=[]
+(gdb) 
+185^done
+(gdb) 
+186^done,threads=[{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x000055555555b679",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="342",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+187^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555be09",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+188^done,depth="1"
+(gdb) 
+189^done,stack=[frame={level="0",addr="0x000055555555be09",func="main",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",arch="i386:x86-64"}]
+(gdb) 
+190^done,stack=[frame={level="0",addr="0x000055555555b679",func="coutThreadFunc",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="342",arch="i386:x86-64"},frame={level="1",addr="0x0000555555569a99",func="pthreadSupport::ctorHelperLower<void (&)()>",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="59",arch="i386:x86-64"},frame={level="2",addr="0x0000555555567fda",func="pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}::operator()() const",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="88",arch="i386:x86-64"},frame={level="3",addr="0x000055555556b325",func="std::__invoke_impl<void, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(std::__invoke_other, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}&&)",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="4",addr="0x000055555556b26f",func="std::__invoke<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(void (&)())",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="5",addr="0x000055555556b1e0",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::_M_invoke<0ul>(std::_Index_tuple<0ul>)",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="6",addr="0x000055555556b194",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::operator()()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="7",addr="0x000055555556b150",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> > >::_M_run()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7450de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="9",addr="0x00007ffff7565609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="10",addr="0x00007ffff728f293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+191^running
+*running,thread-id="all"
+~"[Switching to thread 1 (Thread 0x7ffff7009e40 (LWP 11116))](running)\n"
+=thread-selected,id="1"
+(gdb) 
+=breakpoint-modified,bkpt={number="13",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:430"}
+~"[Switching to Thread 0x7ffff7009e40 (LWP 11116)]\n"
+~"\n"
+~"Thread 1 \"Pri\" hit Breakpoint 13, main () at ../src/myioFinal.cpp:430\n"
+~"430\t\t\tpthreadSupport::setSchedPrio(40);\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="13",frame={addr="0x000055555555be09",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="0"
+192^done,stack=[frame={level="0",addr="0x000055555555b67f",func="coutThreadFunc",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="342",arch="i386:x86-64"},frame={level="1",addr="0x0000555555569a99",func="pthreadSupport::ctorHelperLower<void (&)()>",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="59",arch="i386:x86-64"},frame={level="2",addr="0x0000555555567fda",func="pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}::operator()() const",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="88",arch="i386:x86-64"},frame={level="3",addr="0x000055555556b325",func="std::__invoke_impl<void, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(std::__invoke_other, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}&&)",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="4",addr="0x000055555556b26f",func="std::__invoke<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(void (&)())",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="5",addr="0x000055555556b1e0",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::_M_invoke<0ul>(std::_Index_tuple<0ul>)",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="6",addr="0x000055555556b194",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::operator()()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="7",addr="0x000055555556b150",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> > >::_M_run()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7450de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="9",addr="0x00007ffff7565609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="10",addr="0x00007ffff728f293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+193^done,stack-args=[frame={level="0",args=[]},frame={level="1",args=[{name="policy",value="1"},{name="sch",value="{sched_priority = 50}"},{name="sem4",value="@0x7fffffffd800: {__size = \"\\263\\212\\265A\\377\\377\\377\\377H\\000\\000\\000\\000a\\000\\000\\060\\330\\377\\377\\377\\177\\000\\000\\353'VUUU\\000\", __align = -3192550733}"},{name="__f",value="@0x55555555b481: {void (void)} 0x55555555b481 <coutThreadFunc()>"}]},frame={level="2",args=[{name="this",value="0x604000000018"}]},frame={level="3",args=[{name="__f",value="@0x604000000018: {__policy = @0x7fffffffd720, __sch = @0x7fffffffd730, __sem4 = @0x7fffffffd800, ____f = @0x55555555b481}"}]},frame={level="4",args=[{name="__fn",value="@0x604000000018: {__policy = @0x7fffffffd720, __sch = @0x7fffffffd730, __sem4 = @0x7fffffffd800, ____f = @0x55555555b481}"}]},frame={level="5",args=[{name="this",value="0x604000000018"}]},frame={level="6",args=[{name="this",value="0x604000000018"}]},frame={level="7",args=[{name="this",value="0x604000000010"}]},frame={level="8",args=[]},frame={level="9",args=[{name="arg",value="<optimized out>"}]},frame={level="10",args=[]}]
+(gdb) 
+194^done,locals=[{name="buffer",value="{static size = 9, buf = \"12345678\\266\", read_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}, write_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}}"}]
+(gdb) 
+195^done,depth="1"
+(gdb) 
+196^done,depth="11"
+(gdb) 
+197^done,changelist=[]
+(gdb) 
+198^done
+(gdb) 
+199^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555be09",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+200^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+201^done,locals=[{name="sch",value="{sched_priority = 60}"},{name="coutThread",value="{<std::thread> = {_M_id = {_M_thread = 140737280734976}}, <No data fields>}"},{name="cpu_set",value="{__bits = {140737488345681, 93824992292807, 140737340872352, 140737343357936, 140737340891080, 140737339158439, 0, 0, 140737488345744, 3, 140737488345808, 140737343357277, 140737488345776, 93824992250970, 140737488346136, 93824992365504}}"},{name="threadName",value="0x55555556c820 \"Pri\""},{name="ptr",value="0x62a000000200"}]
+(gdb) 
+202^done,changelist=[]
+(gdb) 
+203^done,changelist=[]
+(gdb) 
+204^done,changelist=[]
+(gdb) 
+205^done,changelist=[]
+(gdb) 
+206^done,changelist=[]
+(gdb) 
+207^done,threads=[{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x000055555555b67f",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="342",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+208^running
+*running,thread-id="all"
+~"[Switching to thread 2 (Thread 0x7ffff39ff700 (LWP 11130))](running)\n"
+=thread-selected,id="2"
+(gdb) 
+=breakpoint-modified,bkpt={number="14",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be13",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="432",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:432"}
+~"\n"
+~"Thread 1 \"Pri\" hit Breakpoint 14, main () at ../src/myioFinal.cpp:432\n"
+~"432\t\t\tmyClose(daSktPr[0]);\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="14",frame={addr="0x000055555555be13",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="432",arch="i386:x86-64"},thread-id="1",stopped-threads="all",core="0"
+209^done,locals=[{name="sch",value="{sched_priority = 60}"},{name="coutThread",value="{<std::thread> = {_M_id = {_M_thread = 140737280734976}}, <No data fields>}"},{name="cpu_set",value="{__bits = {140737488345681, 93824992292807, 140737340872352, 140737343357936, 140737340891080, 140737339158439, 0, 0, 140737488345744, 3, 140737488345808, 140737343357277, 140737488345776, 93824992250970, 140737488346136, 93824992365504}}"},{name="threadName",value="0x55555556c820 \"Pri\""},{name="ptr",value="0x62a000000200"}]
+(gdb) 
+210^done,depth="1"
+(gdb) 
+211^done,changelist=[]
+(gdb) 
+212^done,changelist=[]
+(gdb) 
+213^done,changelist=[]
+(gdb) 
+214^done,changelist=[]
+(gdb) 
+215^done,changelist=[]
+(gdb) 
+216^done
+(gdb) 
+217^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555be13",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="432",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+218^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+219^done,threads=[{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x000055555555b692",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="343",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+220^done,depth="11"
+(gdb) 
+221^done,stack=[frame={level="0",addr="0x000055555555b692",func="coutThreadFunc",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="343",arch="i386:x86-64"},frame={level="1",addr="0x0000555555569a99",func="pthreadSupport::ctorHelperLower<void (&)()>",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="59",arch="i386:x86-64"},frame={level="2",addr="0x0000555555567fda",func="pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}::operator()() const",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="88",arch="i386:x86-64"},frame={level="3",addr="0x000055555556b325",func="std::__invoke_impl<void, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(std::__invoke_other, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}&&)",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="4",addr="0x000055555556b26f",func="std::__invoke<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(void (&)())",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="5",addr="0x000055555556b1e0",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::_M_invoke<0ul>(std::_Index_tuple<0ul>)",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="6",addr="0x000055555556b194",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::operator()()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="7",addr="0x000055555556b150",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> > >::_M_run()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7450de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="9",addr="0x00007ffff7565609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="10",addr="0x00007ffff728f293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+222^running
+*running,thread-id="all"
+~"[Switching to thread 2 (Thread 0x7ffff39ff700 (LWP 11130))](running)\n"
+=thread-selected,id="2"
+(gdb) 
+=breakpoint-modified,bkpt={number="16",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b692",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="343",thread-groups=["i1"],times="1",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:343"}
+~"[Switching to Thread 0x7ffff39ff700 (LWP 11130)]\n"
+~"\n"
+~"Thread 2 \"Pri\" hit Breakpoint 16, coutThreadFunc () at ../src/myioFinal.cpp:343\n"
+~"343\t    RetVal = myReadcond2(daSktPr[1], B, BSize, 5, 0);\n"
+*stopped,reason="breakpoint-hit",disp="keep",bkptno="16",frame={addr="0x000055555555b692",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="343",arch="i386:x86-64"},thread-id="2",stopped-threads="all",core="0"
+223^done,stack-args=[frame={level="0",args=[]}]
+(gdb) 
+224^done,locals=[{name="sch",value="{sched_priority = 60}"},{name="coutThread",value="{<std::thread> = {_M_id = {_M_thread = 140737280734976}}, <No data fields>}"},{name="cpu_set",value="{__bits = {140737488345681, 93824992292807, 140737340872352, 140737343357936, 140737340891080, 140737339158439, 0, 0, 140737488345744, 3, 140737488345808, 140737343357277, 140737488345776, 93824992250970, 140737488346136, 93824992365504}}"},{name="threadName",value="0x55555556c820 \"Pri\""},{name="ptr",value="0x62a000000200"}]
+(gdb) 
+225^done,stack=[frame={level="0",addr="0x000055555555be19",func="main",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="432",arch="i386:x86-64"}]
+(gdb) 
+226^done,depth="11"
+(gdb) 
+227^done,depth="1"
+(gdb) 
+228^done,changelist=[]
+(gdb) 
+229^done,changelist=[]
+(gdb) 
+230^done,changelist=[]
+(gdb) 
+231^done,changelist=[]
+(gdb) 
+232^done,changelist=[]
+(gdb) 
+233^done
+(gdb) 
+234^done,threads=[{id="2",target-id="Thread 0x7ffff39ff700 (LWP 11130)",name="Pri",frame={level="0",addr="0x000055555555b692",func="coutThreadFunc",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="343",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+235^done,groups=[{id="i1",type="process",pid="11116",executable="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/Debug/finalPrep",cores=["0"]}]
+(gdb) 
+236^done,locals=[{name="buffer",value="{static size = 9, buf = \"12345678\\266\", read_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}, write_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}}"}]
+(gdb) 
+237^done,depth="11"
+(gdb) 
+238^done,changelist=[]
+(gdb) 
+239^done,threads=[{id="1",target-id="Thread 0x7ffff7009e40 (LWP 11116)",name="Pri",frame={level="0",addr="0x000055555555be19",func="main",args=[],file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="432",arch="i386:x86-64"},state="stopped",core="0"}]
+(gdb) 
+240^done,stack=[frame={level="0",addr="0x000055555555b692",func="coutThreadFunc",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="343",arch="i386:x86-64"},frame={level="1",addr="0x0000555555569a99",func="pthreadSupport::ctorHelperLower<void (&)()>",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="59",arch="i386:x86-64"},frame={level="2",addr="0x0000555555567fda",func="pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}::operator()() const",file="../src/posixThread.hpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/posixThread.hpp",line="88",arch="i386:x86-64"},frame={level="3",addr="0x000055555556b325",func="std::__invoke_impl<void, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(std::__invoke_other, pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}&&)",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="60",arch="i386:x86-64"},frame={level="4",addr="0x000055555556b26f",func="std::__invoke<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}>(void (&)())",file="/usr/include/c++/9/bits/invoke.h",fullname="/usr/include/c++/9/bits/invoke.h",line="95",arch="i386:x86-64"},frame={level="5",addr="0x000055555556b1e0",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::_M_invoke<0ul>(std::_Index_tuple<0ul>)",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="244",arch="i386:x86-64"},frame={level="6",addr="0x000055555556b194",func="std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> >::operator()()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="251",arch="i386:x86-64"},frame={level="7",addr="0x000055555556b150",func="std::thread::_State_impl<std::thread::_Invoker<std::tuple<pthreadSupport::posixThread::beforeThread<void (&)()>(int, sched_param, void (&)())::{lambda()#2}> > >::_M_run()",file="/usr/include/c++/9/thread",fullname="/usr/include/c++/9/thread",line="195",arch="i386:x86-64"},frame={level="8",addr="0x00007ffff7450de4",func="??",from="/lib/x86_64-linux-gnu/libstdc++.so.6",arch="i386:x86-64"},frame={level="9",addr="0x00007ffff7565609",func="start_thread",file="pthread_create.c",fullname="/build/glibc-YYA7BZ/glibc-2.31/nptl/pthread_create.c",line="477",arch="i386:x86-64"},frame={level="10",addr="0x00007ffff728f293",func="clone",file="../sysdeps/unix/sysv/linux/x86_64/clone.S",fullname="/build/glibc-YYA7BZ/glibc-2.31/sysdeps/unix/sysv/linux/x86_64/clone.S",line="95",arch="i386:x86-64"}]
+(gdb) 
+241^done,value="{3, 4}"
+(gdb) 
+242^done,name="var7",numchild="2",value="[2]",type="int [2]",has_more="0"
+(gdb) 
+243^done,name="var8",numchild="1",value="0x555555574d00 <daSktPr>",type="int (*)[2]",has_more="0"
+(gdb) 
+244^done,name="var9",numchild="0",value="3",type="int",has_more="0"
+(gdb) 
+245^done,value="{char *(int)} 0x7ffff720f580 <strerror>"
+(gdb) 
+246^done,name="var10",numchild="0",value="{char *(int)} 0x7ffff720f580 <strerror>",type="char *(int)",has_more="0"
+(gdb) 
+247^done,format="octal",value="0363"
+(gdb) 
+248^done,format="natural",value="{char *(int)} 0x7ffff720f580 <strerror>"
+(gdb) 
+249^done,format="decimal",value="-13"
+(gdb) 
+250^done,format="natural",value="{char *(int)} 0x7ffff720f580 <strerror>"
+(gdb) 
+251^done,format="binary",value="11110011"
+(gdb) 
+252^done,format="natural",value="{char *(int)} 0x7ffff720f580 <strerror>"
+(gdb) 
+253^done,format="hexadecimal",value="0xf3"
+(gdb) 
+254^done,format="natural",value="{char *(int)} 0x7ffff720f580 <strerror>"
+(gdb) 
+255^done,value="\"abc123\\000\\070\", '\\000' <repeats 11 times>"
+(gdb) 
+256^done,name="var11",numchild="20",value="[20]",type="char [20]",has_more="0"
+(gdb) 
+257^done,name="var12",numchild="1",value="0x555555574c80 <B>",type="char (*)[20]",has_more="0"
+(gdb) 
+258^done,name="var13",numchild="0",value="97 'a'",type="char",has_more="0"
+(gdb) 
+259^done,name="var14",numchild="0",value="98 'b'",type="char",has_more="0"
+(gdb) 
+260^done,name="var15",numchild="0",value="99 'c'",type="char",has_more="0"
+(gdb) 
+261^done,name="var16",numchild="0",value="49 '1'",type="char",has_more="0"
+(gdb) 
+262^done,name="var17",numchild="0",value="50 '2'",type="char",has_more="0"
+(gdb) 
+263^done,name="var18",numchild="0",value="51 '3'",type="char",has_more="0"
+(gdb) 
+264^done,name="var19",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+265^done,name="var20",numchild="0",value="56 '8'",type="char",has_more="0"
+(gdb) 
+266^done,name="var21",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+267^done,name="var22",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+268^done,name="var23",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+269^done,name="var24",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+270^done,name="var25",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+271^done,name="var26",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+272^done,name="var27",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+273^done,name="var28",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+274^done,name="var29",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+275^done,format="octal",value="02525252525646200"
+(gdb) 
+276^done,format="natural",value="0x555555574c80 <B>"
+(gdb) 
+277^done,format="decimal",value="93824992365696"
+(gdb) 
+278^done,format="natural",value="0x555555574c80 <B>"
+(gdb) 
+279^done,format="binary",value="10101010101010101010101010101110100110010000000"
+(gdb) 
+280^done,format="natural",value="0x555555574c80 <B>"
+(gdb) 
+281^done,format="hexadecimal",value="0x555555574c80"
+(gdb) 
+282^done,format="natural",value="0x555555574c80 <B>"
+(gdb) 
+283^done,value="{ssize_t (int, const void *, size_t)} 0x55555555a833 <myWrite(int, void const*, unsigned long)>"
+(gdb) 
+284^done,name="var30",numchild="0",value="{ssize_t (int, const void *, size_t)} 0x55555555a833 <myWrite(int, void const*, unsigned long)>",type="ssize_t (int, const void *, size_t)",has_more="0"
+(gdb) 
+285^done,format="octal",value="0363"
+(gdb) 
+286^done,format="natural",value="{ssize_t (int, const void *, size_t)} 0x55555555a833 <myWrite(int, void const*, unsigned long)>"
+(gdb) 
+287^done,format="decimal",value="-13"
+(gdb) 
+288^done,format="natural",value="{ssize_t (int, const void *, size_t)} 0x55555555a833 <myWrite(int, void const*, unsigned long)>"
+(gdb) 
+289^done,format="binary",value="11110011"
+(gdb) 
+290^done,format="natural",value="{ssize_t (int, const void *, size_t)} 0x55555555a833 <myWrite(int, void const*, unsigned long)>"
+(gdb) 
+291^done,format="hexadecimal",value="0xf3"
+(gdb) 
+292^done,format="natural",value="{ssize_t (int, const void *, size_t)} 0x55555555a833 <myWrite(int, void const*, unsigned long)>"
+(gdb) 
+293^done,value="\" Error: \""
+(gdb) 
+294^done,name="var31",numchild="0",value="4",type="int",has_more="0"
+(gdb) 
+295^done,format="octal",value="02525252525646400"
+(gdb) 
+296^done,format="natural",value="0x555555574d00 <daSktPr>"
+(gdb) 
+297^done,format="decimal",value="93824992365824"
+(gdb) 
+298^done,format="natural",value="0x555555574d00 <daSktPr>"
+(gdb) 
+299^done,format="binary",value="10101010101010101010101010101110100110100000000"
+(gdb) 
+300^done,format="natural",value="0x555555574d00 <daSktPr>"
+(gdb) 
+301^done,format="hexadecimal",value="0x555555574d00"
+(gdb) 
+302^done,format="natural",value="0x555555574d00 <daSktPr>"
+(gdb) 
+303^error,msg="Invalid character '\\' in expression."
+(gdb) 
+304^done,value="\"wxyz\", '\\000' <repeats 15 times>"
+(gdb) 
+305^done,name="var32",numchild="20",value="[20]",type="char [20]",has_more="0"
+(gdb) 
+306^done,name="var33",numchild="1",value="0x555555574cc0 <B2>",type="char (*)[20]",has_more="0"
+(gdb) 
+307^done,name="var34",numchild="0",value="119 'w'",type="char",has_more="0"
+(gdb) 
+308^done,name="var35",numchild="0",value="120 'x'",type="char",has_more="0"
+(gdb) 
+309^done,name="var36",numchild="0",value="121 'y'",type="char",has_more="0"
+(gdb) 
+310^done,name="var37",numchild="0",value="122 'z'",type="char",has_more="0"
+(gdb) 
+311^done,name="var38",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+312^done,name="var39",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+313^done,name="var40",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+314^done,name="var41",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+315^done,name="var42",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+316^done,name="var43",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+317^done,name="var44",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+318^done,name="var45",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+319^done,name="var46",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+320^done,name="var47",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+321^done,name="var48",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+322^done,name="var49",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+323^done,name="var50",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+324^done,format="octal",value="02525252525646300"
+(gdb) 
+325^done,format="natural",value="0x555555574cc0 <B2>"
+(gdb) 
+326^done,format="decimal",value="93824992365760"
+(gdb) 
+327^done,format="natural",value="0x555555574cc0 <B2>"
+(gdb) 
+328^done,format="binary",value="10101010101010101010101010101110100110011000000"
+(gdb) 
+329^done,format="natural",value="0x555555574cc0 <B2>"
+(gdb) 
+330^done,format="hexadecimal",value="0x555555574cc0"
+(gdb) 
+331^done,format="natural",value="0x555555574cc0 <B2>"
+(gdb) 
+332^done,value="4"
+(gdb) 
+333^done,name="var51",numchild="0",value="4",type="int",has_more="0"
+(gdb) 
+334^done,format="octal",value="04"
+(gdb) 
+335^done,format="natural",value="4"
+(gdb) 
+336^done,format="decimal",value="4"
+(gdb) 
+337^done,format="natural",value="4"
+(gdb) 
+338^done,format="binary",value="100"
+(gdb) 
+339^done,format="natural",value="4"
+(gdb) 
+340^done,format="hexadecimal",value="0x4"
+(gdb) 
+341^done,format="natural",value="4"
+(gdb) 
+342^done,value="0"
+(gdb) 
+343^done,name="var52",numchild="0",value="0",type="int",has_more="0"
+(gdb) 
+344^error,msg="No symbol \"retVal\" in current context."
+(gdb) 
+345^error,msg="No symbol \"operator<<\" in current context."
+(gdb) 
+346^error,msg="No symbol \"endl\" in current context."
+(gdb) 
+347^error,msg="Invalid character '\\' in expression."
+(gdb) 
+348^done,value="\"Output Line 4b- RetVal: \""
+(gdb) 
+349^done,value="\"Output Line 3 - RetVal: \""
+(gdb) 
+350^done,name="var53",numchild="25",value="[25]",type="char [25]",has_more="0"
+(gdb) 
+351^done,name="var54",numchild="1",value="0x7ffff7008780",type="char (*)[25]",has_more="0"
+(gdb) 
+352^done,name="var55",numchild="0",value="79 'O'",type="char",has_more="0"
+(gdb) 
+353^done,name="var56",numchild="0",value="117 'u'",type="char",has_more="0"
+(gdb) 
+354^done,name="var57",numchild="0",value="116 't'",type="char",has_more="0"
+(gdb) 
+355^done,name="var58",numchild="0",value="112 'p'",type="char",has_more="0"
+(gdb) 
+356^done,name="var59",numchild="0",value="117 'u'",type="char",has_more="0"
+(gdb) 
+357^done,name="var60",numchild="0",value="116 't'",type="char",has_more="0"
+(gdb) 
+358^done,name="var61",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+359^done,name="var62",numchild="0",value="76 'L'",type="char",has_more="0"
+(gdb) 
+360^done,name="var63",numchild="0",value="105 'i'",type="char",has_more="0"
+(gdb) 
+361^done,name="var64",numchild="0",value="110 'n'",type="char",has_more="0"
+(gdb) 
+362^done,name="var65",numchild="0",value="101 'e'",type="char",has_more="0"
+(gdb) 
+363^done,name="var66",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+364^done,name="var67",numchild="0",value="51 '3'",type="char",has_more="0"
+(gdb) 
+365^done,name="var68",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+366^done,name="var69",numchild="0",value="45 '-'",type="char",has_more="0"
+(gdb) 
+367^done,name="var70",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+368^done,name="var71",numchild="0",value="82 'R'",type="char",has_more="0"
+(gdb) 
+369^done,format="octal",value="03777776700103600"
+(gdb) 
+370^done,format="natural",value="0x7ffff7008780"
+(gdb) 
+371^done,format="decimal",value="140737337395072"
+(gdb) 
+372^done,format="natural",value="0x7ffff7008780"
+(gdb) 
+373^done,format="binary",value="11111111111111111110111000000001000011110000000"
+(gdb) 
+374^done,format="natural",value="0x7ffff7008780"
+(gdb) 
+375^done,format="hexadecimal",value="0x7ffff7008780"
+(gdb) 
+376^done,format="natural",value="0x7ffff7008780"
+(gdb) 
+377^done,bkpt={number="28",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bd9f",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="410",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:410"}
+(gdb) 
+378^done,bkpt={number="29",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:416"}
+(gdb) 
+379^done,bkpt={number="30",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:418"}
+(gdb) 
+380^done,bkpt={number="31",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:421"}
+(gdb) 
+381^done,bkpt={number="32",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555ba7c",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="387",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:387"}
+(gdb) 
+382^done,bkpt={number="33",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b9aa",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="380",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:380"}
+(gdb) 
+383^done,bkpt={number="34",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b8a2",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="373",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:373"}
+(gdb) 
+384^done,bkpt={number="35",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bed6",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="437",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:437"}
+(gdb) 
+385^done,bkpt={number="36",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bfb2",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="440",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:439"}
+(gdb) 
+386^done
+(gdb) 
+387^done
+(gdb) 
+388^done
+(gdb) 
+389^done
+(gdb) 
+390^done
+(gdb) 
+391^done
+(gdb) 
+392^done
+(gdb) 
+393^done
+(gdb) 
+394^done
+(gdb) 
+395^done,value="7"
+(gdb) 
+396^done,name="var72",numchild="0",value="7",type="int",has_more="0"
+(gdb) 
+397^done,format="octal",value="07"
+(gdb) 
+398^done,format="natural",value="7"
+(gdb) 
+399^done,format="decimal",value="7"
+(gdb) 
+400^done,format="natural",value="7"
+(gdb) 
+401^done,format="binary",value="111"
+(gdb) 
+402^done,format="natural",value="7"
+(gdb) 
+403^done,format="hexadecimal",value="0x7"
+(gdb) 
+404^done,format="natural",value="7"
+(gdb) 
+405^error,msg="No symbol \"endl\" in current context."
+(gdb) 
+406^done,value="\"Output Line 5 - RetVal: \""
+(gdb) 
+407^done,name="var73",numchild="25",value="[25]",type="char [25]",has_more="0"
+(gdb) 
+408^done,name="var74",numchild="1",value="0x7ffff70087a0",type="char (*)[25]",has_more="0"
+(gdb) 
+409^done,name="var75",numchild="0",value="79 'O'",type="char",has_more="0"
+(gdb) 
+410^done,name="var76",numchild="0",value="117 'u'",type="char",has_more="0"
+(gdb) 
+411^done,name="var77",numchild="0",value="116 't'",type="char",has_more="0"
+(gdb) 
+412^done,name="var78",numchild="0",value="112 'p'",type="char",has_more="0"
+(gdb) 
+413^done,name="var79",numchild="0",value="117 'u'",type="char",has_more="0"
+(gdb) 
+414^done,name="var80",numchild="0",value="116 't'",type="char",has_more="0"
+(gdb) 
+415^done,name="var81",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+416^done,name="var82",numchild="0",value="76 'L'",type="char",has_more="0"
+(gdb) 
+417^done,name="var83",numchild="0",value="105 'i'",type="char",has_more="0"
+(gdb) 
+418^done,name="var84",numchild="0",value="110 'n'",type="char",has_more="0"
+(gdb) 
+419^done,name="var85",numchild="0",value="101 'e'",type="char",has_more="0"
+(gdb) 
+420^done,name="var86",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+421^done,name="var87",numchild="0",value="53 '5'",type="char",has_more="0"
+(gdb) 
+422^done,name="var88",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+423^done,name="var89",numchild="0",value="45 '-'",type="char",has_more="0"
+(gdb) 
+424^done,name="var90",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+425^done,name="var91",numchild="0",value="82 'R'",type="char",has_more="0"
+(gdb) 
+426^done,format="octal",value="03777776700103640"
+(gdb) 
+427^done,format="natural",value="0x7ffff70087a0"
+(gdb) 
+428^done,format="decimal",value="140737337395104"
+(gdb) 
+429^done,format="natural",value="0x7ffff70087a0"
+(gdb) 
+430^done,format="binary",value="11111111111111111110111000000001000011110100000"
+(gdb) 
+431^done,format="natural",value="0x7ffff70087a0"
+(gdb) 
+432^done,format="hexadecimal",value="0x7ffff70087a0"
+(gdb) 
+433^done,format="natural",value="0x7ffff70087a0"
+(gdb) 
+434^done,bkpt={number="37",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:419"}
+(gdb) 
+435^done,bkpt={number="38",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:425"}
+(gdb) 
+436^done,bkpt={number="39",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:427"}
+(gdb) 
+437^done,bkpt={number="40",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:430"}
+(gdb) 
+&"No line 446 in file \"/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp\".\n"
+438^done,bkpt={number="41",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:446",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:446"}
+(gdb) 
+&"No line 448 in file \"/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp\".\n"
+439^done,bkpt={number="42",type="breakpoint",disp="keep",enabled="y",addr="<PENDING>",pending="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:448",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:448"}
+(gdb) 
+440^done
+(gdb) 
+441^done
+(gdb) 
+442^done
+(gdb) 
+443^done
+(gdb) 
+444^done
+(gdb) 
+445^done
+(gdb) 
+446^error,msg="No symbol \"operator<<\" in current context."
+(gdb) 
+447^done,value="-1"
+(gdb) 
+448^done,name="var92",numchild="0",value="-1",type="int",has_more="0"
+(gdb) 
+449^done,format="octal",value="037777777777"
+(gdb) 
+450^done,format="natural",value="-1"
+(gdb) 
+451^done,format="decimal",value="-1"
+(gdb) 
+452^done,format="natural",value="-1"
+(gdb) 
+453^done,format="binary",value="11111111111111111111111111111111"
+(gdb) 
+454^done,format="natural",value="-1"
+(gdb) 
+455^done,format="hexadecimal",value="0xffffffff"
+(gdb) 
+456^done,format="natural",value="-1"
+(gdb) 
+457^done,value="1"
+(gdb) 
+458^done,name="var93",numchild="0",value="1",type="int",has_more="0"
+(gdb) 
+459^done,format="octal",value="01"
+(gdb) 
+460^done,format="natural",value="1"
+(gdb) 
+461^done,format="decimal",value="1"
+(gdb) 
+462^done,format="natural",value="1"
+(gdb) 
+463^done,format="binary",value="1"
+(gdb) 
+464^done,format="natural",value="1"
+(gdb) 
+465^done,format="hexadecimal",value="0x1"
+(gdb) 
+466^done,format="natural",value="1"
+(gdb) 
+467^done,value="3"
+(gdb) 
+468^done,format="octal",value="03"
+(gdb) 
+469^done,format="natural",value="3"
+(gdb) 
+470^done,format="decimal",value="3"
+(gdb) 
+471^done,format="natural",value="3"
+(gdb) 
+472^done,format="binary",value="11"
+(gdb) 
+473^done,format="natural",value="3"
+(gdb) 
+474^done,format="hexadecimal",value="0x3"
+(gdb) 
+475^done,format="natural",value="3"
+(gdb) 
+476^done,value="true"
+(gdb) 
+477^done,name="var94",numchild="0",value="true",type="bool",has_more="0"
+(gdb) 
+478^done,format="octal",value="01"
+(gdb) 
+479^done,format="natural",value="true"
+(gdb) 
+480^done,format="decimal",value="1"
+(gdb) 
+481^done,format="natural",value="true"
+(gdb) 
+482^done,format="binary",value="1"
+(gdb) 
+483^done,format="natural",value="true"
+(gdb) 
+484^done,format="hexadecimal",value="0x1"
+(gdb) 
+485^done,format="natural",value="true"
+(gdb) 
+486^error,msg="Invalid character '\\' in expression."
+(gdb) 
+487^done,value="8"
+(gdb) 
+488^done,name="var95",numchild="0",value="8",type="int",has_more="0"
+(gdb) 
+489^done,format="octal",value="010"
+(gdb) 
+490^done,format="natural",value="8"
+(gdb) 
+491^done,format="decimal",value="8"
+(gdb) 
+492^done,format="natural",value="8"
+(gdb) 
+493^done,format="binary",value="1000"
+(gdb) 
+494^done,format="natural",value="8"
+(gdb) 
+495^done,format="hexadecimal",value="0x8"
+(gdb) 
+496^done,format="natural",value="8"
+(gdb) 
+497^done,value="2"
+(gdb) 
+498^done,value="50"
+(gdb) 
+499^done,name="var96",numchild="0",value="50",type="int",has_more="0"
+(gdb) 
+500^done,format="octal",value="062"
+(gdb) 
+501^done,format="natural",value="50"
+(gdb) 
+502^done,format="decimal",value="50"
+(gdb) 
+503^done,format="natural",value="50"
+(gdb) 
+504^done,format="binary",value="110010"
+(gdb) 
+505^done,format="natural",value="50"
+(gdb) 
+506^done,format="hexadecimal",value="0x32"
+(gdb) 
+507^done,format="natural",value="50"
+(gdb) 
+508^done,format="octal",value="0"
+(gdb) 
+509^done,format="natural",value="0"
+(gdb) 
+510^done,format="decimal",value="0"
+(gdb) 
+511^done,format="natural",value="0"
+(gdb) 
+512^done,format="binary",value="0"
+(gdb) 
+513^done,format="natural",value="0"
+(gdb) 
+514^done,format="hexadecimal",value="0x0"
+(gdb) 
+515^done,format="natural",value="0"
+(gdb) 
+516^done,value="5"
+(gdb) 
+517^done,name="var97",numchild="0",value="5",type="int",has_more="0"
+(gdb) 
+518^done,format="octal",value="05"
+(gdb) 
+519^done,format="natural",value="5"
+(gdb) 
+520^done,format="decimal",value="5"
+(gdb) 
+521^done,format="natural",value="5"
+(gdb) 
+522^done,format="binary",value="101"
+(gdb) 
+523^done,format="natural",value="5"
+(gdb) 
+524^done,format="hexadecimal",value="0x5"
+(gdb) 
+525^done,format="natural",value="5"
+(gdb) 
+526^done,value="\"Output Line 2b - RetVal: \""
+(gdb) 
+527^done,name="var98",numchild="26",value="[26]",type="char [26]",has_more="0"
+(gdb) 
+528^done,name="var99",numchild="1",value="0x7ffff70087c0",type="char (*)[26]",has_more="0"
+(gdb) 
+529^done,name="var100",numchild="0",value="79 'O'",type="char",has_more="0"
+(gdb) 
+530^done,name="var101",numchild="0",value="117 'u'",type="char",has_more="0"
+(gdb) 
+531^done,name="var102",numchild="0",value="116 't'",type="char",has_more="0"
+(gdb) 
+532^done,name="var103",numchild="0",value="112 'p'",type="char",has_more="0"
+(gdb) 
+533^done,name="var104",numchild="0",value="117 'u'",type="char",has_more="0"
+(gdb) 
+534^done,name="var105",numchild="0",value="116 't'",type="char",has_more="0"
+(gdb) 
+535^done,name="var106",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+536^done,name="var107",numchild="0",value="76 'L'",type="char",has_more="0"
+(gdb) 
+537^done,name="var108",numchild="0",value="105 'i'",type="char",has_more="0"
+(gdb) 
+538^done,name="var109",numchild="0",value="110 'n'",type="char",has_more="0"
+(gdb) 
+539^done,name="var110",numchild="0",value="101 'e'",type="char",has_more="0"
+(gdb) 
+540^done,name="var111",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+541^done,name="var112",numchild="0",value="50 '2'",type="char",has_more="0"
+(gdb) 
+542^done,name="var113",numchild="0",value="98 'b'",type="char",has_more="0"
+(gdb) 
+543^done,name="var114",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+544^done,name="var115",numchild="0",value="45 '-'",type="char",has_more="0"
+(gdb) 
+545^done,name="var116",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+546^done,format="octal",value="03777776700103700"
+(gdb) 
+547^done,format="natural",value="0x7ffff70087c0"
+(gdb) 
+548^done,format="decimal",value="140737337395136"
+(gdb) 
+549^done,format="natural",value="0x7ffff70087c0"
+(gdb) 
+550^done,format="binary",value="11111111111111111110111000000001000011111000000"
+(gdb) 
+551^done,format="natural",value="0x7ffff70087c0"
+(gdb) 
+552^done,format="hexadecimal",value="0x7ffff70087c0"
+(gdb) 
+553^done,format="natural",value="0x7ffff70087c0"
+(gdb) 
+554^error,msg="Invalid character '\\' in expression."
+(gdb) 
+555^done,value="1"
+(gdb) 
+556^done,name="var117",numchild="0",value="1",type="int",has_more="0"
+(gdb) 
+557^done,format="octal",value="01"
+(gdb) 
+558^done,format="natural",value="1"
+(gdb) 
+559^done,format="decimal",value="1"
+(gdb) 
+560^done,format="natural",value="1"
+(gdb) 
+561^done,format="binary",value="1"
+(gdb) 
+562^done,format="natural",value="1"
+(gdb) 
+563^done,format="hexadecimal",value="0x1"
+(gdb) 
+564^done,format="natural",value="1"
+(gdb) 
+565^error,msg="Invalid character '\\' in expression."
+(gdb) 
+566^done,value="14"
+(gdb) 
+567^done,name="var118",numchild="0",value="14",type="int",has_more="0"
+(gdb) 
+568^done,format="octal",value="016"
+(gdb) 
+569^done,format="natural",value="14"
+(gdb) 
+570^done,format="decimal",value="14"
+(gdb) 
+571^done,format="natural",value="14"
+(gdb) 
+572^done,format="binary",value="1110"
+(gdb) 
+573^done,format="natural",value="14"
+(gdb) 
+574^done,format="hexadecimal",value="0xe"
+(gdb) 
+575^done,format="natural",value="14"
+(gdb) 
+576^done,name="var119",numchild="0",value="0 '\\000'",type="char",has_more="0"
+(gdb) 
+577^done,value="10"
+(gdb) 
+578^done,name="var120",numchild="0",value="10",type="int",has_more="0"
+(gdb) 
+579^done,name="var121",numchild="0",value="101 'e'",type="char",has_more="0"
+(gdb) 
+580^done,value="{unsigned int (CircBuf<char> * const, const char *, unsigned int)} 0x555555563c58 <CircBuf<char>::write(char const*, unsigned int)>"
+(gdb) 
+581^done,name="var122",numchild="0",value="{unsigned int (CircBuf<char> * const, const char *, unsigned int)} 0x555555563c58 <CircBuf<char>::write(char const*, unsigned int)>",type="unsigned int (CircBuf<char> * const, const char *, unsigned int)",thread-id="2",has_more="0"
+(gdb) 
+582^done,format="octal",value="0"
+(gdb) 
+583^done,format="natural",value="{unsigned int (CircBuf<char> * const, const char *, unsigned int)} 0x555555563c58 <CircBuf<char>::write(char const*, unsigned int)>"
+(gdb) 
+584^done,format="decimal",value="0"
+(gdb) 
+585^done,format="natural",value="{unsigned int (CircBuf<char> * const, const char *, unsigned int)} 0x555555563c58 <CircBuf<char>::write(char const*, unsigned int)>"
+(gdb) 
+586^done,format="binary",value="0"
+(gdb) 
+587^done,format="natural",value="{unsigned int (CircBuf<char> * const, const char *, unsigned int)} 0x555555563c58 <CircBuf<char>::write(char const*, unsigned int)>"
+(gdb) 
+588^done,format="hexadecimal",value="0x0"
+(gdb) 
+589^done,format="natural",value="{unsigned int (CircBuf<char> * const, const char *, unsigned int)} 0x555555563c58 <CircBuf<char>::write(char const*, unsigned int)>"
+(gdb) 
+590^done,value="{void (void)} 0x55555555b481 <coutThreadFunc()>"
+(gdb) 
+591^done,name="var123",numchild="0",value="{void (void)} 0x55555555b481 <coutThreadFunc()>",type="void (void)",has_more="0"
+(gdb) 
+592^done,format="octal",value="0363"
+(gdb) 
+593^done,format="natural",value="{void (void)} 0x55555555b481 <coutThreadFunc()>"
+(gdb) 
+594^done,format="decimal",value="-13"
+(gdb) 
+595^done,format="natural",value="{void (void)} 0x55555555b481 <coutThreadFunc()>"
+(gdb) 
+596^done,format="binary",value="11110011"
+(gdb) 
+597^done,format="natural",value="{void (void)} 0x55555555b481 <coutThreadFunc()>"
+(gdb) 
+598^done,format="hexadecimal",value="0xf3"
+(gdb) 
+599^done,format="natural",value="{void (void)} 0x55555555b481 <coutThreadFunc()>"
+(gdb) 
+600^done,value="<incomplete type>"
+(gdb) 
+601^done,name="var124",numchild="0",value="{...}",type="std::ostream",has_more="0"
+(gdb) 
+602^done,format="octal",value="{...}"
+(gdb) 
+603^done,format="natural",value="{...}"
+(gdb) 
+604^done,format="decimal",value="{...}"
+(gdb) 
+605^done,format="natural",value="{...}"
+(gdb) 
+606^done,format="binary",value="{...}"
+(gdb) 
+607^done,format="natural",value="{...}"
+(gdb) 
+608^done,format="hexadecimal",value="{...}"
+(gdb) 
+609^done,format="natural",value="{...}"
+(gdb) 
+610^done,value="{int (int, void *, int, int, int)} 0x55555555a5b8 <myReadcond2(int, void*, int, int, int)>"
+(gdb) 
+611^done,name="var125",numchild="0",value="{int (int, void *, int, int, int)} 0x55555555a5b8 <myReadcond2(int, void*, int, int, int)>",type="int (int, void *, int, int, int)",has_more="0"
+(gdb) 
+612^done,format="octal",value="0363"
+(gdb) 
+613^done,format="natural",value="{int (int, void *, int, int, int)} 0x55555555a5b8 <myReadcond2(int, void*, int, int, int)>"
+(gdb) 
+614^done,format="decimal",value="-13"
+(gdb) 
+615^done,format="natural",value="{int (int, void *, int, int, int)} 0x55555555a5b8 <myReadcond2(int, void*, int, int, int)>"
+(gdb) 
+616^done,format="binary",value="11110011"
+(gdb) 
+617^done,format="natural",value="{int (int, void *, int, int, int)} 0x55555555a5b8 <myReadcond2(int, void*, int, int, int)>"
+(gdb) 
+618^done,format="hexadecimal",value="0xf3"
+(gdb) 
+619^done,format="natural",value="{int (int, void *, int, int, int)} 0x55555555a5b8 <myReadcond2(int, void*, int, int, int)>"
+(gdb) 
+620^done,value="{unsigned int (CircBuf<char> * const, char *, unsigned int)} 0x555555564670 <CircBuf<char>::read(char*, unsigned int)>"
+(gdb) 
+621^done,name="var126",numchild="0",value="{unsigned int (CircBuf<char> * const, char *, unsigned int)} 0x555555564670 <CircBuf<char>::read(char*, unsigned int)>",type="unsigned int (CircBuf<char> * const, char *, unsigned int)",thread-id="2",has_more="0"
+(gdb) 
+622^done,format="octal",value="0"
+(gdb) 
+623^done,format="natural",value="{unsigned int (CircBuf<char> * const, char *, unsigned int)} 0x555555564670 <CircBuf<char>::read(char*, unsigned int)>"
+(gdb) 
+624^done,format="decimal",value="0"
+(gdb) 
+625^done,format="natural",value="{unsigned int (CircBuf<char> * const, char *, unsigned int)} 0x555555564670 <CircBuf<char>::read(char*, unsigned int)>"
+(gdb) 
+626^done,format="binary",value="0"
+(gdb) 
+627^done,format="natural",value="{unsigned int (CircBuf<char> * const, char *, unsigned int)} 0x555555564670 <CircBuf<char>::read(char*, unsigned int)>"
+(gdb) 
+628^done,format="hexadecimal",value="0x0"
+(gdb) 
+629^done,format="natural",value="{unsigned int (CircBuf<char> * const, char *, unsigned int)} 0x555555564670 <CircBuf<char>::read(char*, unsigned int)>"
+(gdb) 
+630^error,msg="No symbol \"size\" in current context."
+(gdb) 
+631^error,msg="No symbol \"write_pos\" in current context."
+(gdb) 
+632^error,msg="No symbol \"shared_ptr\" in current context."
+(gdb) 
+633^done,value="20"
+(gdb) 
+634^done,name="var127",numchild="0",value="20",type="int",has_more="0"
+(gdb) 
+635^done,format="octal",value="024"
+(gdb) 
+636^done,format="natural",value="20"
+(gdb) 
+637^done,format="decimal",value="20"
+(gdb) 
+638^done,format="natural",value="20"
+(gdb) 
+639^done,format="binary",value="10100"
+(gdb) 
+640^done,format="natural",value="20"
+(gdb) 
+641^done,format="hexadecimal",value="0x14"
+(gdb) 
+642^done,format="natural",value="20"
+(gdb) 
+643^done,value="{static size = 9, buf = \"12345678\\266\", read_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}, write_pos = {<std::__atomic_base<unsigned int>> = {static _S_alignment = 4, _M_i = 8}, static is_always_lock_free = true}}"
+(gdb) 
+644^done,numchild="1",children=[child={name="var6.private",exp="private",numchild="4",thread-id="2"}],has_more="0"
+(gdb) 
+645^done,numchild="4",children=[child={name="var6.private.size",exp="size",numchild="0",type="const unsigned int",thread-id="2"},child={name="var6.private.buf",exp="buf",numchild="9",type="char [9]",thread-id="2"},child={name="var6.private.read_pos",exp="read_pos",numchild="2",type="std::atomic<unsigned int>",thread-id="2"},child={name="var6.private.write_pos",exp="write_pos",numchild="2",type="std::atomic<unsigned int>",thread-id="2"}],has_more="0"
+(gdb) 
+646^done,path_expr="((buffer).size)"
+(gdb) 
+647^done,path_expr="((buffer).buf)"
+(gdb) 
+648^done,path_expr="((buffer).read_pos)"
+(gdb) 
+649^done,path_expr="((buffer).write_pos)"
+(gdb) 
+650^done,value="9"
+(gdb) 
+651^done,value="{...}"
+(gdb) 
+652^done,value="{...}"
+(gdb) 
+653^done,name="var128",numchild="1",value="0x7ffff39fec60",type="char (*)[9]",thread-id="2",has_more="0"
+(gdb) 
+654^done,format="octal",value="{...}"
+(gdb) 
+655^done,format="natural",value="{...}"
+(gdb) 
+656^done,format="decimal",value="{...}"
+(gdb) 
+657^done,format="natural",value="{...}"
+(gdb) 
+658^done,format="binary",value="{...}"
+(gdb) 
+659^done,format="natural",value="{...}"
+(gdb) 
+660^done,format="hexadecimal",value="{...}"
+(gdb) 
+661^done,format="natural",value="{...}"
+(gdb) 
+662^error,msg="No symbol \"desInfoP\" in current context."
+(gdb) 
+663^error,msg="No symbol \"desInfoLk\" in current context."
+(gdb) 
+664^done,value="{(anonymous namespace)::socketInfoClassSp (int)} 0x55555555a3b1 <(anonymous namespace)::getDesInfoP(int)>"
+(gdb) 
+665^done,name="var129",numchild="0",value="{(anonymous namespace)::socketInfoClassSp (int)} 0x55555555a3b1 <(anonymous namespace)::getDesInfoP(int)>",type="(anonymous namespace)::socketInfoClassSp (int)",has_more="0"
+(gdb) 
+666^done,format="octal",value="0363"
+(gdb) 
+667^done,format="natural",value="{(anonymous namespace)::socketInfoClassSp (int)} 0x55555555a3b1 <(anonymous namespace)::getDesInfoP(int)>"
+(gdb) 
+668^done,format="decimal",value="-13"
+(gdb) 
+669^done,format="natural",value="{(anonymous namespace)::socketInfoClassSp (int)} 0x55555555a3b1 <(anonymous namespace)::getDesInfoP(int)>"
+(gdb) 
+670^done,format="binary",value="11110011"
+(gdb) 
+671^done,format="natural",value="{(anonymous namespace)::socketInfoClassSp (int)} 0x55555555a3b1 <(anonymous namespace)::getDesInfoP(int)>"
+(gdb) 
+672^done,format="hexadecimal",value="0xf3"
+(gdb) 
+673^done,format="natural",value="{(anonymous namespace)::socketInfoClassSp (int)} 0x55555555a3b1 <(anonymous namespace)::getDesInfoP(int)>"
+(gdb) 
+674^error,msg="No symbol \"iter\" in current context."
+(gdb) 
+675^done,value="std::map with 1 element = {[4] = std::shared_ptr<(anonymous namespace)::socketInfoClass> (use count 1, weak count 0) = {get() = 0x610000000150}}"
+(gdb) 
+676^done,name="var130",numchild="0",value="{...}",type="std::map<int, std::shared_ptr<(anonymous namespace)::socketInfoClass>, std::less<int>, std::allocator<std::pair<int const, std::shared_ptr<(anonymous namespace)::socketInfoClass> > > >",displayhint="map",dynamic="1",has_more="1"
+(gdb) 
+677^done,numchild="1",displayhint="map",children=[child={name="var130.[0]",exp="[0]",numchild="0",type="const int"}],has_more="1"
+(gdb) 
+678^done
+(gdb) 
+679^done,numchild="1",displayhint="map",children=[child={name="var130.[1]",exp="[1]",numchild="0",type="std::shared_ptr<(anonymous namespace)::socketInfoClass>",dynamic="1"}],has_more="0"
+(gdb) 
+680^done
+(gdb) 
+681^done,value="4"
+(gdb) 
+682^error,msg="No symbol \"_Callable\" in current context."
+(gdb) 
+683^done,bkpt={number="43",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bdcc",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="413",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:412"}
+(gdb) 
+684^done,bkpt={number="44",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:418"}
+(gdb) 
+685^done,bkpt={number="45",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:420"}
+(gdb) 
+686^done,bkpt={number="46",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555be09",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="430",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:423"}
+(gdb) 
+687^done,bkpt={number="47",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b9aa",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="380",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:380"}
+(gdb) 
+688^done,bkpt={number="48",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b79a",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="366",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:366"}
+(gdb) 
+689^done,bkpt={number="49",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555b8a2",func="coutThreadFunc()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="373",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:373"}
+(gdb) 
+690^done,bkpt={number="50",type="breakpoint",disp="keep",enabled="y",addr="0x000055555555bfb2",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="440",thread-groups=["i1"],times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:439"}
+(gdb) 
+691^done,bkpt={number="51",type="breakpoint",disp="keep",enabled="y",addr="<MULTIPLE>",times="0",original-location="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp:441",locations=[{number="51.1",enabled="y",addr="0x000055555555be52",func="main()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="441",thread-groups=["i1"]},{number="51.2",enabled="y",addr="0x0000555555561dd7",func="__static_initialization_and_destruction_0(int, int)",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="441",thread-groups=["i1"]},{number="51.3",enabled="y",addr="0x00005555555621a9",func="_GLOBAL__sub_I__Z11myReadcond2iPviii()",file="../src/myioFinal.cpp",fullname="/mnt/hgfs/VMsf2020/eclipse-workspace-2021-06/finalPrep-updated/finalPrep/src/myioFinal.cpp",line="441",thread-groups=["i1"]}]}
+(gdb) 
+692^done
+(gdb) 
+693^done
+(gdb) 
+694^done
+(gdb) 
+695^done
+(gdb) 
+696^done
+(gdb) 
+697^done
+(gdb) 
+698^done
+(gdb) 
+699^done
+(gdb) 
+700^done
+(gdb) 
+=thread-exited,id="1",group-id="i1"
+=thread-exited,id="2",group-id="i1"
+=thread-group-exited,id="i1"

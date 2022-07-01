@@ -1,0 +1,282 @@
+10:40:09 **** Clean-only build of configuration Debug for project Ensc351Part1-1217 ****
+make clean 
+rm -rf  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o  ./src/Ensc351Part1.d ./src/PeerY.d ./src/SenderY.d ./src/myIO.d  Ensc351Part1-1217
+ 
+12:08:24 **** Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/PeerY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerY.d" -MT"src/PeerY.o" -o "src/PeerY.o" "../src/PeerY.cpp"
+Finished building: ../src/PeerY.cpp
+ 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building file: ../src/myIO.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/myIO.d" -MT"src/myIO.o" -o "src/myIO.o" "../src/myIO.cpp"
+Finished building: ../src/myIO.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+12:09:28 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:09:44 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:11 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:13 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:42 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:43 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:44 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:44 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:47 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:48 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:49 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:11:50 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:12:03 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:12:13 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+12:12:25 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+22:59:38 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/PeerY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/PeerY.d" -MT"src/PeerY.o" -o "src/PeerY.o" "../src/PeerY.cpp"
+Finished building: ../src/PeerY.cpp
+ 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+23:00:03 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+23:01:56 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+23:02:00 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+21:06:46 **** Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+23:49:06 **** Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+16:10:32 **** Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+make: Nothing to be done for 'all'.
+16:27:19 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+../src/Ensc351Part1.cpp: In function ‘int main()’:
+../src/Ensc351Part1.cpp:51:33: error: no matching function for call to ‘SenderY::statBlk(std::vector<const char*>&)’
+     SenderY::statBlk(iFileNamesB);
+                                 ^
+In file included from ../src/Ensc351Part1.cpp:16:0:
+../src/SenderY.h:17:7: note: candidate: void SenderY::statBlk(const char*)
+  void statBlk(const char* fileName);
+       ^
+../src/SenderY.h:17:7: note:   no known conversion for argument 1 from ‘std::vector<const char*>’ to ‘const char*’
+make: *** [src/Ensc351Part1.o] Error 1
+src/subdir.mk:27: recipe for target 'src/Ensc351Part1.o' failed
+16:32:52 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+../src/Ensc351Part1.cpp: In function ‘void testSenderY(std::vector<const char*>, int)’:
+../src/Ensc351Part1.cpp:26:28: error: no matching function for call to ‘SenderY::statBlk(std::vector<const char*>&)’
+  ySender.statBlk(iFileNames);
+                            ^
+In file included from ../src/Ensc351Part1.cpp:16:0:
+../src/SenderY.h:17:7: note: candidate: void SenderY::statBlk(const char*)
+  void statBlk(const char* fileName);
+       ^
+../src/SenderY.h:17:7: note:   no known conversion for argument 1 from ‘std::vector<const char*>’ to ‘const char*’
+../src/Ensc351Part1.cpp: In function ‘int main()’:
+../src/Ensc351Part1.cpp:54:5: error: ‘ySender’ was not declared in this scope
+     ySender.statBlk(iFileNamesB);
+     ^
+src/subdir.mk:27: recipe for target 'src/Ensc351Part1.o' failed
+make: *** [src/Ensc351Part1.o] Error 1
+16:33:13 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+../src/Ensc351Part1.cpp: In function ‘void testSenderY(std::vector<const char*>, int)’:
+../src/Ensc351Part1.cpp:26:28: error: no matching function for call to ‘SenderY::statBlk(std::vector<const char*>&)’
+  ySender.statBlk(iFileNames);
+                            ^
+In file included from ../src/Ensc351Part1.cpp:16:0:
+../src/SenderY.h:17:7: note: candidate: void SenderY::statBlk(const char*)
+  void statBlk(const char* fileName);
+       ^
+../src/SenderY.h:17:7: note:   no known conversion for argument 1 from ‘std::vector<const char*>’ to ‘const char*’
+make: *** [src/Ensc351Part1.o] Error 1
+src/subdir.mk:27: recipe for target 'src/Ensc351Part1.o' failed
+16:36:50 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+../src/Ensc351Part1.cpp: In function ‘void testSenderY(std::vector<const char*>, int)’:
+../src/Ensc351Part1.cpp:26:29: error: no matching function for call to ‘SenderY::statBlk(std::vector<const char*>*)’
+  ySender.statBlk(&iFileNames);
+                             ^
+In file included from ../src/Ensc351Part1.cpp:16:0:
+../src/SenderY.h:17:7: note: candidate: void SenderY::statBlk(const char*)
+  void statBlk(const char* fileName);
+       ^
+../src/SenderY.h:17:7: note:   no known conversion for argument 1 from ‘std::vector<const char*>*’ to ‘const char*’
+src/subdir.mk:27: recipe for target 'src/Ensc351Part1.o' failed
+make: *** [src/Ensc351Part1.o] Error 1
+17:01:04 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+../src/Ensc351Part1.cpp: In function ‘void testSenderY(std::vector<const char*>, int)’:
+../src/Ensc351Part1.cpp:26:18: error: invalid use of ‘this’ in non-member function
+  ySender.statBlk(this->iFileNames);
+                  ^
+src/subdir.mk:27: recipe for target 'src/Ensc351Part1.o' failed
+make: *** [src/Ensc351Part1.o] Error 1
+17:04:03 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+../src/Ensc351Part1.cpp: In function ‘void testSenderY(std::vector<const char*>, int)’:
+../src/Ensc351Part1.cpp:26:28: error: no matching function for call to ‘SenderY::statBlk(std::vector<const char*>&)’
+  ySender.statBlk(iFileNames);
+                            ^
+In file included from ../src/Ensc351Part1.cpp:16:0:
+../src/SenderY.h:17:7: note: candidate: void SenderY::statBlk(const char*)
+  void statBlk(const char* fileName);
+       ^
+../src/SenderY.h:17:7: note:   no known conversion for argument 1 from ‘std::vector<const char*>’ to ‘const char*’
+make: *** [src/Ensc351Part1.o] Error 1
+src/subdir.mk:27: recipe for target 'src/Ensc351Part1.o' failed
+17:05:24 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:68:18: warning: unused variable ‘fileSize’ [-Wunused-variable]
+         unsigned fileSize = st.st_size;
+                  ^
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 
+17:06:16 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+../src/Ensc351Part1.cpp: In function ‘void testSenderY(std::vector<const char*>, int)’:
+../src/Ensc351Part1.cpp:26:18: error: no matching function for call to ‘SenderY::statBlk()’
+  ySender.statBlk();
+                  ^
+In file included from ../src/Ensc351Part1.cpp:16:0:
+../src/SenderY.h:17:7: note: candidate: void SenderY::statBlk(const char*)
+  void statBlk(const char* fileName);
+       ^
+../src/SenderY.h:17:7: note:   candidate expects 1 argument, 0 provided
+make: *** [src/Ensc351Part1.o] Error 1
+src/subdir.mk:27: recipe for target 'src/Ensc351Part1.o' failed
+18:38:31 **** Incremental Build of configuration Debug for project Ensc351Part1-1217 ****
+make all 
+Building file: ../src/Ensc351Part1.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Ensc351Part1.d" -MT"src/Ensc351Part1.o" -o "src/Ensc351Part1.o" "../src/Ensc351Part1.cpp"
+Finished building: ../src/Ensc351Part1.cpp
+ 
+Building file: ../src/SenderY.cpp
+Invoking: GCC C++ Compiler
+g++ -std=c++1y -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SenderY.d" -MT"src/SenderY.o" -o "src/SenderY.o" "../src/SenderY.cpp"
+../src/SenderY.cpp: In member function ‘void SenderY::genStatBlk(uint8_t*, const char*)’:
+../src/SenderY.cpp:68:18: warning: unused variable ‘fileSize’ [-Wunused-variable]
+         unsigned fileSize = st.st_size;
+                  ^
+Finished building: ../src/SenderY.cpp
+ 
+Building target: Ensc351Part1-1217
+Invoking: GCC C++ Linker
+g++  -o "Ensc351Part1-1217"  ./src/Ensc351Part1.o ./src/PeerY.o ./src/SenderY.o ./src/myIO.o   
+Finished building target: Ensc351Part1-1217
+ 

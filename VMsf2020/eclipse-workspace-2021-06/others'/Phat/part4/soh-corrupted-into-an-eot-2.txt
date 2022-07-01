@@ -1,0 +1,1 @@
+in the FirstByte state, we check if the first byte is SOH or not. And in the EOT state, if the next character is not EOT, not CAN, and not from keyboard, we go back to the FirstByte state to receive the next character.

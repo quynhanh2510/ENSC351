@@ -1,0 +1,346 @@
+~"+handle SIGPIPE nostop\n"
+~"+skip -rfu ^std::\n"
+&"No function found named -rfu ^std::.\n"
+~"Ignore function pending future shared library load? (y or [n]) [answered N; input not from terminal]\n"
+14^done
+(gdb) 
+15^done
+(gdb) 
+16^done
+(gdb) 
+17^done
+(gdb) 
+18^done,value="auto"
+(gdb) 
+19^done
+(gdb) 
+~"$1 = 0xff\n"
+20^done
+(gdb) 
+21^done,value="8"
+(gdb) 
+22^done
+(gdb) 
+~"The target endianness is set automatically (currently little endian)\n"
+23^done
+(gdb) 
+24^done,bkpt={number="1",type="breakpoint",disp="del",enabled="y",addr="0x00000000004010d8",func="main()",file="../src/Ensc351Part1.cpp",fullname="/mnt/hgfs/VMsfU/eclipse-workspace-2021-06/Ensc351Part1-1217/src/Ensc351Part1.cpp",line="30",thread-groups=["i1"],times="0",original-location="main"}
+(gdb) 
+25^done
+(gdb) 
+=thread-group-started,id="i1",pid="4193"
+=thread-created,id="1",group-id="i1"
+=library-loaded,id="/lib64/ld-linux-x86-64.so.2",target-name="/lib64/ld-linux-x86-64.so.2",host-name="/lib64/ld-linux-x86-64.so.2",symbols-loaded="0",thread-group="i1"
+26^running
+*running,thread-id="all"
+(gdb) 
+=library-loaded,id="/usr/lib/x86_64-linux-gnu/libstdc++.so.6",target-name="/usr/lib/x86_64-linux-gnu/libstdc++.so.6",host-name="/usr/lib/x86_64-linux-gnu/libstdc++.so.6",symbols-loaded="0",thread-group="i1"
+=library-loaded,id="/lib/x86_64-linux-gnu/libgcc_s.so.1",target-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",host-name="/lib/x86_64-linux-gnu/libgcc_s.so.1",symbols-loaded="0",thread-group="i1"
+=library-loaded,id="/lib/x86_64-linux-gnu/libc.so.6",target-name="/lib/x86_64-linux-gnu/libc.so.6",host-name="/lib/x86_64-linux-gnu/libc.so.6",symbols-loaded="0",thread-group="i1"
+=library-loaded,id="/lib/x86_64-linux-gnu/libm.so.6",target-name="/lib/x86_64-linux-gnu/libm.so.6",host-name="/lib/x86_64-linux-gnu/libm.so.6",symbols-loaded="0",thread-group="i1"
+=breakpoint-modified,bkpt={number="1",type="breakpoint",disp="del",enabled="y",addr="0x00000000004010d8",func="main()",file="../src/Ensc351Part1.cpp",fullname="/mnt/hgfs/VMsfU/eclipse-workspace-2021-06/Ensc351Part1-1217/src/Ensc351Part1.cpp",line="30",thread-groups=["i1"],times="1",original-location="main"}
+~"\n"
+~"Temporary breakpoint 1, main () at ../src/Ensc351Part1.cpp:30\n"
+~"30\tint main() {\n"
+*stopped,reason="breakpoint-hit",disp="del",bkptno="1",frame={addr="0x00000000004010d8",func="main",args=[],file="../src/Ensc351Part1.cpp",fullname="/mnt/hgfs/VMsfU/eclipse-workspace-2021-06/Ensc351Part1-1217/src/Ensc351Part1.cpp",line="30"},thread-id="1",stopped-threads="all",core="1"
+=breakpoint-deleted,id="1"
+(gdb) 
+27^done,groups=[{id="i1",type="process",pid="4193",executable="/mnt/hgfs/VMsfU/eclipse-workspace-2021-06/Ensc351Part1-1217/Debug/Ensc351Part1-1217",cores=["1"]}]
+(gdb) 
+28^done,threads=[{id="1",target-id="process 4193",name="Ensc351Part1-12",frame={level="0",addr="0x00000000004010d8",func="main",args=[],file="../src/Ensc351Part1.cpp",fullname="/mnt/hgfs/VMsfU/eclipse-workspace-2021-06/Ensc351Part1-1217/src/Ensc351Part1.cpp",line="30"},state="stopped",core="1"}]
+(gdb) 
+29^done,depth="1"
+(gdb) 
+30^done
+(gdb) 
+31^done,threads=[{id="1",target-id="process 4193",name="Ensc351Part1-12",frame={level="0",addr="0x00000000004010d8",func="main",args=[],file="../src/Ensc351Part1.cpp",fullname="/mnt/hgfs/VMsfU/eclipse-workspace-2021-06/Ensc351Part1-1217/src/Ensc351Part1.cpp",line="30"},state="stopped",core="1"}]
+(gdb) 
+32^done,groups=[{id="1",type="process",description="/sbin/init splash",user="root",cores=["0"]},{id="2",type="process",description="[kthreadd]",user="root",cores=["1"]},{id="4",type="process",description="[kworker/0:0H]",user="root",cores=["0"]},{id="6",type="process",description="[mm_percpu_wq]",user="root",cores=["0"]},{id="7",type="process",description="[ksoftirqd/0]",user="root",cores=["0"]},{id="8",type="process",description="[rcu_sched]",user="root",cores=["0"]},{id="9",type="process",description="[rcu_bh]",user="root",cores=["0"]},{id="10",type="process",description="[migration/0]",user="root",cores=["0"]},{id="11",type="process",description="[watchdog/0]",user="root",cores=["0"]},{id="12",type="process",description="[cpuhp/0]",user="root",cores=["0"]},{id="13",type="process",description="[cpuhp/1]",user="root",cores=["1"]},{id="14",type="process",description="[watchdog/1]",user="root",cores=["1"]},{id="15",type="process",description="[migration/1]",user="root",cores=["1"]},{id="16",type="process",description="[ksoftirqd/1]",user="root",cores=["1"]},{id="18",type="process",description="[kworker/1:0H]",user="root",cores=["1"]},{id="19",type="process",description="[cpuhp/2]",user="root",cores=["2"]},{id="20",type="process",description="[watchdog/2]",user="root",cores=["2"]},{id="21",type="process",description="[migration/2]",user="root",cores=["2"]},{id="22",type="process",description="[ksoftirqd/2]",user="root",cores=["2"]},{id="24",type="process",description="[kworker/2:0H]",user="root",cores=["2"]},{id="25",type="process",description="[cpuhp/3]",user="root",cores=["3"]},{id="26",type="process",description="[watchdog/3]",user="root",cores=["3"]},{id="27",type="process",description="[migration/3]",user="root",cores=["3"]},{id="28",type="process",description="[ksoftirqd/3]",user="root",cores=["3"]},{id="30",type="process",description="[kworker/3:0H]",user="root",cores=["3"]},{id="31",type="process",description="[kdevtmpfs]",user="root",cores=["2"]},{id="32",type="process",description="[netns]",user="root",cores=["1"]},{id="33",type="process",description="[rcu_tasks_kthre]",user="root",cores=["2"]},{id="34",type="process",description="[kauditd]",user="root",cores=["2"]},{id="36",type="process",description="[khungtaskd]",user="root",cores=["2"]},{id="37",type="process",description="[oom_reaper]",user="root",cores=["2"]},{id="38",type="process",description="[writeback]",user="root",cores=["2"]},{id="39",type="process",description="[kcompactd0]",user="root",cores=["3"]},{id="40",type="process",description="[ksmd]",user="root",cores=["3"]},{id="41",type="process",description="[khugepaged]",user="root",cores=["3"]},{id="42",type="process",description="[crypto]",user="root",cores=["3"]},{id="43",type="process",description="[kintegrityd]",user="root",cores=["1"]},{id="44",type="process",description="[kblockd]",user="root",cores=["2"]},{id="45",type="process",description="[ata_sff]",user="root",cores=["0"]},{id="46",type="process",description="[md]",user="root",cores=["1"]},{id="47",type="process",description="[edac-poller]",user="root",cores=["2"]},{id="48",type="process",description="[devfreq_wq]",user="root",cores=["0"]},{id="49",type="process",description="[watchdogd]",user="root",cores=["0"]},{id="53",type="process",description="[kswapd0]",user="root",cores=["1"]},{id="56",type="process",description="[kworker/u257:0]",user="root",cores=["0"]},{id="57",type="process",description="[ecryptfs-kthrea]",user="root",cores=["2"]},{id="99",type="process",description="[kthrotld]",user="root",cores=["3"]},{id="100",type="process",description="[acpi_thermal_pm]",user="root",cores=["1"]},{id="101",type="process",description="[scsi_eh_0]",user="root",cores=["2"]},{id="102",type="process",description="[scsi_tmf_0]",user="root",cores=["2"]},{id="103",type="process",description="[scsi_eh_1]",user="root",cores=["0"]},{id="104",type="process",description="[scsi_tmf_1]",user="root",cores=["3"]},{id="110",type="process",description="[ipv6_addrconf]",user="root",cores=["0"]},{id="119",type="process",description="[kstrp]",user="root",cores=["1"]},{id="136",type="process",description="[charger_manager]",user="root",cores=["2"]},{id="191",type="process",description="[mpt_poll_0]",user="root",cores=["0"]},{id="192",type="process",description="[mpt/0]",user="root",cores=["1"]},{id="193",type="process",description="[scsi_eh_2]",user="root",cores=["3"]},{id="194",type="process",description="[scsi_tmf_2]",user="root",cores=["0"]},{id="195",type="process",description="[scsi_eh_3]",user="root",cores=["3"]},{id="196",type="process",description="[scsi_tmf_3]",user="root",cores=["3"]},{id="197",type="process",description="[scsi_eh_4]",user="root",cores=["2"]},{id="198",type="process",description="[scsi_tmf_4]",user="root",cores=["2"]},{id="199",type="process",description="[scsi_eh_5]",user="root",cores=["0"]},{id="200",type="process",description="[scsi_tmf_5]",user="root",cores=["1"]},{id="201",type="process",description="[scsi_eh_6]",user="root",cores=["0"]},{id="202",type="process",description="[scsi_tmf_6]",user="root",cores=["1"]},{id="203",type="process",description="[scsi_eh_7]",user="root",cores=["0"]},{id="204",type="process",description="[scsi_tmf_7]",user="root",cores=["2"]},{id="205",type="process",description="[scsi_eh_8]",user="root",cores=["0"]},{id="206",type="process",description="[scsi_tmf_8]",user="root",cores=["3"]},{id="207",type="process",description="[scsi_eh_9]",user="root",cores=["0"]},{id="208",type="process",description="[scsi_tmf_9]",user="root",cores=["1"]},{id="209",type="process",description="[scsi_eh_10]",user="root",cores=["0"]},{id="210",type="process",description="[scsi_tmf_10]",user="root",cores=["2"]},{id="211",type="process",description="[scsi_eh_11]",user="root",cores=["0"]},{id="212",type="process",description="[scsi_tmf_11]",user="root",cores=["3"]},{id="213",type="process",description="[scsi_eh_12]",user="root",cores=["0"]},{id="214",type="process",description="[scsi_tmf_12]",user="root",cores=["1"]},{id="215",type="process",description="[scsi_eh_13]",user="root",cores=["0"]},{id="216",type="process",description="[scsi_tmf_13]",user="root",cores=["0"]},{id="217",type="process",description="[scsi_eh_14]",user="root",cores=["0"]},{id="218",type="process",description="[scsi_tmf_14]",user="root",cores=["2"]},{id="219",type="process",description="[scsi_eh_15]",user="root",cores=["0"]},{id="220",type="process",description="[scsi_tmf_15]",user="root",cores=["3"]},{id="221",type="process",description="[scsi_eh_16]",user="root",cores=["0"]},{id="222",type="process",description="[scsi_tmf_16]",user="root",cores=["1"]},{id="223",type="process",description="[scsi_eh_17]",user="root",cores=["3"]},{id="224",type="process",description="[scsi_tmf_17]",user="root",cores=["2"]},{id="225",type="process",description="[scsi_eh_18]",user="root",cores=["0"]},{id="226",type="process",description="[scsi_tmf_18]",user="root",cores=["3"]},{id="227",type="process",description="[scsi_eh_19]",user="root",cores=["0"]},{id="228",type="process",description="[scsi_tmf_19]",user="root",cores=["1"]},{id="229",type="process",description="[scsi_eh_20]",user="root",cores=["0"]},{id="230",type="process",description="[scsi_tmf_20]",user="root",cores=["0"]},{id="231",type="process",description="[scsi_eh_21]",user="root",cores=["0"]},{id="232",type="process",description="[scsi_tmf_21]",user="root",cores=["0"]},{id="233",type="process",description="[scsi_eh_22]",user="root",cores=["0"]},{id="234",type="process",description="[scsi_tmf_22]",user="root",cores=["0"]},{id="235",type="process",description="[scsi_eh_23]",user="root",cores=["0"]},{id="236",type="process",description="[scsi_tmf_23]",user="root",cores=["0"]},{id="237",type="process",description="[scsi_eh_24]",user="root",cores=["3"]},{id="238",type="process",description="[scsi_tmf_24]",user="root",cores=["2"]},{id="239",type="process",description="[scsi_eh_25]",user="root",cores=["0"]},{id="240",type="process",description="[scsi_tmf_25]",user="root",cores=["3"]},{id="241",type="process",description="[scsi_eh_26]",user="root",cores=["0"]},{id="242",type="process",description="[scsi_tmf_26]",user="root",cores=["1"]},{id="243",type="process",description="[scsi_eh_27]",user="root",cores=["0"]},{id="244",type="process",description="[scsi_tmf_27]",user="root",cores=["2"]},{id="245",type="process",description="[scsi_eh_28]",user="root",cores=["0"]},{id="246",type="process",description="[scsi_tmf_28]",user="root",cores=["3"]},{id="247",type="process",description="[scsi_eh_29]",user="root",cores=["0"]},{id="248",type="process",description="[scsi_tmf_29]",user="root",cores=["1"]},{id="249",type="process",description="[scsi_eh_30]",user="root",cores=["0"]},{id="250",type="process",description="[scsi_tmf_30]",user="root",cores=["2"]},{id="251",type="process",description="[scsi_eh_31]",user="root",cores=["0"]},{id="252",type="process",description="[scsi_tmf_31]",user="root",cores=["3"]},{id="253",type="process",description="[scsi_eh_32]",user="root",cores=["0"]},{id="254",type="process",description="[scsi_tmf_32]",user="root",cores=["1"]},{id="274",type="process",description="[kworker/u256:24]",user="root",cores=["1"]},{id="278",type="process",description="[kworker/u256:28]",user="root",cores=["1"]},{id="282",type="process",description="[ttm_swap]",user="root",cores=["1"]},{id="283",type="process",description="[irq/16-vmwgfx]",user="root",cores=["3"]},{id="286",type="process",description="[kworker/3:1H]",user="root",cores=["3"]},{id="287",type="process",description="[kworker/1:1H]",user="root",cores=["1"]},{id="288",type="process",description="[kworker/0:1H]",user="root",cores=["0"]},{id="313",type="process",description="[kworker/2:1H]",user="root",cores=["2"]},{id="323",type="process",description="[jbd2/sda1-8]",user="root",cores=["3"]},{id="324",type="process",description="[ext4-rsv-conver]",user="root",cores=["1"]},{id="362",type="process",description="/lib/systemd/systemd-journald",user="root",cores=["3"]},{id="396",type="process",description="[kworker/3:5]",user="root",cores=["3"]},{id="411",type="process",description="/lib/systemd/systemd-udevd",user="root",cores=["2"]},{id="416",type="process",description="[rpciod]",user="root",cores=["2"]},{id="417",type="process",description="[xprtiod]",user="root",cores=["2"]},{id="446",type="process",description="/usr/sbin/rpc.idmapd",user="root",cores=["1"]},{id="494",type="process",description="/lib/systemd/systemd-timesyncd",user="systemd-timesync",cores=["0","2"]},{id="503",type="process",description="vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid",user="root",cores=["0"]},{id="506",type="process",description="/usr/bin/vmtoolsd",user="root",cores=["2","3"]},{id="884",type="process",description="/usr/sbin/ModemManager",user="root",cores=["1"]},{id="885",type="process",description="/usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation",user="messagebus",cores=["1"]},{id="890",type="process",description="/usr/sbin/NetworkManager --no-daemon",user="root",cores=["2","3"]},{id="892",type="process",description="/usr/bin/VGAuthService",user="root",cores=["0"]},{id="894",type="process",description="/usr/sbin/cron -f",user="root",cores=["0"]},{id="897",type="process",description="/usr/sbin/acpid",user="root",cores=["2"]},{id="899",type="process",description="avahi-daemon: running [osboxes-2.local]",user="avahi",cores=["3"]},{id="900",type="process",description="/lib/systemd/systemd-logind",user="root",cores=["0"]},{id="901",type="process",description="/usr/lib/accountsservice/accounts-daemon",user="root",cores=["0","2","3"]},{id="906",type="process",description="/usr/sbin/rsyslogd -n",user="syslog",cores=["3"]},{id="949",type="process",description="/usr/lib/policykit-1/polkitd --no-debug",user="root",cores=["1","2"]},{id="958",type="process",description="/usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal",user="root",cores=["0","1"]},{id="962",type="process",description="/usr/lib/colord/colord",user="colord",cores=["0","2","3"]},{id="963",type="process",description="avahi-daemon: chroot helper",user="avahi",cores=["1"]},{id="993",type="process",description="/sbin/rpcbind -f -w",user="root",cores=["0"]},{id="1002",type="process",description="/usr/sbin/sshd -D",user="root",cores=["2"]},{id="1020",type="process",description="/usr/sbin/rpc.mountd --manage-gids",user="root",cores=["1"]},{id="1053",type="process",description="[lockd]",user="root",cores=["2"]},{id="1055",type="process",description="[nfsd]",user="root",cores=["2"]},{id="1056",type="process",description="[nfsd]",user="root",cores=["3"]},{id="1057",type="process",description="[nfsd]",user="root",cores=["0"]},{id="1058",type="process",description="[nfsd]",user="root",cores=["2"]},{id="1059",type="process",description="[nfsd]",user="root",cores=["3"]},{id="1060",type="process",description="[nfsd]",user="root",cores=["0"]},{id="1061",type="process",description="[nfsd]",user="root",cores=["2"]},{id="1062",type="process",description="[nfsd]",user="root",cores=["3"]},{id="1104",type="process",description="/usr/sbin/lightdm",user="root",cores=["1","2","3"]},{id="1123",type="process",description="/usr/sbin/irqbalance --pid=/var/run/irqbalance.pid",user="root",cores=["3"]},{id="1174",type="process",description="/usr/lib/xorg/Xorg -core :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch",user="root",cores=["2","3"]},{id="1194",type="process",description="/sbin/dhclient -d -q -sf /usr/lib/NetworkManager/nm-dhcp-helper -pf /var/run/dhclient-ens33.pid -lf /var/lib/NetworkManager/dhclient-f06200e0-d2fe-372e-a05e-b446e1c0b1f4-ens33.lease -cf /var/lib/NetworkManager/dhclient-ens33.conf ens33",user="root",cores=["3"]},{id="1344",type="process",description="lightdm --session-child 12 15",user="root",cores=["0","1","2"]},{id="1349",type="process",description="/lib/systemd/systemd --user",user="osboxes",cores=["1"]},{id="1350",type="process",description="(sd-pam)",user="osboxes",cores=["0"]},{id="1353",type="process",description="/sbin/upstart --user",user="osboxes",cores=["0"]},{id="1480",type="process",description="upstart-udev-bridge --daemon --user",user="osboxes",cores=["1"]},{id="1482",type="process",description="dbus-daemon --fork --session --address=unix:abstract=/tmp/dbus-yHvDTGMUTO",user="osboxes",cores=["2"]},{id="1523",type="process",description="gnome-keyring-daemon --start --components pkcs11,secrets",user="osboxes",cores=["0","1","2"]},{id="1531",type="process",description="upstart-dbus-bridge --daemon --session --user --bus-name session",user="osboxes",cores=["2"]},{id="1534",type="process",description="upstart-file-bridge --daemon --user",user="osboxes",cores=["3"]},{id="1536",type="process",description="upstart-dbus-bridge --daemon --system --user --bus-name system",user="osboxes",cores=["1"]},{id="1550",type="process",description="gpg-agent --homedir /home/osboxes/.gnupg --use-standard-socket --daemon",user="osboxes",cores=["0"]},{id="1552",type="process",description="/usr/lib/at-spi2-core/at-spi-bus-launcher",user="osboxes",cores=["0","2","3"]},{id="1557",type="process",description="/usr/bin/dbus-daemon --config-file=/etc/at-spi2/accessibility.conf --nofork --print-address 3",user="osboxes",cores=["1"]},{id="1559",type="process",description="/usr/lib/at-spi2-core/at-spi2-registryd --use-gnome-session",user="osboxes",cores=["0","1","2"]},{id="1566",type="process",description="/usr/sbin/dnsmasq --no-resolv --keep-in-foreground --no-hosts --bind-interfaces --pid-file=/var/run/NetworkManager/dnsmasq.pid --listen-address=127.0.1.1 --cache-size=0 --conf-file=/dev/null --proxy-dnssec --enable-dbus=org.freedesktop.NetworkManager.dnsmasq --conf-dir=/etc/NetworkManager/dnsmasq.d",user="nobody",cores=["2"]},{id="1571",type="process",description="/usr/lib/gvfs/gvfsd",user="osboxes",cores=["1","2"]},{id="1606",type="process",description="/usr/lib/gvfs/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes",user="osboxes",cores=["0","1","2","3"]},{id="1751",type="process",description="/bin/sh /etc/xdg/xfce4/xinitrc -- /etc/X11/xinit/xserverrc",user="osboxes",cores=["2"]},{id="1762",type="process",description="xfce4-session",user="osboxes",cores=["2","3"]},{id="1766",type="process",description="/usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd",user="osboxes",cores=["2"]},{id="1772",type="process",description="xfwm4 --replace",user="osboxes",cores=["0"]},{id="1776",type="process",description="xfce4-panel",user="osboxes",cores=["0"]},{id="1778",type="process",description="Thunar --daemon",user="osboxes",cores=["1","3"]},{id="1780",type="process",description="xfdesktop",user="osboxes",cores=["0","1"]},{id="1782",type="process",description="xfsettingsd",user="osboxes",cores=["0","1"]},{id="1783",type="process",description="xfce4-power-manager",user="osboxes",cores=["0","3"]},{id="1787",type="process",description="/usr/bin/vmtoolsd -n vmusr --blockFd 3",user="osboxes",cores=["1","3"]},{id="1788",type="process",description="update-notifier",user="osboxes",cores=["0","1","2","3"]},{id="1789",type="process",description="light-locker",user="osboxes",cores=["0","2","3"]},{id="1797",type="process",description="/usr/lib/dconf/dconf-service",user="osboxes",cores=["1","2","3"]},{id="1800",type="process",description="/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1",user="osboxes",cores=["0","3"]},{id="1801",type="process",description="nm-applet",user="osboxes",cores=["0","1","3"]},{id="1809",type="process",description="/usr/bin/python3 /usr/bin/blueman-applet",user="osboxes",cores=["0","2","3"]},{id="1812",type="process",description="/usr/bin/python3 /usr/share/system-config-printer/applet.py",user="osboxes",cores=["0","3"]},{id="1814",type="process",description="xfce4-volumed",user="osboxes",cores=["0","3"]},{id="1822",type="process",description="/usr/lib/upower/upowerd",user="root",cores=["0","1","3"]},{id="1851",type="process",description="/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 10485798 whiskermenu Whisker Menu Show a menu to easily access installed applications",user="osboxes",cores=["1","2","3"]},{id="1853",type="process",description="/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 4 10485805 systray Notification Area Area where notification icons appear",user="osboxes",cores=["3"]},{id="1854",type="process",description="/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-1.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 5 10485806 power-manager-plugin Power Manager Plugin Display the battery levels of your devices and control the brightness of your display",user="osboxes",cores=["1","2"]},{id="1855",type="process",description="/usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libindicator-plugin.so 6 10485807 indicator Indicator Plugin Provides a panel area for Unity indicators. Indicators allow applications and system services to display their status and interact with the user.",user="osboxes",cores=["1","2"]},{id="1866",type="process",description="/usr/bin/pulseaudio --start --log-target=syslog",user="osboxes",cores=["0","2"]},{id="1868",type="process",description="/usr/lib/gvfs/gvfs-udisks2-volume-monitor",user="osboxes",cores=["0","1","3"]},{id="1869",type="process",description="/usr/lib/rtkit/rtkit-daemon",user="rtkit",cores=["0","3"]},{id="1877",type="process",description="/usr/lib/udisks2/udisksd --no-debug",user="root",cores=["1","3"]},{id="1896",type="process",description="upstart --user --startup-event indicator-services-start",user="osboxes",cores=["1"]},{id="1898",type="process",description="/usr/lib/gvfs/gvfs-mtp-volume-monitor",user="osboxes",cores=["0"]},{id="1900",type="process",description="/usr/lib/x86_64-linux-gnu/indicator-messages/indicator-messages-service",user="osboxes",cores=["0","1","3"]},{id="1901",type="process",description="/usr/lib/x86_64-linux-gnu/indicator-sound/indicator-sound-service",user="osboxes",cores=["0","1","2"]},{id="1903",type="process",description="/usr/lib/x86_64-linux-gnu/indicator-application/indicator-application-service",user="osboxes",cores=["0","1","3"]},{id="1910",type="process",description="/usr/lib/gvfs/gvfs-gphoto2-volume-monitor",user="osboxes",cores=["1","3"]},{id="1923",type="process",description="/usr/lib/gvfs/gvfs-afc-volume-monitor",user="osboxes",cores=["0","3"]},{id="1932",type="process",description="/usr/lib/gvfs/gvfs-goa-volume-monitor",user="osboxes",cores=["1","2"]},{id="1942",type="process",description="/usr/lib/gvfs/gvfsd-trash --spawner :1.7 /org/gtk/gvfs/exec_spaw/0",user="osboxes",cores=["0","3"]},{id="1948",type="process",description="/usr/lib/gvfs/gvfsd-metadata",user="osboxes",cores=["2","3"]},{id="1961",type="process",description="dhcpd -user dhcpd -group dhcpd -f -4 -pf /run/dhcp-server/dhcpd.pid -cf /etc/dhcp/dhcpd.conf",user="dhcpd",cores=["3"]},{id="1964",type="process",description="/usr/bin/whoopsie -f",user="whoopsie",cores=["0","1","3"]},{id="1980",type="process",description="/sbin/agetty --noclear tty1 linux",user="root",cores=["0"]},{id="2047",type="process",description="/usr/sbin/xinetd -pidfile /run/xinetd.pid -stayalive -inetd_compat -inetd_ipv6",user="root",cores=["1"]},{id="2279",type="process",description="/usr/sbin/exim4 -bd -q30m",user="Debian-exim",cores=["3"]},{id="2380",type="process",description="/usr/lib/bluetooth/obexd",user="osboxes",cores=["3"]},{id="2415",type="process",description="/usr/bin/vmhgfs-fuse .host:/ /mnt/hgfs -o subtype=vmhgfs-fuse,allow_other",user="root",cores=["0","1","2","3"]},{id="2484",type="process",description="/usr/lib/gvfs/gvfsd-network --spawner :1.7 /org/gtk/gvfs/exec_spaw/1",user="osboxes",cores=["0","2","3"]},{id="2502",type="process",description="/usr/lib/gvfs/gvfsd-dnssd --spawner :1.7 /org/gtk/gvfs/exec_spaw/3",user="osboxes",cores=["2","3"]},{id="2857",type="process",description="/usr/sbin/cupsd -l",user="root",cores=["0"]},{id="2858",type="process",description="/usr/sbin/cups-browsed",user="root",cores=["1","3"]},{id="3195",type="process",description="[kworker/1:0]",user="root",cores=["1"]},{id="3214",type="process",description="/opt/share/umake/ide/eclipse-cpp/eclipse",user="osboxes",cores=["2"]},{id="3231",type="process",description="/usr/bin/java -Dosgi.requiredJavaVersion=1.8 -Dosgi.instance.area.default=@user.home/eclipse-workspace -XX:+UseG1GC -XX:+UseStringDeduplication -Dosgi.requiredJavaVersion=1.8 -Xms256m -Xmx1024m -jar /opt/share/umake/ide/eclipse-cpp//plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar -os linux -ws gtk -arch x86_64 -showsplash /opt/share/umake/ide/eclipse-cpp//plugins/org.eclipse.epp.package.common_4.7.1.20171005-1200/splash.bmp -launcher /opt/share/umake/ide/eclipse-cpp/eclipse -name Eclipse --launcher.library /opt/share/umake/ide/eclipse-cpp//plugins/org.eclipse.equinox.launcher.gtk.linux.x86_64_1.1.550.v20170928-1359/eclipse_1629.so -startup /opt/share/umake/ide/eclipse-cpp//plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar --launcher.appendVmargs -exitdata 1d8009 -product org.eclipse.epp.package.cpp.product -vm /usr/bin/java -vmargs -Dosgi.requiredJavaVersion=1.8 -Dosgi.instance.area.default=@user.home/eclipse-workspace -XX:+UseG1GC -XX:+UseStringDeduplication -Dosgi.requiredJavaVersion=1.8 -Xms256m -Xmx1024m -jar /opt/share/umake/ide/eclipse-cpp//plugins/org.eclipse.equinox.launcher_1.4.0.v20161219-1356.jar",user="osboxes",cores=["0","1","2","3"]},{id="3465",type="process",description="[kworker/3:1]",user="root",cores=["3"]},{id="3475",type="process",description="[kworker/1:1]",user="root",cores=["1"]},{id="3691",type="process",description="[kworker/0:1]",user="root",cores=["0"]},{id="3909",type="process",description="[kworker/2:2]",user="root",cores=["2"]},{id="3958",type="process",description="[kworker/0:0]",user="root",cores=["0"]},{id="3960",type="process",description="[kworker/2:1]",user="root",cores=["2"]},{id="4063",type="process",description="[kworker/u256:0]",user="root",cores=["2"]},{id="4184",type="process",description="gdb --interpreter mi2 --nx",user="osboxes",cores=["3"]},{id="4193",type="process",description="/mnt/hgfs/VMsfU/eclipse-workspace-2021-06/Ensc351Part1-1217/Debug/Ensc351Part1-1217",user="osboxes",cores=["1"]}]
+(gdb) 
+33^done,groups=[{id="i1",type="process",pid="4193",executable="/mnt/hgfs/VMsfU/eclipse-workspace-2021-06/Ensc351Part1-1217/Debug/Ensc351Part1-1217",cores=["1"]}]
+(gdb) 
+34^done,locals=[{name="oFileName",value="0x7ffff7dd39a0 <std::wcerr> \"\\350\\351\\334\\367\\377\\177\""},{name="mode",value="4158470560"},{name="mediumD",value="32767"},{name="iFileNamesA",value="std::vector of length -377201, capacity -17592168982344 = {0x7ffff7dce9e8 <vtable for std::basic_ostream<wchar_t, std::char_traits<wchar_t> >+24> \"\", 0x7ffff7dcea10 <vtable for std::basic_ostream<wchar_t, std::char_traits<wchar_t> >+64> \"0,\\266\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x1002 <error: Cannot access memory at address 0x1002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8 <error: Cannot access memory at address 0x8>, 0x7ffff7dd3b08 <std::wcout+72> \"\", 0x7ffff7dd57a0 <(anonymous namespace)::c_locale_impl> \"\\020\", 0x0, 0x0, 0x7ffff7dd3400 <__gnu_internal::buf_wcout_sync> \"\", 0x7ffff7dd4b20 <(anonymous namespace)::ctype_w> \"0\\251\\334\\367\\377\\177\", 0x7ffff7dd4ab0 <(anonymous namespace)::num_put_w> \"\\260\\370\\334\\367\\377\\177\", 0x7ffff7dd4ac0 <(anonymous namespace)::num_get_w> \"8\\370\\334\\367\\377\\177\", 0x0, 0x0, 0x7ffff7dcdf48 <vtable for std::basic_istream<wchar_t, std::char_traits<wchar_t> >+24> \"0\\263\\264\\367\\377\\177\", 0x0, 0x7ffff7dcdf70 <vtable for std::basic_istream<wchar_t, std::char_traits<wchar_t> >+64> \"`\\263\\264\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x1002 <error: Cannot access memory at address 0x1002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8 <error: Cannot access memory at address 0x8>, 0x7ffff7dd3c30 <std::wcin+80> \"\", 0x7ffff7dd57a0 <(anonymous namespace)::c_locale_impl> \"\\020\", 0x7ffff7dd3ac0 <std::wcout> \"\\350\\351\\334\\367\\377\\177\", 0x0, 0x7ffff7dd33a0 <__gnu_internal::buf_wcin_sync> \"\", 0x7ffff7dd4b20 <(anonymous namespace)::ctype_w> \"0\\251\\334\\367\\377\\177\", 0x7ffff7dd4ab0 <(anonymous namespace)::num_put_w> \"\\260\\370\\334\\367\\377\\177\", 0x7ffff7dd4ac0 <(anonymous namespace)::num_get_w> \"8\\370\\334\\367\\377\\177\", 0x0, 0x7ffff7dce988 <vtable for std::ostream+24> \"p+\\266\\367\\377\\177\", 0x7ffff7dce9b0 <vtable for std::ostream+64> \"\\240+\\266\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x1002 <error: Cannot access memory at address 0x1002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8 <error: Cannot access memory at address 0x8>, 0x7ffff7dd3d48 <std::clog+72> \"\", 0x7ffff7dd57a0 <(anonymous namespace)::c_locale_impl> \"\\020\", 0x0, 0x0, 0x7ffff7dd3760 <__gnu_internal::buf_cerr_sync> \"\\200\\320\\334\\367\\377\\177\", 0x7ffff7dd51c0 <(anonymous namespace)::ctype_c> \"\320\250\\334\\367\\377\\177\", 0x7ffff7dd5150 <(anonymous namespace)::num_put_c> \"\\360\\343\\334\\367\\377\\177\", 0x7ffff7dd5160 <(anonymous namespace)::num_get_c> \"x\\343\\334\\367\\377\\177\", 0x0, 0x0, 0x7ffff7dce988 <vtable for std::ostream+24> \"p+\\266\\367\\377\\177\", 0x7ffff7dce9b0 <vtable for std::ostream+64> \"\\240+\\266\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x3002 <error: Cannot access memory at address 0x3002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8 <error: Cannot access memory at address 0x8>, 0x7ffff7dd3e68 <std::cerr+72> \"\", 0x7ffff7dd57a0 <(anonymous namespace)::c_locale_impl> \"\\020\", 0x605100 <std::cout@@GLIBCXX_3.4> \"\\210\\351\\334\\367\\377\\177\", 0x0, 0x7ffff7dd3760 <__gnu_internal::buf_cerr_sync> \"\\200\\320\\334\\367\\377\\177\", 0x7ffff7dd51c0 <(anonymous namespace)::ctype_c> \"\320\250\\334\\367\\377\\177\", 0x7ffff7dd5150 <(anonymous namespace)::num_put_c> \"\\360\\343\\334\\367\\377\\177\", 0x7ffff7dd5160 <(anonymous namespace)::num_get_c> \"x\\343\\334\\367\\377\\177\", 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x7ffff7dcdee8 <vtable for std::istream+24> \"\\240\\262\\264\\367\\377\\177\", 0x0, 0x7ffff7dcdf10 <vtable for std::istream+64> \"\320\262\\264\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x1002 <error: Cannot access memory at address 0x1002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0...}"},{name="iFileNamesB",value="std::vector of length 17592166994997, capacity -789021 = {0x0, 0x0, 0x7ffff7dce988 <vtable for std::ostream+24> \"p+\\266\\367\\377\\177\", 0x7ffff7dce9b0 <vtable for std::ostream+64> \"\\240+\\266\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x1002 <error: Cannot access memory at address 0x1002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8 <error: Cannot access memory at address 0x8>, 0x605148 <std::cout@@GLIBCXX_3.4+72> \"\", 0x7ffff7dd57a0 <(anonymous namespace)::c_locale_impl> \"\\020\", 0x0, 0x0, 0x7ffff7dd3820 <__gnu_internal::buf_cout_sync> \"\\200\\320\\334\\367\\377\\177\", 0x7ffff7dd51c0 <(anonymous namespace)::ctype_c> \"\320\250\\334\\367\\377\\177\", 0x7ffff7dd5150 <(anonymous namespace)::num_put_c> \"\\360\\343\\334\\367\\377\\177\", 0x7ffff7dd5160 <(anonymous namespace)::num_get_c> \"x\\343\\334\\367\\377\\177\", 0x7ffff783a620 <_IO_2_1_stdout_> \"\\204 \\255\", <incomplete sequence \\373>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0...}"}]
+(gdb) 
+35^done,name="var1",numchild="1",value="0x7ffff7dd39a0 <std::wcerr> \"\\350\\351\\334\\367\\377\\177\"",type="const char *",thread-id="1",has_more="0"
+(gdb) 
+36^done,name="var2",numchild="0",value="4158470560",type="mode_t",thread-id="1",has_more="0"
+(gdb) 
+37^done,name="var3",numchild="0",value="32767",type="int",thread-id="1",has_more="0"
+(gdb) 
+38^done,name="var4",numchild="0",value="{...}",type="std::vector<char const*, std::allocator<char const*> >",thread-id="1",displayhint="array",dynamic="1",has_more="1"
+(gdb) 
+39^done,name="var5",numchild="0",value="{...}",type="std::vector<char const*, std::allocator<char const*> >",thread-id="1",displayhint="array",dynamic="1",has_more="1"
+(gdb) 
+40^done,numchild="1",displayhint="array",children=[child={name="var4.[0]",exp="[0]",numchild="1",type="const char *",thread-id="1"}],has_more="1"
+(gdb) 
+41^done,numchild="1",displayhint="array",children=[child={name="var5.[0]",exp="[0]",numchild="1",type="const char *",thread-id="1"}],has_more="1"
+(gdb) 
+42^done
+(gdb) 
+43^done
+(gdb) 
+44^error,msg="Attempt to use a type name as an expression"
+(gdb) 
+45^error,msg="No symbol \"statBlk\" in current context."
+(gdb) 
+46^error,msg="No symbol \"iFileNames\" in current context."
+(gdb) 
+47^error,msg="A syntax error in expression, near `'."
+(gdb) 
+48^error,msg="No symbol \"fileName\" in current context."
+(gdb) 
+49^error,msg="No symbol \"vector<const char*>\" in current context."
+(gdb) 
+50^done,value="{void (std::vector<char const*, std::allocator<char const*> >, int)} 0x400f76 <testSenderY(std::vector<char const*, std::allocator<char const*> >, int)>"
+(gdb) 
+51^done,name="var6",numchild="0",value="{void (std::vector<char const*, std::allocator<char const*> >, int)} 0x400f76 <testSenderY(std::vector<char const*, std::allocator<char const*> >, int)>",type="void (std::vector<char const*, std::allocator<char const*> >, int)",has_more="0"
+(gdb) 
+52^done,format="octal",value="<error reading variable>"
+(gdb) 
+53^done,format="natural",value="{void (std::vector<char const*, std::allocator<char const*> >, int)} 0x400f76 <testSenderY(std::vector<char const*, std::allocator<char const*> >, int)>"
+(gdb) 
+54^done,format="decimal",value="<error reading variable>"
+(gdb) 
+55^done,format="natural",value="{void (std::vector<char const*, std::allocator<char const*> >, int)} 0x400f76 <testSenderY(std::vector<char const*, std::allocator<char const*> >, int)>"
+(gdb) 
+56^done,format="binary",value="<error reading variable>"
+(gdb) 
+57^done,format="natural",value="{void (std::vector<char const*, std::allocator<char const*> >, int)} 0x400f76 <testSenderY(std::vector<char const*, std::allocator<char const*> >, int)>"
+(gdb) 
+58^done,format="hexadecimal",value="<error reading variable>"
+(gdb) 
+59^done,format="natural",value="{void (std::vector<char const*, std::allocator<char const*> >, int)} 0x400f76 <testSenderY(std::vector<char const*, std::allocator<char const*> >, int)>"
+(gdb) 
+60^error,msg="No symbol \"fileNames\" in current context."
+(gdb) 
+61^done,value="\"test sending with CRC\""
+(gdb) 
+62^done,name="var7",numchild="22",value="[22]",type="char [22]",has_more="0"
+(gdb) 
+63^done,name="var8",numchild="1",value="0x617c20",type="char (*)[22]",has_more="0"
+(gdb) 
+64^done,name="var9",numchild="0",value="116 't'",type="char",has_more="0"
+(gdb) 
+65^done,name="var10",numchild="0",value="101 'e'",type="char",has_more="0"
+(gdb) 
+66^done,name="var11",numchild="0",value="115 's'",type="char",has_more="0"
+(gdb) 
+67^done,name="var12",numchild="0",value="116 't'",type="char",has_more="0"
+(gdb) 
+68^done,name="var13",numchild="0",value="32 ' '",type="char",has_more="0"
+(gdb) 
+69^done,format="octal",value="030276040"
+(gdb) 
+70^done,format="natural",value="0x617c20"
+(gdb) 
+71^done,format="decimal",value="6388768"
+(gdb) 
+72^done,format="natural",value="0x617c20"
+(gdb) 
+73^done,format="binary",value="11000010111110000100000"
+(gdb) 
+74^done,format="natural",value="0x617c20"
+(gdb) 
+75^done,format="hexadecimal",value="0x617c20"
+(gdb) 
+76^done,format="natural",value="0x617c20"
+(gdb) 
+77^done,value="std::vector of length -377201, capacity -17592168982344 = {0x7ffff7dce9e8 <vtable for std::basic_ostream<wchar_t, std::char_traits<wchar_t> >+24> \"\", 0x7ffff7dcea10 <vtable for std::basic_ostream<wchar_t, std::char_traits<wchar_t> >+64> \"0,\\266\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x1002 <error: Cannot access memory at address 0x1002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8 <error: Cannot access memory at address 0x8>, 0x7ffff7dd3b08 <std::wcout+72> \"\", 0x7ffff7dd57a0 <(anonymous namespace)::c_locale_impl> \"\\020\", 0x0, 0x0, 0x7ffff7dd3400 <__gnu_internal::buf_wcout_sync> \"\", 0x7ffff7dd4b20 <(anonymous namespace)::ctype_w> \"0\\251\\334\\367\\377\\177\", 0x7ffff7dd4ab0 <(anonymous namespace)::num_put_w> \"\\260\\370\\334\\367\\377\\177\", 0x7ffff7dd4ac0 <(anonymous namespace)::num_get_w> \"8\\370\\334\\367\\377\\177\", 0x0, 0x0, 0x7ffff7dcdf48 <vtable for std::basic_istream<wchar_t, std::char_traits<wchar_t> >+24> \"0\\263\\264\\367\\377\\177\", 0x0, 0x7ffff7dcdf70 <vtable for std::basic_istream<wchar_t, std::char_traits<wchar_t> >+64> \"`\\263\\264\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x1002 <error: Cannot access memory at address 0x1002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8 <error: Cannot access memory at address 0x8>, 0x7ffff7dd3c30 <std::wcin+80> \"\", 0x7ffff7dd57a0 <(anonymous namespace)::c_locale_impl> \"\\020\", 0x7ffff7dd3ac0 <std::wcout> \"\\350\\351\\334\\367\\377\\177\", 0x0, 0x7ffff7dd33a0 <__gnu_internal::buf_wcin_sync> \"\", 0x7ffff7dd4b20 <(anonymous namespace)::ctype_w> \"0\\251\\334\\367\\377\\177\", 0x7ffff7dd4ab0 <(anonymous namespace)::num_put_w> \"\\260\\370\\334\\367\\377\\177\", 0x7ffff7dd4ac0 <(anonymous namespace)::num_get_w> \"8\\370\\334\\367\\377\\177\", 0x0, 0x7ffff7dce988 <vtable for std::ostream+24> \"p+\\266\\367\\377\\177\", 0x7ffff7dce9b0 <vtable for std::ostream+64> \"\\240+\\266\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x1002 <error: Cannot access memory at address 0x1002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8 <error: Cannot access memory at address 0x8>, 0x7ffff7dd3d48 <std::clog+72> \"\", 0x7ffff7dd57a0 <(anonymous namespace)::c_locale_impl> \"\\020\", 0x0, 0x0, 0x7ffff7dd3760 <__gnu_internal::buf_cerr_sync> \"\\200\\320\\334\\367\\377\\177\", 0x7ffff7dd51c0 <(anonymous namespace)::ctype_c> \"\320\250\\334\\367\\377\\177\", 0x7ffff7dd5150 <(anonymous namespace)::num_put_c> \"\\360\\343\\334\\367\\377\\177\", 0x7ffff7dd5160 <(anonymous namespace)::num_get_c> \"x\\343\\334\\367\\377\\177\", 0x0, 0x0, 0x7ffff7dce988 <vtable for std::ostream+24> \"p+\\266\\367\\377\\177\", 0x7ffff7dce9b0 <vtable for std::ostream+64> \"\\240+\\266\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x3002 <error: Cannot access memory at address 0x3002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8 <error: Cannot access memory at address 0x8>, 0x7ffff7dd3e68 <std::cerr+72> \"\", 0x7ffff7dd57a0 <(anonymous namespace)::c_locale_impl> \"\\020\", 0x605100 <std::cout@@GLIBCXX_3.4> \"\\210\\351\\334\\367\\377\\177\", 0x0, 0x7ffff7dd3760 <__gnu_internal::buf_cerr_sync> \"\\200\\320\\334\\367\\377\\177\", 0x7ffff7dd51c0 <(anonymous namespace)::ctype_c> \"\320\250\\334\\367\\377\\177\", 0x7ffff7dd5150 <(anonymous namespace)::num_put_c> \"\\360\\343\\334\\367\\377\\177\", 0x7ffff7dd5160 <(anonymous namespace)::num_get_c> \"x\\343\\334\\367\\377\\177\", 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x7ffff7dcdee8 <vtable for std::istream+24> \"\\240\\262\\264\\367\\377\\177\", 0x0, 0x7ffff7dcdf10 <vtable for std::istream+64> \"\320\262\\264\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x1002 <error: Cannot access memory at address 0x1002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0...}"
+(gdb) 
+78^done,numchild="100",displayhint="array",children=[child={name="var4.[1]",exp="[1]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[2]",exp="[2]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[3]",exp="[3]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[4]",exp="[4]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[5]",exp="[5]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[6]",exp="[6]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[7]",exp="[7]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[8]",exp="[8]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[9]",exp="[9]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[10]",exp="[10]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[11]",exp="[11]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[12]",exp="[12]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[13]",exp="[13]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[14]",exp="[14]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[15]",exp="[15]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[16]",exp="[16]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[17]",exp="[17]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[18]",exp="[18]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[19]",exp="[19]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[20]",exp="[20]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[21]",exp="[21]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[22]",exp="[22]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[23]",exp="[23]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[24]",exp="[24]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[25]",exp="[25]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[26]",exp="[26]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[27]",exp="[27]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[28]",exp="[28]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[29]",exp="[29]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[30]",exp="[30]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[31]",exp="[31]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[32]",exp="[32]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[33]",exp="[33]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[34]",exp="[34]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[35]",exp="[35]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[36]",exp="[36]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[37]",exp="[37]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[38]",exp="[38]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[39]",exp="[39]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[40]",exp="[40]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[41]",exp="[41]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[42]",exp="[42]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[43]",exp="[43]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[44]",exp="[44]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[45]",exp="[45]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[46]",exp="[46]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[47]",exp="[47]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[48]",exp="[48]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[49]",exp="[49]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[50]",exp="[50]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[51]",exp="[51]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[52]",exp="[52]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[53]",exp="[53]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[54]",exp="[54]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[55]",exp="[55]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[56]",exp="[56]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[57]",exp="[57]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[58]",exp="[58]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[59]",exp="[59]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[60]",exp="[60]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[61]",exp="[61]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[62]",exp="[62]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[63]",exp="[63]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[64]",exp="[64]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[65]",exp="[65]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[66]",exp="[66]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[67]",exp="[67]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[68]",exp="[68]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[69]",exp="[69]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[70]",exp="[70]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[71]",exp="[71]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[72]",exp="[72]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[73]",exp="[73]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[74]",exp="[74]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[75]",exp="[75]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[76]",exp="[76]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[77]",exp="[77]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[78]",exp="[78]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[79]",exp="[79]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[80]",exp="[80]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[81]",exp="[81]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[82]",exp="[82]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[83]",exp="[83]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[84]",exp="[84]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[85]",exp="[85]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[86]",exp="[86]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[87]",exp="[87]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[88]",exp="[88]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[89]",exp="[89]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[90]",exp="[90]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[91]",exp="[91]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[92]",exp="[92]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[93]",exp="[93]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[94]",exp="[94]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[95]",exp="[95]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[96]",exp="[96]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[97]",exp="[97]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[98]",exp="[98]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[99]",exp="[99]",numchild="1",type="const char *",thread-id="1"},child={name="var4.[100]",exp="[100]",numchild="1",type="const char *",thread-id="1"}],has_more="1"
+(gdb) 
+79^done
+(gdb) 
+80^done,value="0x7ffff7dce9e8 <vtable for std::basic_ostream<wchar_t, std::char_traits<wchar_t> >+24> \"\""
+(gdb) 
+81^done,value="0x7ffff7dcea10 <vtable for std::basic_ostream<wchar_t, std::char_traits<wchar_t> >+64> \"0,\\266\\367\\377\\177\""
+(gdb) 
+82^done,value="0x6 <error: Cannot access memory at address 0x6>"
+(gdb) 
+83^done,value="0x0"
+(gdb) 
+84^done,value="0x1002 <error: Cannot access memory at address 0x1002>"
+(gdb) 
+85^done,format="octal",value="{...}"
+(gdb) 
+86^done,format="natural",value="{...}"
+(gdb) 
+87^done,format="decimal",value="{...}"
+(gdb) 
+88^done,format="natural",value="{...}"
+(gdb) 
+89^done,format="binary",value="{...}"
+(gdb) 
+90^done,format="natural",value="{...}"
+(gdb) 
+91^done,format="hexadecimal",value="{...}"
+(gdb) 
+92^done,format="natural",value="{...}"
+(gdb) 
+93^done,value="std::vector of length 17592166994997, capacity -789021 = {0x0, 0x0, 0x7ffff7dce988 <vtable for std::ostream+24> \"p+\\266\\367\\377\\177\", 0x7ffff7dce9b0 <vtable for std::ostream+64> \"\\240+\\266\\367\\377\\177\", 0x6 <error: Cannot access memory at address 0x6>, 0x0, 0x1002 <error: Cannot access memory at address 0x1002>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x8 <error: Cannot access memory at address 0x8>, 0x605148 <std::cout@@GLIBCXX_3.4+72> \"\", 0x7ffff7dd57a0 <(anonymous namespace)::c_locale_impl> \"\\020\", 0x0, 0x0, 0x7ffff7dd3820 <__gnu_internal::buf_cout_sync> \"\\200\\320\\334\\367\\377\\177\", 0x7ffff7dd51c0 <(anonymous namespace)::ctype_c> \"\320\250\\334\\367\\377\\177\", 0x7ffff7dd5150 <(anonymous namespace)::num_put_c> \"\\360\\343\\334\\367\\377\\177\", 0x7ffff7dd5160 <(anonymous namespace)::num_get_c> \"x\\343\\334\\367\\377\\177\", 0x7ffff783a620 <_IO_2_1_stdout_> \"\\204 \\255\", <incomplete sequence \\373>, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0...}"
+(gdb) 
+94^done,numchild="100",displayhint="array",children=[child={name="var5.[1]",exp="[1]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[2]",exp="[2]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[3]",exp="[3]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[4]",exp="[4]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[5]",exp="[5]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[6]",exp="[6]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[7]",exp="[7]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[8]",exp="[8]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[9]",exp="[9]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[10]",exp="[10]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[11]",exp="[11]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[12]",exp="[12]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[13]",exp="[13]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[14]",exp="[14]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[15]",exp="[15]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[16]",exp="[16]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[17]",exp="[17]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[18]",exp="[18]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[19]",exp="[19]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[20]",exp="[20]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[21]",exp="[21]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[22]",exp="[22]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[23]",exp="[23]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[24]",exp="[24]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[25]",exp="[25]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[26]",exp="[26]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[27]",exp="[27]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[28]",exp="[28]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[29]",exp="[29]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[30]",exp="[30]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[31]",exp="[31]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[32]",exp="[32]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[33]",exp="[33]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[34]",exp="[34]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[35]",exp="[35]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[36]",exp="[36]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[37]",exp="[37]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[38]",exp="[38]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[39]",exp="[39]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[40]",exp="[40]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[41]",exp="[41]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[42]",exp="[42]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[43]",exp="[43]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[44]",exp="[44]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[45]",exp="[45]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[46]",exp="[46]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[47]",exp="[47]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[48]",exp="[48]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[49]",exp="[49]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[50]",exp="[50]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[51]",exp="[51]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[52]",exp="[52]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[53]",exp="[53]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[54]",exp="[54]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[55]",exp="[55]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[56]",exp="[56]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[57]",exp="[57]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[58]",exp="[58]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[59]",exp="[59]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[60]",exp="[60]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[61]",exp="[61]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[62]",exp="[62]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[63]",exp="[63]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[64]",exp="[64]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[65]",exp="[65]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[66]",exp="[66]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[67]",exp="[67]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[68]",exp="[68]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[69]",exp="[69]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[70]",exp="[70]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[71]",exp="[71]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[72]",exp="[72]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[73]",exp="[73]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[74]",exp="[74]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[75]",exp="[75]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[76]",exp="[76]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[77]",exp="[77]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[78]",exp="[78]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[79]",exp="[79]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[80]",exp="[80]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[81]",exp="[81]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[82]",exp="[82]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[83]",exp="[83]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[84]",exp="[84]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[85]",exp="[85]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[86]",exp="[86]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[87]",exp="[87]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[88]",exp="[88]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[89]",exp="[89]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[90]",exp="[90]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[91]",exp="[91]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[92]",exp="[92]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[93]",exp="[93]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[94]",exp="[94]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[95]",exp="[95]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[96]",exp="[96]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[97]",exp="[97]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[98]",exp="[98]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[99]",exp="[99]",numchild="1",type="const char *",thread-id="1"},child={name="var5.[100]",exp="[100]",numchild="1",type="const char *",thread-id="1"}],has_more="1"
+(gdb) 
+95^done
+(gdb) 
+96^done,value="0x0"
+(gdb) 
+97^error,msg="No symbol \"ySender\" in current context."
+(gdb) 
+98^done,value="32767"
+(gdb) 
+99^done,format="octal",value="077777"
+(gdb) 
+100^done,format="natural",value="32767"
+(gdb) 
+101^done,format="decimal",value="32767"
+(gdb) 
+102^done,format="natural",value="32767"
+(gdb) 
+103^done,format="binary",value="111111111111111"
+(gdb) 
+104^done,format="natural",value="32767"
+(gdb) 
+105^done,format="hexadecimal",value="0x7fff"
+(gdb) 
+106^done,format="natural",value="32767"
+(gdb) 
+107^error,msg="No symbol \"ySender\" in current context."
+(gdb) 
+108^error,msg="No symbol \"x\" in current context."
+(gdb) 
+109^done,value="\"myRead(transferringFileD, &blkBuf[0], CHUNK_SZ )\""
+(gdb) 
+110^done,name="var14",numchild="49",value="[49]",type="char [49]",has_more="0"
+(gdb) 
+111^done,name="var15",numchild="1",value="0x617c40",type="char (*)[49]",has_more="0"
+(gdb) 
+112^done,name="var16",numchild="0",value="109 'm'",type="char",has_more="0"
+(gdb) 
+113^done,name="var17",numchild="0",value="121 'y'",type="char",has_more="0"
+(gdb) 
+114^done,name="var18",numchild="0",value="82 'R'",type="char",has_more="0"
+(gdb) 
+115^done,name="var19",numchild="0",value="101 'e'",type="char",has_more="0"
+(gdb) 
+116^done,name="var20",numchild="0",value="97 'a'",type="char",has_more="0"
+(gdb) 
+117^done,format="octal",value="030276100"
+(gdb) 
+118^done,format="natural",value="0x617c40"
+(gdb) 
+119^done,format="decimal",value="6388800"
+(gdb) 
+120^done,format="natural",value="0x617c40"
+(gdb) 
+121^done,format="binary",value="11000010111110001000000"
+(gdb) 
+122^done,format="natural",value="0x617c40"
+(gdb) 
+123^done,format="hexadecimal",value="0x617c40"
+(gdb) 
+124^done,format="natural",value="0x617c40"
+(gdb) 
+125^done,value="{ssize_t (int, void *, size_t)} 0x402909 <myRead(int, void*, unsigned long)>"
+(gdb) 
+126^done,name="var21",numchild="0",value="{ssize_t (int, void *, size_t)} 0x402909 <myRead(int, void*, unsigned long)>",type="ssize_t (int, void *, size_t)",has_more="0"
+(gdb) 
+127^done,format="octal",value="<error reading variable>"
+(gdb) 
+128^done,format="natural",value="{ssize_t (int, void *, size_t)} 0x402909 <myRead(int, void*, unsigned long)>"
+(gdb) 
+129^done,format="decimal",value="<error reading variable>"
+(gdb) 
+130^done,format="natural",value="{ssize_t (int, void *, size_t)} 0x402909 <myRead(int, void*, unsigned long)>"
+(gdb) 
+131^done,format="binary",value="<error reading variable>"
+(gdb) 
+132^done,format="natural",value="{ssize_t (int, void *, size_t)} 0x402909 <myRead(int, void*, unsigned long)>"
+(gdb) 
+133^done,format="hexadecimal",value="<error reading variable>"
+(gdb) 
+134^done,format="natural",value="{ssize_t (int, void *, size_t)} 0x402909 <myRead(int, void*, unsigned long)>"
+(gdb) 
+135^done,value="{ssize_t (int, const void *, size_t)} 0x402937 <myWrite(int, void const*, unsigned long)>"
+(gdb) 
+136^done,name="var22",numchild="0",value="{ssize_t (int, const void *, size_t)} 0x402937 <myWrite(int, void const*, unsigned long)>",type="ssize_t (int, const void *, size_t)",has_more="0"
+(gdb) 
+137^done,format="octal",value="<error reading variable>"
+(gdb) 
+138^done,format="natural",value="{ssize_t (int, const void *, size_t)} 0x402937 <myWrite(int, void const*, unsigned long)>"
+(gdb) 
+139^done,format="decimal",value="<error reading variable>"
+(gdb) 
+140^done,format="natural",value="{ssize_t (int, const void *, size_t)} 0x402937 <myWrite(int, void const*, unsigned long)>"
+(gdb) 
+141^done,format="binary",value="<error reading variable>"
+(gdb) 
+142^done,format="natural",value="{ssize_t (int, const void *, size_t)} 0x402937 <myWrite(int, void const*, unsigned long)>"
+(gdb) 
+143^done,format="hexadecimal",value="<error reading variable>"
+(gdb) 
+144^done,format="natural",value="{ssize_t (int, const void *, size_t)} 0x402937 <myWrite(int, void const*, unsigned long)>"
+(gdb) 
+145^done,value="{<text variable, no debug info>} 0x7ffff756c2b0 <write>"
+(gdb) 
+146^done,name="var23",numchild="0",value="{<text variable, no debug info>} 0x7ffff756c2b0 <write>",type="<text variable, no debug info>",has_more="0"
+(gdb) 
+147^done,format="octal",value="<error reading variable>"
+(gdb) 
+148^done,format="natural",value="{<text variable, no debug info>} 0x7ffff756c2b0 <write>"
+(gdb) 
+149^done,format="decimal",value="<error reading variable>"
+(gdb) 
+150^done,format="natural",value="{<text variable, no debug info>} 0x7ffff756c2b0 <write>"
+(gdb) 
+151^done,format="binary",value="<error reading variable>"
+(gdb) 
+152^done,format="natural",value="{<text variable, no debug info>} 0x7ffff756c2b0 <write>"
+(gdb) 
+153^done,format="hexadecimal",value="<error reading variable>"
+(gdb) 
+154^done,format="natural",value="{<text variable, no debug info>} 0x7ffff756c2b0 <write>"
+(gdb) 
+155^error,msg="No symbol \"blkBuf\" in current context."
+(gdb) 
+156^error,msg="No symbol \"bytesRd\" in current context."
+(gdb) 
+157^error,msg="Invalid character '\\' in expression."
+(gdb) 
+158^error,msg="No symbol \"sendByte\" in current context."
+(gdb) 
+159^done,value="0x0"
+(gdb) 
+160^done,value="0x7ffff7dce988 <vtable for std::ostream+24> \"p+\\266\\367\\377\\177\""
+(gdb) 
+161^done,value="0x7ffff7dce9b0 <vtable for std::ostream+64> \"\\240+\\266\\367\\377\\177\""
+(gdb) 
+162^done,value="0x6 <error: Cannot access memory at address 0x6>"
+(gdb) 
+163^done,value="0x0"
+(gdb) 
+164^done,value="0x1002 <error: Cannot access memory at address 0x1002>"
+(gdb) 
+165^done,format="octal",value="{...}"
+(gdb) 
+166^done,format="natural",value="{...}"
+(gdb) 
+167^done,format="decimal",value="{...}"
+(gdb) 
+168^done,format="natural",value="{...}"
+(gdb) 
+169^done,format="binary",value="{...}"
+(gdb) 
+170^done,format="natural",value="{...}"
+(gdb) 
+171^done,format="hexadecimal",value="{...}"
+(gdb) 
+172^done,format="natural",value="{...}"
+(gdb) 
+173^error,msg="No symbol \"bl\" in current context."
+(gdb) 
+174^error,msg="No symbol \"blkNum\" in current context."
+(gdb) 
+175^exit
+=thread-exited,id="1",group-id="i1"
+=thread-group-exited,id="i1"

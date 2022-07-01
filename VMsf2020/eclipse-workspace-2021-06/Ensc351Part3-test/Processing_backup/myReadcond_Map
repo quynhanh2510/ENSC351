@@ -1,0 +1,39 @@
+int myReadcond( int des, void * buf, int n, int min, int time, int timeout )
+{
+    int bytesRead = 0;
+    int numBytesRead = 0;
+    //des is not in socketMap OR socket partner is not openning
+    if ( (socketMap.find(des) == socketMap.end()) || !(socketMap[des].isOpen) ) { //error case
+        bytesRead = wcsReadcond(des, buf, n, min, time, timeout); //return -1;
+    }
+    else if (min == 0) {
+        bytesRead = wcsReadcond(des, buf, n, min, time, timeout);
+        if (bytesRead != -1) {
+            lock_guard<mutex> mapLk(mutexSocketInMap); //lock global mutex
+            socketMap[socketMap[des].paired].numBytes -= bytesRead;
+        }
+    }
+    else {
+        do {
+            unique_lock<mutex> mapLk(mutexSocketInMap); //lock global mutex
+
+            //If there is something in the buffer to be read or our socket pair gets closed
+            cv.wait(mapLk, [des]{return socketMap[socketMap[des].paired].numBytes > 0 || !socketMap[des].isOpen;});
+
+            //Read the output
+            numBytesRead = wcsReadcond(des, ((char*) buf) + bytesRead , n, 1, time, timeout);
+
+            bytesRead  += numBytesRead; //Increment return value by the number of bytes read
+
+            //Modify the number of bytes in the socket to match the current state
+            if(numBytesRead != -1)
+                socketMap[socketMap[des].paired].numBytes -= numBytesRead;
+
+            //Notify our tcdrain() cond_varaible to check again
+            cv.notify_all();
+
+            } while(bytesRead < min && (lock_guard<mutex> (mutexSocketInMap), socketMap[des].isOpen));
+    }
+
+    return bytesRead;
+}

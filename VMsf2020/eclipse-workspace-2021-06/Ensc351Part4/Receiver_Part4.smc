@@ -1,0 +1,989 @@
+9999 4 1
+6
+BEGIN DATA
+BEGIN GenericState 183
+183 10
+2 1 194 156
+1
+Receiver_TopLevel
+0 12582911 0
+18
+TEXTBEGIN
+ctx.KbCan = false;
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN GenericState 118
+118 10
+11 8 154 104
+1
+NON_CAN
+1 65535 0
+147
+TEXTBEGIN
+    ctx.sendByte(ctx.NCGbyte); 
+    ctx.errCnt=0;
+    ctx.transferringFileD = -1; 
+    ctx.closeProb = -1;
+    ctx.tm(TM_SOH);
+    ctx.tm = 0;
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN GenericState 101
+101 10
+83 61 100 69
+1
+FirstByteData
+0 12582911 0
+0
+TEXTBEGIN
+
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN GenericState 103
+103 10
+83 41 100 50
+1
+EOT
+0 12582911 0
+0
+TEXTBEGIN
+
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN FinalState 109
+109 10
+156 95 160 99
+1
+FinalState
+BEGIN Mesg 151
+151 20
+163 53 187 62
+1
+1 1 16777215 65280
+150
+SER
+c==CAN
+20
+TEXTBEGIN
+ctx.tmPush(TM_CHAR);
+TEXTEND
+BEGIN Mesg 111
+111 20
+92 50 118 62
+1
+1 1 16777215 65280
+108
+SER
+c == EOT && !ctx.KbCan
+49
+TEXTBEGIN
+ctx.purge();
+ctx.sendByte(NAK);
+ctx.tm(TM_SOH);
+TEXTEND
+BEGIN Mesg 113
+113 20
+95 34 121 41
+1
+1 1 16777215 65280
+110
+SER
+c==EOT && !ctx.KbCan
+27
+TEXTBEGIN
+ctx.closeTransferredFile();
+TEXTEND
+BEGIN Transition 130
+130 40
+19 35 19 43
+101 129
+3 1 1 3
+2 95 69 95 70 
+0 95 70 95 87 
+3 95 87 95 88 
+BEGIN GenericState 129
+129 10
+76 88 102 100
+1
+CondTransientData
+0 12632256 0
+20
+TEXTBEGIN
+     POST("*",CONT);
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN Mesg 131
+131 20
+73 69 97 87
+1
+1 1 16777215 65280
+130
+SER
+c==SOH && !ctx.KbCan
+108
+TEXTBEGIN
+ctx.getRestBlk();
+if (ctx.goodBlk1st) {
+     ctx.errCnt=0;
+     ctx.anotherFile=0;
+}
+else ctx.errCnt++;
+TEXTEND
+BEGIN Mesg 134
+134 20
+116 84 155 104
+1
+1 1 16777215 65280
+133
+CONT
+ctx.syncLoss || ctx.errCnt >= errB
+155
+TEXTBEGIN
+ctx.purge()
+ctx.cans();
+ctx.closeTransferredFile();
+if (ctx.syncLoss)
+     ctx.result="LossOfSyncronization";
+else
+     ctx.result="ExcessiveErrors";
+TEXTEND
+BEGIN Mesg 137
+137 20
+105 61 155 85
+1
+1 1 16777215 65280
+136
+CONT
+!ctx.syncLoss && (ctx.errCnt < errB)
+199
+TEXTBEGIN
+if (ctx.goodBlk) { 
+     ctx.sendByte(ACK);
+     if (ctx.anotherFile)
+        ctx.sendByte(ctx.NCGbyte);
+}
+else  ctx.sendByte(NAK);
+if (ctx.goodBlk1st) 
+     ctx.writeChunk();
+ctx.tm(TM_SOH);
+TEXTEND
+BEGIN Note 138
+138 50
+157 9 192 27
+1
+0 0 8454143 128
+116
+TEXTBEGIN
+ENSC351_part4
+Name: Thanh Huy Ho
+SFU#: 301385295
+Name: Ngoc Quynh Anh Vo
+SFU#: 301391358
+Date: Nov 19th, 2021
+
+TEXTEND
+BEGIN Mesg 142
+142 20
+102 128 148 138
+1
+1 1 16777215 65280
+141
+SER
+
+108
+TEXTBEGIN
+COUT << "Receiver received totally unexpected char #" << c << ": " << (char) c << endl;
+exit(EXIT_FAILURE);
+TEXTEND
+BEGIN GenericState 144
+144 10
+154 59 171 72
+1
+CAN
+0 65535 0
+0
+TEXTBEGIN
+
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN Mesg 148
+148 20
+158 76 190 93
+1
+1 1 16777215 65280
+146
+SER
+c == CAN
+114
+TEXTBEGIN
+ctx.clearCan();
+if (ctx.transferringFileD != -1) 
+     ctx.closeTransferredFile();
+ctx.result="SndCancelled";
+
+TEXTEND
+BEGIN Note 149
+149 50
+120 32 150 63
+1
+0 0 12632256 128
+267
+TEXTBEGIN
+The entry code:
+
+POST("*",CONT);
+
+in the grey transient states immediately posts a continue (CONT) event that immediately kicks the StateChart out of those states.
+
+Event SER is the event of a character being available from the Medium (simulating a SERial port)
+TEXTEND
+BEGIN GenericState 154
+154 10
+31 25 52 33
+1
+FirstByteStat
+0 12582911 0
+0
+TEXTBEGIN
+
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN InitialState 155
+155 10
+44 36 48 40
+1
+InitialState
+BEGIN Transition 160
+160 40
+92 79 92 87
+159 162
+3 2 1 2
+2 45 80 45 81 
+0 45 81 45 87 
+3 45 87 45 88 
+BEGIN Transition 108
+108 40
+42 45 42 53
+101 103
+1 2 3 2
+2 91 61 91 60 
+0 91 60 91 51 
+3 91 51 91 50 
+BEGIN Transition 165
+165 40
+92 76 92 84
+178 154
+2 2 2 3
+2 49 49 50 49 
+1 50 49 55 49 
+0 55 49 55 31 
+1 55 31 53 31 
+3 53 31 52 31 
+BEGIN Transition 179
+179 40
+77 60 77 68
+178 159
+3 3 1 3
+2 30 55 30 56 
+0 30 56 30 65 
+1 30 65 50 65 
+0 50 65 50 67 
+3 50 67 50 68 
+BEGIN Transition 187
+187 40
+33 65 33 73
+159 186
+4 2 1 2
+2 34 74 33 74 
+1 33 74 20 74 
+0 20 74 20 88 
+3 20 88 20 89 
+BEGIN Transition 193
+193 40
+34 16 34 24
+154 154
+1 1 1 3
+2 36 25 36 24 
+0 36 24 36 22 
+1 36 22 46 22 
+0 46 22 46 24 
+3 46 24 46 25 
+BEGIN Transition 110
+110 40
+58 57 58 65
+103 171
+1 3 3 3
+2 95 41 95 40 
+0 95 40 95 34 
+3 95 34 95 33 
+BEGIN Transition 157
+157 40
+88 52 88 60
+154 178
+3 3 1 2
+2 36 33 36 34 
+0 36 34 36 42 
+3 36 42 36 43 
+BEGIN Transition 146
+146 40
+55 23 55 31
+144 109
+3 3 1 1
+2 158 72 158 73 
+0 158 73 158 94 
+3 158 94 158 95 
+BEGIN Mesg 158
+158 20
+14 30 38 44
+1
+1 1 16777215 65280
+157
+SER
+c==SOH && !ctx.KbCan
+88
+TEXTBEGIN
+ctx.getRestBlk();
+if (!ctx.closeProb) {
+    ctx.errCnt=0;
+    ctx.closedProb = -1;
+}
+TEXTEND
+BEGIN GenericState 159
+159 10
+34 68 57 80
+1
+CondTransientCheck
+0 12632256 0
+20
+TEXTBEGIN
+     POST("*",CONT);
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN Mesg 161
+161 20
+45 80 79 95
+1
+1 1 16777215 65280
+160
+CONT
+ctx.anotherFile
+32
+TEXTBEGIN
+ctx.openFileForTransfer();
+
+
+
+TEXTEND
+BEGIN GenericState 162
+162 10
+34 88 57 100
+1
+CondTransientOpen
+0 12632256 0
+20
+TEXTBEGIN
+     POST("*",CONT);
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN Mesg 164
+164 20
+57 57 86 68
+1
+1 1 16777215 65280
+163
+CONT
+ctx.transferringFileD != -1
+63
+TEXTBEGIN
+ctx.sendByte(ACK);
+ctx.sendByte(ctx.NCGbyte);
+ctx.tm(TM_SOH);
+TEXTEND
+BEGIN Mesg 166
+166 20
+55 30 76 46
+1
+1 1 16777215 65280
+165
+CONT
+!ctx.syncLoss && (ctx.errCnt < errB)  && !ctx.goodBlk
+50
+TEXTBEGIN
+ctx.sendByte(NAK);
+ctx.errCnt++;
+ctx.tm(TM_SOH);
+TEXTEND
+BEGIN Mesg 169
+169 20
+7 109 28 115
+1
+1 1 16777215 65280
+168
+TM
+
+20
+TEXTBEGIN
+ctx.result="Done";
+
+TEXTEND
+BEGIN Mesg 170
+170 20
+45 101 75 114
+1
+1 1 16777215 65280
+167
+CONT
+ctx.transferringFileD == -1
+51
+TEXTBEGIN
+ctx.purge();
+ctx.cans();
+ctx.result="CreatError";
+TEXTEND
+BEGIN GenericState 171
+171 10
+90 21 111 33
+1
+CondTransientEOT
+0 12632256 0
+20
+TEXTBEGIN
+     POST("*",CONT);
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN Mesg 176
+176 20
+66 14 93 27
+1
+1 1 16777215 65280
+175
+CONT
+!ctx.closeProb
+78
+TEXTBEGIN
+ctx.sendByte(ACK);
+ctx.sendByte(ctx.NCGbyte);
+ctx.errCnt=0;
+ctx.tm(TM_SOH);
+TEXTEND
+BEGIN Mesg 177
+177 20
+167 98 194 109
+1
+1 1 16777215 65280
+172
+CONT
+ctx.closeProb
+52
+TEXTBEGIN
+ctx.purge();
+ctx.cans(); 
+ctx.result="CloseError";
+TEXTEND
+BEGIN GenericState 178
+178 10
+24 43 49 55
+1
+CondlTransientStat
+0 12632256 0
+20
+TEXTBEGIN
+     POST("*",CONT);
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN Mesg 180
+180 20
+31 54 56 67
+1
+1 1 16777215 65280
+179
+CONT
+!ctx.syncLoss && (ctx.errCnt < errB) && ctx.goodBlk
+26
+TEXTBEGIN
+ctx.checkForAnotherFile();
+TEXTEND
+BEGIN Mesg 182
+182 20
+4 118 44 136
+1
+1 1 16777215 65280
+181
+CONT
+ctx.syncLoss || ctx.errCnt >= errB
+137
+TEXTBEGIN
+ctx.purge();
+ctx.cans();
+if (ctx.syncLoss)
+     ctx.result="LossOfSync at Stat Blk";
+else
+     ctx.result="ExcessiveErrors at Stat";
+TEXTEND
+BEGIN InitialState 184
+184 10
+3 17 7 21
+1
+InitialState
+BEGIN GenericState 186
+186 10
+13 89 27 97
+1
+Timeout
+0 12582911 0
+0
+TEXTBEGIN
+
+TEXTEND
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN Mesg 189
+189 20
+14 64 39 77
+1
+1 1 16777215 65280
+188
+SER
+c==SOH && !ctx.KbCan
+32
+TEXTBEGIN
+ctx.getRestBlk();
+ctx.errCnt++;
+TEXTEND
+BEGIN Note 190
+190 50
+112 16 153 26
+1
+0 0 8454016 128
+161
+TEXTBEGIN
+Due to a bug in SmartState studio, in this StateChart, please interpret && as &&&& -- a logical AND.  Do not interpret it as a bitwise AND as you normally would.
+TEXTEND
+BEGIN Mesg 191
+191 20
+20 78 43 93
+1
+1 1 16777215 65280
+187
+CONT
+!ctx.anotherFile
+36
+TEXTBEGIN
+ctx.sendByte(ACK);
+ctx.tm(TM_END); 
+TEXTEND
+BEGIN Mesg 194
+194 20
+39 8 68 25
+1
+1 1 16777215 65280
+193
+SER
+c==EOT && !ctx.closeProb && ctx.errCnt < errB && !ctx.KbCan
+78
+TEXTBEGIN
+ctx.sendByte(ACK);
+ctx.sendByte(ctx.NCGbyte);
+ctx.errCnt++;
+ctx.tm(TM_SOH);
+TEXTEND
+BEGIN Mesg 196
+196 20
+46 127 93 139
+1
+1 1 16777215 65280
+195
+SER
+c==EOT && !ctx.closeProb && ctx.errCnt >= errB
+52
+TEXTBEGIN
+ctx.purge()
+ctx.cans();
+ctx.result="ExcessiveEOTs"
+TEXTEND
+BEGIN Mesg 201
+201 20
+159 125 190 143
+1
+1 1 16777215 65280
+200
+TM
+
+160
+TEXTBEGIN
+ctx.cans()
+if (ctx.transferringFileD != -1)
+   ctx.closeTransferredFile();
+if (ctx.KbCan)
+   ctx.result = "KbCancelled";
+else
+   ctx.result = "Timeout";
+
+TEXTEND
+BEGIN Mesg 202
+202 20
+175 66 197 75
+1
+1 1 16777215 65280
+199
+KB_C
+
+17
+TEXTBEGIN
+ctx.KbCan = true;
+TEXTEND
+BEGIN Transition 213
+213 40
+7 15 7 23
+184 118
+2 1 4 3
+2 7 19 8 19 
+0 8 19 8 32 
+1 8 32 10 32 
+3 10 32 11 32 
+BEGIN Transition 156
+156 40
+63 53 63 61
+155 154
+1 1 3 1
+2 46 36 46 35 
+0 46 35 46 34 
+3 46 34 46 33 
+BEGIN Transition 133
+133 40
+30 51 30 59
+129 109
+2 3 4 1
+2 102 97 103 97 
+1 103 97 155 97 
+3 155 97 156 97 
+BEGIN Transition 175
+175 40
+208 17 208 25
+171 154
+4 2 2 1
+2 90 27 89 27 
+1 89 27 53 27 
+3 53 27 52 27 
+BEGIN Transition 217
+217 40
+87 47 87 55
+103 101
+3 3 1 1
+2 87 50 87 51 
+0 87 51 87 60 
+3 87 60 87 61 
+BEGIN Transition 163
+163 40
+91 102 91 110
+162 101
+2 3 4 1
+2 57 97 58 97 
+1 58 97 70 97 
+0 70 97 70 67 
+1 70 67 82 67 
+3 82 67 83 67 
+BEGIN Transition 188
+188 40
+17 75 17 83
+186 178
+1 1 4 1
+2 17 89 17 88 
+0 17 88 17 86 
+1 17 86 13 86 
+0 13 86 13 52 
+1 13 52 23 52 
+3 23 52 24 52 
+BEGIN Transition 199
+199 40
+166 67 166 75
+144 144
+3 1 2 3
+2 166 72 166 73 
+1 166 73 174 73 
+0 174 73 174 68 
+1 174 68 172 68 
+3 172 68 171 68 
+BEGIN Transition 136
+136 40
+15 47 15 55
+129 101
+2 1 2 3
+2 102 91 103 91 
+1 103 91 105 91 
+0 105 91 105 67 
+1 105 67 101 67 
+3 101 67 100 67 
+BEGIN Transition 167
+167 40
+79 105 79 113
+162 109
+3 2 3 1
+2 45 100 45 101 
+0 45 101 45 112 
+1 45 112 158 112 
+0 158 112 158 100 
+3 158 100 158 99 
+BEGIN Transition 168
+168 40
+66 79 66 87
+186 109
+4 2 3 1
+2 13 93 12 93 
+1 12 93 7 93 
+0 7 93 7 115 
+1 7 115 158 115 
+0 158 115 158 100 
+3 158 100 158 99 
+BEGIN Transition 181
+181 40
+66 54 66 62
+178 109
+4 2 3 1
+2 24 49 23 49 
+1 23 49 5 49 
+0 5 49 5 118 
+1 5 118 158 118 
+0 158 118 158 100 
+3 158 100 158 99 
+BEGIN Transition 195
+195 40
+30 18 30 26
+154 109
+4 3 3 1
+2 31 27 30 27 
+1 30 27 3 27 
+0 3 27 3 138 
+1 3 138 93 138 
+0 93 138 93 121 
+1 93 121 158 121 
+0 158 121 158 100 
+3 158 100 158 99 
+BEGIN Transition 219
+219 40
+50 135 50 143
+183 109
+3 3 3 1
+2 50 156 50 157 
+0 50 157 50 159 
+1 50 159 96 159 
+0 96 159 96 124 
+1 96 124 158 124 
+0 158 124 158 100 
+3 158 100 158 99 
+BEGIN Transition 150
+150 40
+72 31 72 39
+118 144
+2 2 1 2
+2 154 56 155 56 
+1 155 56 162 56 
+0 162 56 162 58 
+3 162 58 162 59 
+BEGIN Transition 172
+172 40
+219 26 219 34
+171 109
+2 3 2 1
+2 111 30 112 30 
+1 112 30 188 30 
+0 188 30 188 97 
+1 188 97 161 97 
+3 161 97 160 97 
+BEGIN Transition 209
+209 40
+171 57 171 65
+144 118
+2 1 2 1
+2 171 62 172 62 
+1 172 62 181 62 
+0 181 62 181 51 
+1 181 51 158 51 
+0 158 51 158 32 
+1 158 32 155 32 
+3 155 32 154 32 
+BEGIN Transition 203
+203 40
+158 54 158 62
+144 118
+1 1 2 1
+2 158 59 158 58 
+0 158 58 158 32 
+1 158 32 155 32 
+3 155 32 154 32 
+BEGIN Transition 214
+214 40
+82 99 82 107
+118 118
+3 2 3 1
+2 82 104 82 105 
+0 82 105 82 108 
+1 82 108 117 108 
+0 117 108 117 105 
+3 117 105 117 104 
+BEGIN Transition 141
+141 40
+26 58 26 66
+183 109
+3 2 3 1
+2 98 156 98 157 
+0 98 157 98 159 
+1 98 159 101 159 
+0 101 159 101 127 
+1 101 127 158 127 
+0 158 127 158 100 
+3 158 100 158 99 
+BEGIN Transition 200
+200 40
+142 132 142 140
+183 109
+3 1 3 1
+2 146 156 146 157 
+0 146 157 146 159 
+1 146 159 158 159 
+0 158 159 158 100 
+3 158 100 158 99 
+BEGIN Mesg 210
+210 20
+173 46 192 53
+1
+1 1 16777215 65280
+209
+TM
+!ctx.KbCan
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN Mesg 204
+204 20
+158 35 172 45
+1
+1 1 16777215 65280
+203
+SER
+c != CAN && !ctx.KbCan
+12
+TEXTBEGIN
+ctx.tmPop();
+TEXTEND
+BEGIN Mesg 215
+215 20
+92 103 128 115
+1
+1 1 16777215 65280
+214
+KB_C
+!ctx.KbCan
+46
+TEXTBEGIN
+ctx.KbCan = true;
+ctx.tmRed(TM_VL - TM_2CHAR)
+TEXTEND
+BEGIN Mesg 218
+218 20
+74 50 92 57
+1
+1 1 16777215 65280
+217
+SER
+c == SOH && !ctx.KbCan
+0
+TEXTBEGIN
+
+TEXTEND
+BEGIN Mesg 220
+220 20
+57 144 96 158
+1
+1 1 16777215 65280
+219
+SER
+ctx.KbCan && (c == SOH || c == EOT)
+69
+TEXTBEGIN
+ctx.cans();
+ctx.closeTransferredFile();
+ctx.result = "KbCancelled";
+TEXTEND
+END DATA
+Receiver
+ReceiverX
+ReceiverX.h
+
+69
+INCLUDE BEGIN
+#include "AtomicCOUT.h"
+//#include <iostream>
+#include <stdlib.h>
+
+INCLUDE END
+20
+DECL BEGIN
+#define c wParam
+
+
+DECL END
+Copyright (c) 2021 W. Craig Scratchley
+77
+DESC BEGIN
+ Simple YMODEM Receiver
+
+Copyright (c) 2021 Craig Scratchley
+wcs AT sfu.ca
+DESC END
+0
+INCLUDE BEGIN
+
+INCLUDE END
+0
+DECL BEGIN
+
+DECL END
+Context
+
+0
+DECL BEGIN
+
+DECL END
+Context
+
+0
+DECL BEGIN
+
+DECL END

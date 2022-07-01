@@ -1,0 +1,52 @@
+map GIT:
+https://github.com/rstolys/eclipse-workspace-2020-06/blob/master/Ensc351Part3-test-priorities/src/myIO.cpp
+
+vector GIT: 
+https://github.com/shypre/ensc351_xmodem/blob/master/Part3/Ensc351Part2SolnLib/myIO.cpp
+
+1) Ensc351_Server
+
+2) ASAN does not work with gdb
+	Craig asked to remind him to explain (at the end of lec)
+
+3) Why are there 2 myReadcond?
+1st myReadcond is for myWrite?
+2nd myReadcond ?
+	/* finished: statement A: result was 14 Ba: abcd123456789 */
+	myReadcond(daSktPr[1], Ba, 20, 0, 0, 0); // returned 0;
+	myWrite(daSktPr[1], "Will not be read", 17);
+	/* B */ myReadcond(daSktPr[1], Ba, 20, 12, 0, 0); // blocked
+	
+4) Why it "will not be read"?
+T41-line8
+	myWrite(daSktPr[1], "Will not be read", 17);
+	
+5) why myTcdrain does not block T32 till myReadcond 1?
+T32-line9
+	PE(myTcdrain(daSktPr[0]));
+	
+6) what is the purpose of index of daSktPr (daSktPr[0], daSktPr[1])?
+
+7) what do we need to modify?
+	Do we need to modify Ensc351_test? 
+	if not (only use for testing myIO), why you need to cut the solution before releasing to us?
+	why are there more than 200 lines in your Ensc351_test? ours is just 100 lines something
+	
+8) why when I set myPriority = 98 it still call cout (warning)?
+	int primaryPriority = 98;
+
+	getSchedParam(&policy, &sch);
+	if (sch.__sched_priority < 98)
+		cout << "**** If you are debugging, debugger is not running at a high priority. ****\n" <<
+						" **** This could cause problems with debugging.  Consider debugging\n" <<
+						" **** with the proper debug launch configuration ****" << std::endl;
+	cout << "Primary Thread was executing at policy " << policy << " and priority " <<  sch.sched_priority << endl;
+
+******************** comprehensive******************
+1) if moving if(numBytesRead != -1) to cover 2 lines will give different output
+ 	if(numBytesRead != -1) 
+		socketMap[socketMap[des].paired].numBytes -= numBytesRead; //data after being drained
+
+2) why cannot replace (!desIsOpen) with (socketMap[des].paired != -1)
+    (socketMap.find(des) == socketMap.end()) || !(socketMap[des].isOpen)
+

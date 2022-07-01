@@ -1,0 +1,31 @@
+int myReadcond( int des, void * buf, int n, int min, int time, int timeout )
+{
+    int bytesRead;
+    //des is not in socketMap OR socket partner is not openning
+    if ( (socketMap.find(des) == socketMap.end()) || !(socketMap[des].isOpen) ) { //error case
+        return wcsReadcond(des, buf, n, min, time, timeout); //return -1;
+    }
+    else if (socketMap[socketMap[des].paired].numBytes >= min) { //minimum requirement to make socketRead() work
+        lock_guard<mutex> mapLk(mutexSocketInMap); //lock global mutex
+        bytesRead = wcsReadcond(des, buf, n, min, time, timeout);
+        if (bytesRead != -1) { //make sure there is no error
+            socketMap[socketMap[des].paired].numBytes -= bytesRead; //data after being drained
+            if (!socketMap[socketMap[des].paired].numBytes)
+                cv.notify_all(); //all data is drained
+        }
+    }
+    else { //numBytes < min
+        unique_lock<mutex> mapLk(mutexSocketInMap); //lock global mutex
+        socketMap[socketMap[des].paired].numBytes -= min; //used to count how many bytes left to reach the minimum to call wcsReadcond
+        cv.notify_all(); //notify that wcsReadcond needs more bytes to be written
+        /*unlock member mutex, switch to another thread to write more data to buffer until reach the minimum*/
+
+        //numBytes is now < 0
+        cv.wait(mapLk, [des]{return (socketMap[socketMap[des].paired].numBytes >= 0);});
+        bytesRead = wcsReadcond(des, buf, n, min, time, timeout);
+
+        socketMap[socketMap[des].paired].numBytes += min; //back to normal numBytes
+        socketMap[socketMap[des].paired].numBytes -= bytesRead; //data after being drained
+    }
+    return bytesRead;
+}
